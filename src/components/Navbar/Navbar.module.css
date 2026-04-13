@@ -1,0 +1,206 @@
+/* ===================
+   NAVBAR — Fully transparent with adaptive color
+   =================== */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  padding: 1.5rem 0;
+  background: transparent;
+  transition: color 0.4s ease;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---- Logo ---- */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  z-index: 201;
+}
+
+.logoIcon {
+  transition: color 0.4s ease;
+  color: var(--color-text);
+}
+
+.logoText {
+  font-family: var(--font-sans);
+  font-size: var(--text-nav);
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  color: var(--color-text);
+  text-transform: uppercase;
+  transition: color 0.4s ease;
+}
+
+/* ---- Light theme (over dark backgrounds like hero) ---- */
+.navLight .logoIcon,
+.navLight .logoText {
+  color: #fff;
+}
+
+.navLight .line {
+  background-color: #fff;
+}
+
+/* ---- Burger Icon ---- */
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 201;
+  position: relative;
+}
+
+.line {
+  display: block;
+  width: 28px;
+  height: 1.5px;
+  background-color: var(--color-text);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.3s ease,
+              background-color 0.4s ease;
+  transform-origin: center;
+}
+
+.burgerOpen .line:first-child {
+  transform: translateY(3.75px) rotate(45deg);
+}
+
+.burgerOpen .line:last-child {
+  transform: translateY(-3.75px) rotate(-45deg);
+}
+
+/* ---- Fullscreen Overlay ---- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 199;
+  background-color: var(--color-bg);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.overlayOpen {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.overlayContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 max(2rem, 8vw);
+}
+
+/* ---- Menu Links ---- */
+.menuLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.menuLink {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              color 0.3s ease;
+}
+
+.overlayOpen .menuLink {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menuLink:hover {
+  color: var(--color-bg-warm);
+}
+
+.menuLinkActive {
+  opacity: 0.4 !important;
+}
+
+.menuNumber {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  letter-spacing: 0.1em;
+  opacity: 0.3;
+  flex-shrink: 0;
+}
+
+/* ---- Bottom area ---- */
+.menuBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.menuLangs {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.lang {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  text-transform: uppercase;
+  color: var(--color-text);
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+  padding: 0;
+  outline: none;
+}
+
+.lang[data-active='true'] {
+  opacity: 1;
+}
+
+.lang:hover {
+  opacity: 1;
+}
+
+.menuContact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.4;
+}

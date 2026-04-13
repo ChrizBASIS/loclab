@@ -1,40 +1,101 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* =============================================
+   ARCHIDOMO-EXACT FONT DECLARATIONS
+   Canela (Headlines weight 300) + Maison Neue (Body weight 400/500)
+   ============================================= */
+
+@font-face {
+  font-family: 'Canela';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('https://fonts.cdnfonts.com/s/86518/CanelaText-Light-Trial.woff') format('woff');
+}
+@font-face {
+  font-family: 'Canela';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.cdnfonts.com/s/86518/CanelaText-Regular-Trial.woff') format('woff');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Maison Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.cdnfonts.com/s/29652/MaisonNeueBook.woff') format('woff');
+}
+@font-face {
+  font-family: 'Maison Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('https://fonts.cdnfonts.com/s/29652/MaisonNeueMedium.woff') format('woff');
+}
+
+
+/* =============================================
+   ARCHIDOMO-EXACT CSS TOKENS
+   All values extracted from computed styles
+   ============================================= */
+
+:root {
+  /* Exact Colors from Archidomo */
+  --color-bg: #F2F2F2;
+  --color-bg-warm: #BCB5A3;       /* rgb(188, 181, 163) */
+  --color-text: #111111;          /* rgb(17, 17, 17) — NOT pure black */
+  --color-border: rgba(17, 17, 17, 0.15);
+
+  /* Exact Font Stacks */
+  --font-serif: 'Canela', var(--font-instrument-serif), 'Times New Roman', serif;
+  --font-sans: 'Maison Neue', var(--font-inter), -apple-system, sans-serif;
+  --font-mono: var(--font-space-mono), 'Courier New', monospace;
+
+  /* Exact Typography Scale (from computed px) */
+  --text-hero: clamp(3.5rem, 5.9vw, 5.9rem);   /* ~94px on 1600px screen */
+  --text-h2: clamp(2rem, 3.5vw, 3.5rem);        /* ~56px */
+  --text-body-lg: clamp(1.2rem, 1.66vw, 1.66rem); /* ~26.5px */
+  --text-nav: clamp(0.9rem, 1.1vw, 1.1rem);     /* ~17.6px */
+  --text-mono: 0.74rem;                          /* ~11.78px */
+
+  /* Exact Spacing (from Archidomo layout inspection) */
+  --wrapper-gutter: calc(100% - 29.45px);       /* Their wrapper-full class */
+  --side-padding: max(1.5rem, 2vw);             /* ~15px each side */
+  --heading-indent: 8.2vw;                      /* ~131px on 1600px */
+  --section-gap: 12vw;                          /* Massive breathing room */
+}
+
+/* Lenis smooth scroll config */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  height: 100%;
+  font-size: 16px;
 }
 
-html,
 body {
-  max-width: 100vw;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+::selection {
+  background-color: var(--color-text);
+  color: var(--color-bg);
 }
 
 a {
@@ -42,8 +103,32 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Subpages need clearance for the fixed navbar.
+   The Hero component handles its own full-height layout. */
+main > section:first-child:not([class*="hero"]) {
+  padding-top: calc(var(--section-gap) + 80px);
+}
+
+/* =============================================
+   ARCHIDOMO WRAPPER-FULL CLONE
+   Max-width: calc(100% - 29.45px) centered
+   ============================================= */
+
+.wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 max(1.5rem, 3.75vw); /* ~60px on 1600px screen */
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 1.25rem;
   }
 }
+
