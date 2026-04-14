@@ -1,0 +1,528 @@
+/* ===================
+   MARKETING STRATEGY PAGE
+   =================== */
+
+/* ---- Hero ---- */
+.hero {
+  padding: calc(var(--section-gap) + 80px) 0 var(--section-gap);
+  background: linear-gradient(160deg, #1B3A2D 0%, #111 60%);
+  color: #fff;
+}
+
+.heroLabel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.5;
+  margin-bottom: 2rem;
+}
+
+.heroLabelLine {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: rgba(255,255,255,0.4);
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: var(--text-hero);
+  font-weight: 300;
+  line-height: 0.95;
+  margin-bottom: 2rem;
+}
+
+.heroSubtitle {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
+  font-weight: 400;
+  line-height: 1.6;
+  opacity: 0.6;
+  max-width: 50ch;
+  margin-bottom: 4rem;
+}
+
+/* KPI Strip */
+.kpiStrip {
+  display: flex;
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.kpi {
+  flex: 1;
+  padding: 2rem 0;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.kpi:last-child { border-right: none; }
+
+.kpiValue {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  font-weight: 300;
+  line-height: 1;
+}
+
+.kpiLabel {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.4;
+}
+
+/* ---- Sections ---- */
+.section { padding: var(--section-gap) 0; }
+.sectionAlt { background: rgba(188, 181, 163, 0.08); }
+
+.sectionDark {
+  background: #111;
+  color: #fff;
+  padding: var(--section-gap) 0;
+}
+
+.sectionLabel {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.4;
+  margin-bottom: 1rem;
+}
+
+.sectionLabelLight {
+  composes: sectionLabel;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.sectionHeading {
+  font-family: var(--font-serif);
+  font-size: var(--text-h2);
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.sectionHeadingLight {
+  composes: sectionHeading;
+  color: #fff;
+}
+
+.sectionIntro {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  line-height: 1.6;
+  max-width: 55ch;
+  opacity: 0.6;
+  margin-bottom: 4rem;
+}
+
+.sectionIntroLight {
+  composes: sectionIntro;
+  color: rgba(255,255,255,0.6);
+}
+
+.metaLabel {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.4;
+  margin-bottom: 0.2rem;
+}
+
+/* ---- Message Grid ---- */
+.messageGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.messageCard {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.messageTag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 3px 10px;
+  border-radius: 3px;
+  background: rgba(27, 58, 45, 0.08);
+  color: #1B3A2D;
+  margin-bottom: 1rem;
+}
+
+.messageCard p {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+/* ---- Audience Grid ---- */
+.audienceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.audienceCard {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audienceCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+}
+
+.audienceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.audienceIcon { font-size: 1.5rem; }
+
+.audienceBadge {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+
+.badgePrimary { background: rgba(27, 58, 45, 0.1); color: #1B3A2D; }
+.badgeSecondary { background: rgba(0,0,0,0.04); color: #8A8A8A; }
+
+.audienceName {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.audienceMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* ---- Channel Grid ---- */
+.channelGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.channelCard {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.channelCard:hover { transform: translateY(-3px); }
+
+.channelDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.channelName {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.channelType {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  opacity: 0.4;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.channelMeta {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* ---- Instagram Grid ---- */
+.igGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.igCard { perspective: 1000px; }
+
+.igPhone {
+  background: #1a1a1a;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: transform 0.4s ease;
+}
+
+.igPhone:hover { transform: translateY(-6px); }
+
+.igHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 10px 12px;
+}
+
+.igAvatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1B3A2D, #BCB5A3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.igUser { flex: 1; }
+
+.igUsername {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.igPostType {
+  display: block;
+  font-size: 10px;
+  color: rgba(255,255,255,0.4);
+}
+
+.igDots {
+  color: rgba(255,255,255,0.5);
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.igImageWrap {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.igImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.igActions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px 4px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.igActionIcons {
+  display: flex;
+  gap: 12px;
+}
+
+.igLikes {
+  padding: 0 12px 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.igCaption {
+  padding: 0 12px 4px;
+  font-size: 11px;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.igCaptionUser {
+  font-weight: 700;
+  color: #fff;
+}
+
+.igHashtags {
+  padding: 2px 12px 12px;
+  font-size: 10px;
+  color: rgba(100, 180, 255, 0.6);
+}
+
+/* ---- LinkedIn Grid ---- */
+.liGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.liCard {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.liCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+}
+
+.liHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1.2rem 1.5rem 0;
+}
+
+.liAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0A66C2, #1B3A2D);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.liUser { flex: 1; }
+
+.liName {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.liRole {
+  display: block;
+  font-size: 0.72rem;
+  color: #8A8A8A;
+}
+
+.liContent {
+  padding: 1rem 1.5rem;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--color-text);
+}
+
+.liContent p { margin-bottom: 0.3rem; }
+
+.liFooter {
+  padding: 0.8rem 1.5rem;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #8A8A8A;
+}
+
+/* ---- Calendar ---- */
+.calendarWrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+}
+
+.calendar th {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1rem 1.2rem;
+  border-bottom: 2px solid var(--color-text);
+  opacity: 0.5;
+  white-space: nowrap;
+}
+
+.calendar td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.calWeek {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.calEvent {
+  color: #1B3A2D;
+  font-weight: 500;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .messageGrid { grid-template-columns: repeat(2, 1fr); }
+  .igGrid { grid-template-columns: repeat(2, 1fr); }
+  .liGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .kpiStrip { flex-wrap: wrap; }
+  .kpi { flex: 0 0 50%; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .messageGrid { grid-template-columns: 1fr; }
+  .audienceGrid { grid-template-columns: 1fr; }
+  .channelGrid { grid-template-columns: 1fr; }
+  .igGrid { grid-template-columns: 1fr; max-width: 380px; }
+  .liGrid { grid-template-columns: 1fr; }
+  .heroTitle { font-size: clamp(2.5rem, 8vw, 4rem); }
+}
