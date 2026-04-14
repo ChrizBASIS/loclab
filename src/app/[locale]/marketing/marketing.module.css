@@ -1,12 +1,14 @@
 /* ===================
    MARKETING STRATEGY PAGE
+   Follows exact brand guidelines:
+   - bg: #F2F2F2, text: #111111
+   - Canela serif for headings, Maison Neue for body
+   - Section pattern identical to brand.module.css
    =================== */
 
-/* ---- Hero ---- */
+/* ---- Hero (matches brand page hero exactly) ---- */
 .hero {
   padding: calc(var(--section-gap) + 80px) 0 var(--section-gap);
-  background: linear-gradient(160deg, #1B3A2D 0%, #111 60%);
-  color: #fff;
 }
 
 .heroLabel {
@@ -17,7 +19,7 @@
   font-size: var(--text-mono);
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  opacity: 0.5;
+  opacity: 0.4;
   margin-bottom: 2rem;
 }
 
@@ -25,7 +27,7 @@
   display: block;
   width: 40px;
   height: 1px;
-  background: rgba(255,255,255,0.4);
+  background: var(--color-text);
 }
 
 .heroTitle {
@@ -38,28 +40,27 @@
 
 .heroSubtitle {
   font-family: var(--font-sans);
-  font-size: clamp(1rem, 1.2vw, 1.3rem);
+  font-size: var(--text-body-lg);
   font-weight: 400;
-  line-height: 1.6;
   opacity: 0.6;
   max-width: 50ch;
   margin-bottom: 4rem;
 }
 
-/* KPI Strip */
+/* KPI Strip — same border pattern as type scale */
 .kpiStrip {
   display: flex;
-  gap: 0;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .kpi {
   flex: 1;
   padding: 2rem 0;
-  border-right: 1px solid rgba(255,255,255,0.1);
+  border-right: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.4rem;
 }
 
 .kpi:last-child { border-right: none; }
@@ -79,14 +80,13 @@
   opacity: 0.4;
 }
 
-/* ---- Sections ---- */
-.section { padding: var(--section-gap) 0; }
-.sectionAlt { background: rgba(188, 181, 163, 0.08); }
-
-.sectionDark {
-  background: #111;
-  color: #fff;
+/* ---- Section layout (exact match to brand.module.css) ---- */
+.section {
   padding: var(--section-gap) 0;
+}
+
+.sectionAlt {
+  background: rgba(188, 181, 163, 0.08);
 }
 
 .sectionLabel {
@@ -98,12 +98,6 @@
   margin-bottom: 1rem;
 }
 
-.sectionLabelLight {
-  composes: sectionLabel;
-  color: #fff;
-  opacity: 0.5;
-}
-
 .sectionHeading {
   font-family: var(--font-serif);
   font-size: var(--text-h2);
@@ -112,25 +106,16 @@
   margin-bottom: 1.5rem;
 }
 
-.sectionHeadingLight {
-  composes: sectionHeading;
-  color: #fff;
-}
-
 .sectionIntro {
   font-family: var(--font-sans);
-  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
   line-height: 1.6;
-  max-width: 55ch;
-  opacity: 0.6;
+  max-width: 60ch;
+  opacity: 0.7;
   margin-bottom: 4rem;
 }
 
-.sectionIntroLight {
-  composes: sectionIntro;
-  color: rgba(255,255,255,0.6);
-}
-
+/* Shared meta label */
 .metaLabel {
   display: block;
   font-family: var(--font-mono);
@@ -141,19 +126,23 @@
   margin-bottom: 0.2rem;
 }
 
-/* ---- Message Grid ---- */
+/* ---- Message Architecture (4-col grid) ---- */
 .messageGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  gap: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .messageCard {
-  background: #fff;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
   padding: 2rem;
+  border-right: 1px solid var(--color-border);
+  background: #fff;
 }
+
+.messageCard:last-child { border-right: none; }
 
 .messageTag {
   display: inline-block;
@@ -163,75 +152,85 @@
   letter-spacing: 0.12em;
   padding: 3px 10px;
   border-radius: 3px;
-  background: rgba(27, 58, 45, 0.08);
-  color: #1B3A2D;
-  margin-bottom: 1rem;
+  background: rgba(17, 17, 17, 0.05);
+  color: var(--color-text);
+  margin-bottom: 1.2rem;
 }
 
 .messageCard p {
   font-family: var(--font-sans);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.6;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
-/* ---- Audience Grid ---- */
-.audienceGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.audienceCard {
-  background: #fff;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  padding: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.audienceCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.06);
-}
-
-.audienceHeader {
+/* ---- Audience (table-style rows like typeCard in brand) ---- */
+.audienceList {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
+  flex-direction: column;
+  gap: 0;
 }
 
-.audienceIcon { font-size: 1.5rem; }
+.audienceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  padding: 1.8rem 0;
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.3s ease;
+}
+
+.audienceRow:first-child { border-top: 1px solid var(--color-border); }
+
+.audienceIcon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  width: 32px;
+}
+
+.audienceName {
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+  font-weight: 300;
+  flex: 1;
+  line-height: 1.1;
+}
 
 .audienceBadge {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 3px 10px;
   border-radius: 3px;
+  flex-shrink: 0;
 }
 
-.badgePrimary { background: rgba(27, 58, 45, 0.1); color: #1B3A2D; }
-.badgeSecondary { background: rgba(0,0,0,0.04); color: #8A8A8A; }
+.badgePrimary {
+  background: rgba(17, 17, 17, 0.07);
+  color: var(--color-text);
+}
 
-.audienceName {
-  font-family: var(--font-sans);
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
+.badgeSecondary {
+  background: rgba(188, 181, 163, 0.3);
+  color: var(--color-text);
+  opacity: 0.7;
 }
 
 .audienceMeta {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
-  font-size: 0.85rem;
+  gap: 0.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
   line-height: 1.4;
+  width: 280px;
+  flex-shrink: 0;
+  opacity: 0.6;
+  text-align: right;
 }
 
-/* ---- Channel Grid ---- */
+/* ---- Channels (same grid as colorGrid in brand) ---- */
 .channelGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -242,21 +241,25 @@
   border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 2rem;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
   transition: transform 0.3s ease;
 }
 
 .channelCard:hover { transform: translateY(-3px); }
 
-.channelDot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+.channelAccent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
 }
 
 .channelName {
   font-family: var(--font-sans);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 500;
   margin-bottom: 0.3rem;
 }
@@ -267,31 +270,65 @@
   opacity: 0.4;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 1.2rem;
 }
 
 .channelMeta {
-  margin-top: 1.2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
-  font-size: 0.85rem;
+  gap: 0.7rem;
+  font-size: 0.82rem;
   line-height: 1.4;
 }
 
-/* ---- Instagram Grid ---- */
+/* ---- Instagram grid (dark section alt) ---- */
+.igSection {
+  padding: var(--section-gap) 0;
+  background: var(--color-text);
+}
+
+.igSectionLabel {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.4;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.igSectionHeading {
+  font-family: var(--font-serif);
+  font-size: var(--text-h2);
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.igSectionIntro {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  line-height: 1.6;
+  max-width: 55ch;
+  opacity: 0.5;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
 .igGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
-.igCard { perspective: 1000px; }
-
+/* Phone frame using brand colors */
 .igPhone {
-  background: #1a1a1a;
-  border-radius: 16px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.08);
   transition: transform 0.4s ease;
 }
 
@@ -302,40 +339,45 @@
   align-items: center;
   gap: 0.6rem;
   padding: 10px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
 .igAvatar {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #1B3A2D, #BCB5A3);
+  background: var(--color-bg-warm);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: var(--font-sans);
   font-size: 11px;
-  font-weight: 700;
-  color: #fff;
+  font-weight: 500;
+  color: var(--color-text);
 }
 
 .igUser { flex: 1; }
 
 .igUsername {
   display: block;
-  font-size: 12px;
-  font-weight: 600;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
   color: #fff;
 }
 
 .igPostType {
   display: block;
-  font-size: 10px;
-  color: rgba(255,255,255,0.4);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: rgba(255,255,255,0.35);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .igDots {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.3);
   font-size: 14px;
-  letter-spacing: 2px;
 }
 
 .igImageWrap {
@@ -348,33 +390,33 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .igActions {
   display: flex;
   justify-content: space-between;
-  padding: 10px 12px 4px;
-  font-size: 18px;
-  color: #fff;
+  padding: 8px 12px 2px;
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
 }
 
-.igActionIcons {
-  display: flex;
-  gap: 12px;
-}
+.igActionIcons { display: flex; gap: 10px; }
 
 .igLikes {
-  padding: 0 12px 4px;
-  font-size: 12px;
-  font-weight: 600;
-  color: #fff;
+  padding: 0 12px 2px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.8);
 }
 
 .igCaption {
   padding: 0 12px 4px;
-  font-size: 11px;
-  color: rgba(255,255,255,0.8);
-  line-height: 1.4;
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.45;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -382,21 +424,23 @@
 }
 
 .igCaptionUser {
-  font-weight: 700;
-  color: #fff;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
 }
 
 .igHashtags {
-  padding: 2px 12px 12px;
-  font-size: 10px;
-  color: rgba(100, 180, 255, 0.6);
+  padding: 2px 12px 10px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 0.05em;
 }
 
-/* ---- LinkedIn Grid ---- */
+/* ---- LinkedIn grid ---- */
 .liGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .liCard {
@@ -404,32 +448,30 @@
   border: 1px solid var(--color-border);
   border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
-.liCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
-}
+.liCard:hover { transform: translateY(-4px); }
 
 .liHeader {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.8rem;
   padding: 1.2rem 1.5rem 0;
 }
 
 .liAvatar {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #0A66C2, #1B3A2D);
+  background: var(--color-text);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-bg);
   flex-shrink: 0;
 }
 
@@ -437,21 +479,25 @@
 
 .liName {
   display: block;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
   color: var(--color-text);
 }
 
 .liRole {
   display: block;
-  font-size: 0.72rem;
-  color: #8A8A8A;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--color-text);
+  opacity: 0.4;
 }
 
 .liContent {
   padding: 1rem 1.5rem;
+  font-family: var(--font-sans);
   font-size: 0.82rem;
-  line-height: 1.55;
+  line-height: 1.6;
   color: var(--color-text);
 }
 
@@ -462,11 +508,12 @@
   border-top: 1px solid var(--color-border);
   display: flex;
   justify-content: space-between;
-  font-size: 0.75rem;
-  color: #8A8A8A;
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  opacity: 0.4;
 }
 
-/* ---- Calendar ---- */
+/* ---- Calendar (same pattern as scaleItem rows) ---- */
 .calendarWrap {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -485,16 +532,17 @@
   font-size: var(--text-mono);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  padding: 1rem 1.2rem;
+  padding: 1rem 1.5rem 1rem 0;
   border-bottom: 2px solid var(--color-text);
-  opacity: 0.5;
+  opacity: 0.4;
   white-space: nowrap;
 }
 
 .calendar td {
-  padding: 1rem 1.2rem;
+  padding: 1.2rem 1.5rem 1.2rem 0;
   border-bottom: 1px solid var(--color-border);
   vertical-align: top;
+  line-height: 1.4;
 }
 
 .calWeek {
@@ -502,10 +550,10 @@
   font-size: var(--text-mono);
   font-weight: 500;
   white-space: nowrap;
+  opacity: 0.5;
 }
 
 .calEvent {
-  color: #1B3A2D;
   font-weight: 500;
 }
 
@@ -518,11 +566,12 @@
 
 @media (max-width: 768px) {
   .kpiStrip { flex-wrap: wrap; }
-  .kpi { flex: 0 0 50%; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .kpi { flex: 0 0 50%; border-bottom: 1px solid var(--color-border); }
   .messageGrid { grid-template-columns: 1fr; }
-  .audienceGrid { grid-template-columns: 1fr; }
+  .messageCard { border-right: none; border-bottom: 1px solid var(--color-border); }
+  .audienceRow { flex-wrap: wrap; gap: 0.8rem; }
+  .audienceMeta { width: 100%; text-align: left; }
   .channelGrid { grid-template-columns: 1fr; }
   .igGrid { grid-template-columns: 1fr; max-width: 380px; }
   .liGrid { grid-template-columns: 1fr; }
-  .heroTitle { font-size: clamp(2.5rem, 8vw, 4rem); }
 }
