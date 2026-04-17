@@ -3,16 +3,17 @@
 import styles from './marketing.module.css';
 import { motion } from 'framer-motion';
 import Footer from '@/components/Footer/Footer';
+import { PencilRuler, Building, Microscope, Landmark, Hammer, Users } from 'lucide-react';
 
 /* ===== DATA ===== */
 
 const AUDIENCES = [
-  { icon: '📐', name: 'Architekten & Planer', priority: 'Primär', reach: 'LinkedIn · Fachpresse · Konferenzen', message: 'Materialdaten, U-Werte, Baudetails' },
-  { icon: '🏗', name: 'Bauherren & Entwickler', priority: 'Primär', reach: 'Website · LinkedIn · Google', message: 'Referenzobjekte, Zertifizierungen' },
-  { icon: '🔬', name: 'Forschungs-Community', priority: 'Primär', reach: 'LinkedIn · Paper · Konferenzen', message: 'Publikationen, Open Data, Kollaboration' },
-  { icon: '🏛', name: 'Politik & Verwaltung', priority: 'Sekundär', reach: 'Newsletter · Reports · Events', message: 'Impact-Reports, Policy Briefs' },
-  { icon: '🔨', name: 'Handwerk & lokale KMU', priority: 'Sekundär', reach: 'Instagram · Workshops · Lokal', message: 'Schulungen, Netzwerk, Aufträge' },
-  { icon: '🌱', name: 'Interessierte Öffentlichkeit', priority: 'Sekundär', reach: 'Instagram · Events · Medien', message: 'Partizipation, Workshops' },
+  { icon: <PencilRuler size={24} strokeWidth={1.5} />, name: 'Architekten & Planer', priority: 'Primär', reach: 'LinkedIn · Fachpresse · Konferenzen', message: 'Materialdaten, U-Werte, Baudetails' },
+  { icon: <Building size={24} strokeWidth={1.5} />, name: 'Bauherren & Entwickler', priority: 'Primär', reach: 'Website · LinkedIn · Google', message: 'Referenzobjekte, Zertifizierungen' },
+  { icon: <Microscope size={24} strokeWidth={1.5} />, name: 'Forschungs-Community', priority: 'Primär', reach: 'LinkedIn · Paper · Konferenzen', message: 'Publikationen, Open Data, Kollaboration' },
+  { icon: <Landmark size={24} strokeWidth={1.5} />, name: 'Politik & Verwaltung', priority: 'Sekundär', reach: 'Newsletter · Reports · Events', message: 'Impact-Reports, Policy Briefs' },
+  { icon: <Hammer size={24} strokeWidth={1.5} />, name: 'Handwerk & lokale KMU', priority: 'Sekundär', reach: 'Instagram · Workshops · Lokal', message: 'Schulungen, Netzwerk, Aufträge' },
+  { icon: <Users size={24} strokeWidth={1.5} />, name: 'Interessierte Öffentlichkeit', priority: 'Sekundär', reach: 'Instagram · Events · Medien', message: 'Partizipation, Workshops' },
 ];
 
 const CHANNELS = [

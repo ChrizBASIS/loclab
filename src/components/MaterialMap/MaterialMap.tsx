@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import styles from './MaterialMap.module.css';
+import { TreePine, BrickWall, Wheat, Sprout, Mountain, Recycle } from 'lucide-react';
 
 /* ===== TYPES ===== */
 
@@ -38,13 +39,13 @@ export const MATERIAL_LABELS: Record<MaterialType, string> = {
   recycling: 'Recycling',
 };
 
-export const MATERIAL_ICONS: Record<MaterialType, string> = {
-  holz:      '🌲',
-  lehm:      '🏺',
-  stroh:     '🌾',
-  hanf:      '🌿',
-  stein:     '⛰',
-  recycling: '♻️',
+export const MATERIAL_ICONS: Record<MaterialType, React.ReactNode> = {
+  holz:      <TreePine size={16} strokeWidth={1.5} />,
+  lehm:      <BrickWall size={16} strokeWidth={1.5} />,
+  stroh:     <Wheat size={16} strokeWidth={1.5} />,
+  hanf:      <Sprout size={16} strokeWidth={1.5} />,
+  stein:     <Mountain size={16} strokeWidth={1.5} />,
+  recycling: <Recycle size={16} strokeWidth={1.5} />,
 };
 
 const SOURCES: MaterialSource[] = [
