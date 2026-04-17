@@ -107,7 +107,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 6rem max(2rem, 8vw) 2rem;
+  padding: 5rem max(2rem, 8vw) 2rem;
 }
 
 /* ---- Menu Links ---- */
@@ -123,12 +123,12 @@
 
 .menuLink {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(1.4rem, 2.8vw, 2.4rem);
   font-weight: 300;
   line-height: 1.1;
   color: var(--color-text);
   text-decoration: none;
-  padding: 1.2rem 0;
+  padding: 0.75rem 0;
   border-bottom: 1px solid var(--color-border);
   display: flex;
   align-items: baseline;
