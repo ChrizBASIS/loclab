@@ -9,6 +9,7 @@ import Logo from './Logo';
 const NAV_LINKS = [
   { href: '/projekt', label: 'Projekt' },
   { href: '/materialien', label: 'Materialien' },
+  { href: '/karte', label: 'Materialkarte' },
   { href: '/workshops', label: 'Workshops' },
   { href: '/timeline', label: 'Timeline' },
   { href: '/konsortium', label: 'Konsortium' },
