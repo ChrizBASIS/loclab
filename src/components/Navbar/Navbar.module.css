@@ -123,12 +123,12 @@
 
 .menuLink {
   font-family: var(--font-serif);
-  font-size: clamp(1.4rem, 2.8vw, 2.4rem);
+  font-size: clamp(1.7rem, 3.3vw, 2.9rem);
   font-weight: 300;
   line-height: 1.1;
   color: var(--color-text);
   text-decoration: none;
-  padding: 0.75rem 0;
+  padding: 0.95rem 0;
   border-bottom: 1px solid var(--color-border);
   display: flex;
   align-items: baseline;
