@@ -1,5 +1,5 @@
 .section {
-  padding: 5rem 0;
+  padding: 6rem 0;
   background-color: var(--color-bg);
   border-top: 1px solid var(--color-border);
 }
@@ -7,7 +7,7 @@
 .inner {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 .label {
@@ -19,38 +19,32 @@
   opacity: 0.45;
 }
 
-/* Logo strip */
+/* Logo strip – equal-width columns, full width */
 .logos {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
 }
 
 .logoItem {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 2.5rem;
+  padding: 3rem 2rem;
   border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   text-decoration: none;
-  transition: opacity 0.25s ease, background-color 0.25s ease;
-  opacity: 0.7;
-  filter: grayscale(30%);
-}
-
-.logoItem:first-child {
-  padding-left: 0;
-}
-
-.logoItem:last-child {
-  border-right: none;
+  min-height: 140px;
+  transition: opacity 0.3s ease, filter 0.3s ease, background-color 0.3s ease;
+  opacity: 0.75;
+  filter: grayscale(25%);
 }
 
 .logoItem:hover {
   opacity: 1;
   filter: grayscale(0%);
-  background-color: transparent;
+  background-color: color-mix(in srgb, var(--color-text) 3%, transparent);
 }
 
 /* CTA link */
@@ -78,29 +72,17 @@
 
 @media (max-width: 1024px) {
   .logos {
-    gap: 0;
-    border-top: 1px solid var(--color-border);
-  }
-
-  .logoItem {
-    width: 50%;
-    padding: 1.5rem;
-    border-right: 1px solid var(--color-border);
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  .logoItem:first-child {
-    padding-left: 1.5rem;
-  }
-
-  .logoItem:nth-child(even) {
-    border-right: none;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 600px) {
+  .logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .logoItem {
-    width: 100%;
-    border-right: none;
+    padding: 2rem 1.5rem;
+    min-height: 100px;
   }
 }

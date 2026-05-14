@@ -10,31 +10,31 @@ const PARTNERS = [
     name: 'Freie Universität Bozen',
     logo: '/logos/partners/unibz.png',
     url: 'https://www.unibz.it',
-    logoHeight: 44,
+    logoHeight: 72,
   },
   {
     name: 'Pfeifer & Partners',
     logo: '/logos/partners/pfeifer-partners.png',
     url: 'https://www.pfeiferpartners.com',
-    logoHeight: 44,
+    logoHeight: 72,
   },
   {
     name: "LokHaus+",
     logo: '/logos/partners/lokhaus.jpg',
     url: '#',
-    logoHeight: 52,
+    logoHeight: 80,
   },
   {
     name: 'Energytech',
     logo: '/logos/partners/energytech-1.jpg',
     url: '#',
-    logoHeight: 44,
+    logoHeight: 72,
   },
   {
     name: 'Elektro A. Haller',
     logo: '/logos/partners/elektro-haller.png',
     url: '#',
-    logoHeight: 44,
+    logoHeight: 72,
   },
 ];
 
@@ -76,13 +76,13 @@ export default function PartnerLogos() {
                 <Image
                   src={partner.logo}
                   alt={`Logo ${partner.name}`}
-                  width={160}
+                  width={280}
                   height={partner.logoHeight}
                   style={{
                     objectFit: 'contain',
                     width: 'auto',
                     height: `${partner.logoHeight}px`,
-                    maxWidth: '140px',
+                    maxWidth: '200px',
                   }}
                 />
               </motion.a>
