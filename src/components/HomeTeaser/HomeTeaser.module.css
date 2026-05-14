@@ -1,82 +1,205 @@
+/* ===================
+   HOME TEASER – Editorial text-image sections
+   =================== */
+
 .section {
-  padding: var(--section-gap) 0;
   background-color: var(--color-bg);
 }
 
-.grid {
+/* Each row: two-column layout (image + text) */
+.row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: 1.1fr 0.9fr;
+  min-height: 80vh;
 }
 
-.card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.4s ease;
+.reversed {
+  direction: rtl;
 }
 
-.card:hover {
-  transform: translateY(-6px);
+.reversed > * {
+  direction: ltr;
 }
 
-.cardImage {
-  width: 100%;
-  aspect-ratio: 4/3;
+/* Image column */
+.imageCol {
+  position: relative;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+}
+
+.imageWrap {
+  position: absolute;
+  inset: 0;
 }
 
 .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.card:hover .img {
-  transform: scale(1.05);
+.row:hover .img {
+  transform: scale(1.03);
 }
 
-.cardContent {
+/* Text column */
+.textCol {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 6rem 7%;
+  background-color: var(--color-bg-warm);
+  border-bottom: 1px solid var(--color-border);
 }
 
-.cardLabel {
+.reversed .textCol {
+  border-right: 1px solid var(--color-border);
+}
+
+.label {
   font-family: var(--font-mono);
   font-size: var(--text-mono);
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  opacity: 0.5;
+  opacity: 0.45;
 }
 
-.cardTitle {
+.title {
   font-family: var(--font-serif);
-  font-size: var(--text-h2);
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.08;
+  color: var(--color-text);
+  max-width: 16ch;
+}
+
+.description {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-lg);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text);
+  opacity: 0.7;
+  max-width: 42ch;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text);
+  text-decoration: none;
+  padding-top: 1rem;
+  transition: gap 0.3s ease;
+}
+
+.cta:hover {
+  gap: 1.2rem;
+}
+
+.ctaArrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.cta:hover .ctaArrow {
+  transform: translateX(4px);
+}
+
+/* Quick-link row for remaining sections */
+.quickLinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--color-border);
+}
+
+.quickLink {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 2.5rem 2rem;
+  text-decoration: none;
+  color: inherit;
+  border-right: 1px solid var(--color-border);
+  transition: background-color 0.3s ease;
+}
+
+.quickLink:last-child {
+  border-right: none;
+}
+
+.quickLink:hover {
+  background-color: color-mix(in srgb, var(--color-text) 3%, transparent);
+}
+
+.quickLabel {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.45;
+}
+
+.quickTitle {
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 300;
+  line-height: 1.2;
   color: var(--color-text);
 }
 
-.cardArrow {
-  font-family: var(--font-sans);
-  font-size: 1.5rem;
+.quickArrow {
+  font-size: 1.3rem;
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
-  transform: translateX(-10px);
+  transform: translateX(-8px);
 }
 
-.card:hover .cardArrow {
+.quickLink:hover .quickArrow {
   opacity: 1;
   transform: translateX(0);
 }
 
+/* Mobile */
 @media (max-width: 1024px) {
-  .grid { grid-template-columns: repeat(2, 1fr); }
-}
+  .row {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
 
-@media (max-width: 600px) {
-  .grid { grid-template-columns: 1fr; }
+  .reversed {
+    direction: ltr;
+  }
+
+  .imageCol {
+    position: relative;
+    aspect-ratio: 16/9;
+  }
+
+  .textCol {
+    padding: 3rem var(--page-margin);
+  }
+
+  .reversed .textCol {
+    border-right: none;
+  }
+
+  .quickLinks {
+    grid-template-columns: 1fr;
+  }
+
+  .quickLink {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .quickLink:last-child {
+    border-bottom: none;
+  }
 }
