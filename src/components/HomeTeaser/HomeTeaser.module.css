@@ -7,59 +7,51 @@
   padding: var(--section-gap) 0;
 }
 
-/* Each row: two-column layout inside wrapper */
-.row {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 var(--page-margin);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  align-items: center;
-  margin-bottom: 8rem;
+.block {
+  margin-bottom: 6rem;
 }
 
-.row:last-of-type {
+.block:last-of-type {
   margin-bottom: 0;
 }
 
-.reversed {
-  direction: rtl;
+/* Row: always text first in DOM, image second – swap via CSS order */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
 }
 
-.reversed > * {
-  direction: ltr;
+/* Default: text left (order 1), image right (order 2) – no change needed */
+/* Variant: image left */
+.imageLeft .imageCol {
+  order: -1;
 }
 
-/* Image column */
+/* Image */
 .imageCol {
-  position: relative;
   overflow: hidden;
-  border-radius: 4px;
-}
-
-.imageWrap {
-  aspect-ratio: 4/3;
-  overflow: hidden;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 4/3;
   object-fit: cover;
+  display: block;
+  border-radius: 6px;
   transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .row:hover .img {
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
-/* Text column */
+/* Text */
 .textCol {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 1.5rem;
   padding: 2rem 0;
 }
@@ -74,9 +66,9 @@
 
 .title {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   font-weight: 300;
-  line-height: 1.08;
+  line-height: 1.1;
   color: var(--color-text);
   max-width: 16ch;
 }
@@ -88,7 +80,7 @@
   line-height: 1.6;
   color: var(--color-text);
   opacity: 0.7;
-  max-width: 42ch;
+  max-width: 38ch;
 }
 
 .cta {
@@ -123,7 +115,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border: 1px solid var(--color-border);
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 .quickLink {
@@ -177,21 +169,20 @@
 @media (max-width: 1024px) {
   .row {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
-    margin-bottom: 5rem;
+    gap: 2rem;
   }
 
-  .reversed {
-    direction: ltr;
+  .imageLeft .imageCol {
+    order: 0;
   }
 
-  .textCol {
-    padding: 0;
+  .block {
+    margin-bottom: 4rem;
   }
 
   .quickLinks {
     grid-template-columns: 1fr;
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
 
   .quickLink {
