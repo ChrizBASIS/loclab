@@ -61,6 +61,56 @@
   color: var(--color-text);
 }
 
+/* EU Funding Logos section */
+.funding {
+  background-color: var(--color-bg-warm);
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.fundingInner {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.fundingLogos {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-shrink: 0;
+}
+
+.logoItem {
+  display: flex;
+  align-items: center;
+}
+
+.fundingText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.fundingText p {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  color: var(--color-text);
+  opacity: 0.55;
+  margin: 0;
+}
+
+.fundingDivider {
+  width: 1px;
+  height: 56px;
+  background-color: var(--color-border);
+  flex-shrink: 0;
+}
+
 /* Bottom section: giant wordmark */
 .bottom {
   background-color: var(--color-bg-warm);
@@ -103,5 +153,14 @@
     gap: 1rem;
     text-align: center;
     align-items: center;
+  }
+  .fundingInner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .fundingLogos {
+    flex-wrap: wrap;
+    gap: 1.5rem;
   }
 }
