@@ -181,7 +181,6 @@
   color: var(--color-text);
   opacity: 0.55;
   margin: 0;
-  white-space: nowrap;
 }
 
 .fundingDivider {
