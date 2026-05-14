@@ -146,7 +146,7 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   border: 1px solid var(--color-border);
   padding: 1.5rem 2rem;
 }
@@ -219,18 +219,8 @@
     text-align: center;
     align-items: center;
   }
-  .fundingInner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-  }
-  .fundingText p {
-    white-space: normal;
-  }
-  .fundingLogos {
-    flex-wrap: wrap;
-    gap: 1.5rem;
+  .fundingDivider {
+    display: none;
   }
   .partnersInner {
     flex-direction: column;
@@ -241,6 +231,21 @@
   }
   .partnerLink:nth-child(4) {
     border-left: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .fundingInner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .fundingText p {
+    white-space: normal;
+  }
+  .fundingLogos {
+    flex-wrap: wrap;
+    gap: 1.5rem;
   }
   .fundingDivider {
     display: none;
