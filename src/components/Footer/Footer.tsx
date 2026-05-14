@@ -80,9 +80,9 @@ export default function Footer() {
                 <Image
                   src="/logos/fesr-eu-logo.png"
                   alt="Kofinanziert von der Europäischen Union – EFRE FESR 2021–2027"
-                  width={160}
-                  height={120}
-                  style={{ objectFit: 'contain', width: 'auto', height: '56px' }}
+                  width={200}
+                  height={150}
+                  style={{ objectFit: 'contain', width: 'auto', height: '72px' }}
                 />
               </a>
               <a
@@ -95,9 +95,9 @@ export default function Footer() {
                 <Image
                   src="/logos/interreg-logo.png"
                   alt="Interreg VI-A Italia – Österreich 2021–2027"
-                  width={220}
-                  height={80}
-                  style={{ objectFit: 'contain', width: 'auto', height: '56px' }}
+                  width={280}
+                  height={100}
+                  style={{ objectFit: 'contain', width: 'auto', height: '72px' }}
                 />
               </a>
             </div>
@@ -119,9 +119,9 @@ export default function Footer() {
               <Image
                 src="/logos/unibz-logo.png"
                 alt="Freie Universität Bozen – Libera Università di Bolzano"
-                width={200}
-                height={80}
-                style={{ objectFit: 'contain', width: 'auto', height: '44px' }}
+                width={240}
+                height={96}
+                style={{ objectFit: 'contain', width: 'auto', height: '56px' }}
               />
             </a>
           </div>
