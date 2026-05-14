@@ -3,14 +3,24 @@
    =================== */
 
 .section {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-warm);
+  padding: var(--section-gap) 0;
 }
 
-/* Each row: two-column layout (image + text) */
+/* Each row: two-column layout inside wrapper */
 .row {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--page-margin);
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  min-height: 80vh;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.row:last-of-type {
+  margin-bottom: 0;
 }
 
 .reversed {
@@ -25,11 +35,13 @@
 .imageCol {
   position: relative;
   overflow: hidden;
+  border-radius: 4px;
 }
 
 .imageWrap {
-  position: absolute;
-  inset: 0;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
 .img {
@@ -40,7 +52,7 @@
 }
 
 .row:hover .img {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 /* Text column */
@@ -49,13 +61,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
-  padding: 6rem 7%;
-  background-color: var(--color-bg-warm);
-  border-bottom: 1px solid var(--color-border);
-}
-
-.reversed .textCol {
-  border-right: 1px solid var(--color-border);
+  padding: 2rem 0;
 }
 
 .label {
@@ -117,6 +123,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border: 1px solid var(--color-border);
+  margin-top: 8rem;
 }
 
 .quickLink {
@@ -170,28 +177,21 @@
 @media (max-width: 1024px) {
   .row {
     grid-template-columns: 1fr;
-    min-height: auto;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
   }
 
   .reversed {
     direction: ltr;
   }
 
-  .imageCol {
-    position: relative;
-    aspect-ratio: 16/9;
-  }
-
   .textCol {
-    padding: 3rem var(--page-margin);
-  }
-
-  .reversed .textCol {
-    border-right: none;
+    padding: 0;
   }
 
   .quickLinks {
     grid-template-columns: 1fr;
+    margin-top: 5rem;
   }
 
   .quickLink {

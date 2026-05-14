@@ -12,8 +12,8 @@ export default function Footer() {
     offset: ["start end", "end end"]
   });
 
-  const scale = useTransform(scrollYProgress, [0, 1], [0.85, 1]);
-  const opacity = useTransform(scrollYProgress, [0, 0.6], [0, 1]);
+  const scale = useTransform(scrollYProgress, [0, 0.5], [0.9, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 0.4], [0, 1]);
 
   return (
     <footer className={styles.footer} id="contact" ref={containerRef}>

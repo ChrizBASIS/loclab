@@ -128,7 +128,7 @@
 /* Bottom section: giant wordmark + funding + legal */
 .bottom {
   background-color: var(--color-bg-warm);
-  padding-bottom: 0;
+  padding-bottom: 2rem;
 }
 
 .wordmark {
@@ -200,6 +200,8 @@
   letter-spacing: 0.08em;
   opacity: 0.5;
   padding: 2rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--color-border);
 }
 
 /* Mobile */
