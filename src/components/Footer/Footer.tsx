@@ -5,39 +5,6 @@ import styles from './Footer.module.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
-const PARTNER_LOGOS = [
-  {
-    name: 'Freie Universität Bozen',
-    src: '/logos/partners/unibz.png',
-    url: 'https://www.unibz.it',
-    height: 36,
-  },
-  {
-    name: 'Pfeifer & Partners',
-    src: '/logos/partners/pfeifer-partners.png',
-    url: 'https://www.pfeiferpartners.com',
-    height: 36,
-  },
-  {
-    name: 'LokHaus+',
-    src: '/logos/partners/lokhaus.jpg',
-    url: '#',
-    height: 40,
-  },
-  {
-    name: 'Energytech',
-    src: '/logos/partners/energytech-1.jpg',
-    url: '#',
-    height: 36,
-  },
-  {
-    name: 'Elektro A. Haller',
-    src: '/logos/partners/elektro-haller.png',
-    url: '#',
-    height: 36,
-  },
-];
-
 export default function Footer() {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -97,104 +64,73 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* EU Funding Logos – required by FESR/Interreg communication guidelines (Kap. 4.1) */}
-      <div className={styles.funding}>
-        <div className="wrapper">
-          <div className={styles.fundingInner}>
-            <div className={styles.fundingLogos}>
-              {/* 1. EU Emblem + FESR – always first per guidelines */}
-              <a
-                href="https://europa.provincia.bz.it/it/informazione-e-visibilita"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.logoItem}
-                aria-label="EFRE FESR Programm 2021–2027"
-              >
-                <Image
-                  src="/logos/fesr-eu-logo.png"
-                  alt="Kofinanziert von der Europäischen Union – EFRE FESR 2021–2027"
-                  width={160}
-                  height={120}
-                  style={{ objectFit: 'contain', width: 'auto', height: '80px' }}
-                />
-              </a>
-              {/* 2. Interreg VI-A Italia–Österreich */}
-              <a
-                href="https://www.interreg.net/it/2021-2027/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.logoItem}
-                aria-label="Interreg VI-A Italia – Österreich 2021–2027"
-              >
-                <Image
-                  src="/logos/interreg-logo.png"
-                  alt="Interreg VI-A Italia – Österreich 2021–2027"
-                  width={220}
-                  height={80}
-                  style={{ objectFit: 'contain', width: 'auto', height: '80px' }}
-                />
-              </a>
-            </div>
-
-            {/* Mandatory co-funding text (IT + DE) */}
-            <div className={styles.fundingText}>
-              <p>Realizzato con il cofinanziamento dell&apos;Unione europea nell&apos;ambito del programma EFRE-FESR 2021–2027</p>
-              <p>Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027</p>
-            </div>
-
-            <div className={styles.fundingDivider} aria-hidden="true" />
-
-            {/* 3. Unibz */}
-            <a
-              href="https://www.unibz.it"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.logoItem}
-              aria-label="Freie Universität Bozen"
-            >
-              <Image
-                src="/logos/unibz-logo.png"
-                alt="Freie Universität Bozen – Libera Università di Bolzano"
-                width={200}
-                height={80}
-                style={{ objectFit: 'contain', width: 'auto', height: '56px' }}
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* Giant LOCLAB wordmark */}
       <div className={styles.bottom}>
         <motion.div style={{ scale, opacity }} className={styles.wordmark}>
           LOCLAB
         </motion.div>
 
-        {/* Partner logo strip – directly under LOCLAB wordmark */}
-        <div className={`wrapper ${styles.logoStrip}`}>
-          {PARTNER_LOGOS.map((p) => (
+        {/* EU Funding Logos – UNDER LOCLAB wordmark, in one line */}
+        <div className={`wrapper ${styles.fundingInner}`}>
+          <div className={styles.fundingLogos}>
+            {/* 1. EU Emblem + FESR */}
             <a
-              key={p.name}
-              href={p.url}
-              target={p.url !== '#' ? '_blank' : undefined}
-              rel={p.url !== '#' ? 'noopener noreferrer' : undefined}
-              className={styles.stripItem}
-              aria-label={p.name}
+              href="https://europa.provincia.bz.it/it/informazione-e-visibilita"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.logoItem}
+              aria-label="EFRE FESR Programm 2021–2027"
             >
               <Image
-                src={p.src}
-                alt={`Logo ${p.name}`}
+                src="/logos/fesr-eu-logo.png"
+                alt="Kofinanziert von der Europäischen Union – EFRE FESR 2021–2027"
                 width={160}
-                height={p.height}
-                style={{
-                  objectFit: 'contain',
-                  width: 'auto',
-                  height: `${p.height}px`,
-                  maxWidth: '120px',
-                }}
+                height={120}
+                style={{ objectFit: 'contain', width: 'auto', height: '56px' }}
               />
             </a>
-          ))}
+            {/* 2. Interreg VI-A Italia–Österreich */}
+            <a
+              href="https://www.interreg.net/it/2021-2027/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.logoItem}
+              aria-label="Interreg VI-A Italia – Österreich 2021–2027"
+            >
+              <Image
+                src="/logos/interreg-logo.png"
+                alt="Interreg VI-A Italia – Österreich 2021–2027"
+                width={220}
+                height={80}
+                style={{ objectFit: 'contain', width: 'auto', height: '56px' }}
+              />
+            </a>
+          </div>
+
+          {/* Mandatory co-funding text (IT + DE) */}
+          <div className={styles.fundingText}>
+            <p>Realizzato con il cofinanziamento dell&apos;Unione europea – EFRE-FESR 2021–2027</p>
+            <p>Kofinanziert von der Europäischen Union – EFRE-FESR 2021–2027</p>
+          </div>
+
+          <div className={styles.fundingDivider} aria-hidden="true" />
+
+          {/* 3. Unibz */}
+          <a
+            href="https://www.unibz.it"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.logoItem}
+            aria-label="Freie Universität Bozen"
+          >
+            <Image
+              src="/logos/unibz-logo.png"
+              alt="Freie Universität Bozen – Libera Università di Bolzano"
+              width={200}
+              height={80}
+              style={{ objectFit: 'contain', width: 'auto', height: '44px' }}
+            />
+          </a>
         </div>
 
         {/* Legal row */}
