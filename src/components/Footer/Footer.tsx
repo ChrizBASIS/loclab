@@ -103,8 +103,8 @@ export default function Footer() {
             </div>
 
             <div className={styles.fundingText}>
-              <p>Realizzato con il cofinanziamento dell&apos;Unione europea – EFRE-FESR 2021–2027</p>
-              <p>Kofinanziert von der Europäischen Union – EFRE-FESR 2021–2027</p>
+              <p>Realizzato con il cofinanziamento dell&apos;Unione europea nell&apos;ambito del programma EFRE-FESR 2021–2027</p>
+              <p>Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027</p>
             </div>
 
             <div className={styles.fundingDivider} aria-hidden="true" />
