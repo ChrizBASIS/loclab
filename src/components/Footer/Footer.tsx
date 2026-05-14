@@ -44,14 +44,46 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* EU Funding Logos – required by FESR/Interreg communication guidelines */}
+      {/* Partner links – Projektkonsortium */}
+      <div className={styles.partners}>
+        <div className="wrapper">
+          <div className={styles.partnersInner}>
+            <span className={styles.partnersLabel}>Konsortium</span>
+            <nav className={styles.partnersList} aria-label="Projektpartner">
+              <a href="https://www.unibz.it" target="_blank" rel="noopener noreferrer" className={styles.partnerLink}>
+                Freie Universität Bozen <span className={styles.partnerRole}>(Lead Partner)</span>
+              </a>
+              <a href="https://www.pfeiferpartners.com" target="_blank" rel="noopener noreferrer" className={styles.partnerLink}>
+                Pfeifer &amp; Partners
+              </a>
+              <a href="#" className={styles.partnerLink}>
+                LokHaus+
+              </a>
+              <a href="#" className={styles.partnerLink}>
+                Energytech
+              </a>
+              <a href="#" className={styles.partnerLink}>
+                Elektro A. Haller
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      {/* EU Funding Logos – required by FESR/Interreg communication guidelines (Kap. 4.1) */}
       <div className={styles.funding}>
         <div className="wrapper">
           <div className={styles.fundingInner}>
-            {/* Left: EU funding logos group */}
+            {/* EU funding logos group – linked to official program pages */}
             <div className={styles.fundingLogos}>
               {/* 1. EU Emblem + FESR – always first per guidelines */}
-              <div className={styles.logoItem}>
+              <a
+                href="https://europa.provincia.bz.it/it/informazione-e-visibilita"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.logoItem}
+                aria-label="EFRE FESR Programm 2021–2027 – Autonome Provinz Bozen"
+              >
                 <Image
                   src="/logos/fesr-eu-logo.png"
                   alt="Kofinanziert von der Europäischen Union – EFRE FESR 2021–2027"
@@ -59,9 +91,15 @@ export default function Footer() {
                   height={120}
                   style={{ objectFit: 'contain', width: 'auto', height: '80px' }}
                 />
-              </div>
+              </a>
               {/* 2. Interreg VI-A Italia–Österreich */}
-              <div className={styles.logoItem}>
+              <a
+                href="https://www.interreg.net/it/2021-2027/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.logoItem}
+                aria-label="Interreg VI-A Italia – Österreich 2021–2027"
+              >
                 <Image
                   src="/logos/interreg-logo.png"
                   alt="Interreg VI-A Italia – Österreich 2021–2027"
@@ -69,10 +107,10 @@ export default function Footer() {
                   height={80}
                   style={{ objectFit: 'contain', width: 'auto', height: '80px' }}
                 />
-              </div>
+              </a>
             </div>
 
-            {/* Mandatory co-funding text (IT + DE) */}
+            {/* Mandatory co-funding text (IT + DE) per Kap. 4.1 */}
             <div className={styles.fundingText}>
               <p>
                 Realizzato con il cofinanziamento dell&apos;Unione europea nell&apos;ambito del programma EFRE-FESR 2021–2027
@@ -85,8 +123,14 @@ export default function Footer() {
             {/* Vertical divider */}
             <div className={styles.fundingDivider} aria-hidden="true" />
 
-            {/* 3. Unibz – institutional partner logo (after EU logos per guidelines) */}
-            <div className={styles.logoItem}>
+            {/* 3. Unibz – linked to official website per Unibz CD guidelines */}
+            <a
+              href="https://www.unibz.it"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.logoItem}
+              aria-label="Freie Universität Bozen – Libera Università di Bolzano"
+            >
               <Image
                 src="/logos/unibz-logo.png"
                 alt="Freie Universität Bozen – Libera Università di Bolzano – Free University of Bozen-Bolzano"
@@ -94,7 +138,7 @@ export default function Footer() {
                 height={80}
                 style={{ objectFit: 'contain', width: 'auto', height: '56px' }}
               />
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -106,7 +150,7 @@ export default function Footer() {
         </motion.div>
         <div className={`wrapper ${styles.legal}`}>
           <span>© 2026 — Alle Rechte vorbehalten</span>
-          <span>Co-funded by the European Union</span>
+          <span>Co-funded by the European Union · EFRE1088</span>
           <span>Datenschutz</span>
         </div>
       </div>
