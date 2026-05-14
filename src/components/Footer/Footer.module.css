@@ -128,7 +128,6 @@
 /* Bottom section: giant wordmark + funding + legal */
 .bottom {
   background-color: var(--color-bg-warm);
-  padding-bottom: 2rem;
 }
 
 .wordmark {
@@ -139,7 +138,7 @@
   line-height: 0.85;
   text-align: center;
   color: var(--color-text);
-  padding: 4vw 0 3vw;
+  padding: 3rem 0 2rem;
 }
 
 /* EU Funding Logos – one line under LOCLAB wordmark, boxed like partners */
@@ -194,12 +193,13 @@
 .legal {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-family: var(--font-mono);
   font-size: var(--text-mono);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   opacity: 0.5;
-  padding: 2rem 0;
+  padding: 2rem 0 3rem;
   margin-top: 2rem;
   border-top: 1px solid var(--color-border);
 }
