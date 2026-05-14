@@ -26,18 +26,18 @@ const CHANNELS = [
 ];
 
 const INSTAGRAM_POSTS = [
-  { type: 'Material Monday', image: '/images/material-holz.png', caption: 'Lokal gewachsen, CO₂ gespeichert, 100% recyclierbar. Südtiroler Fichte ist das Rückgrat unserer Häuser. λ-Wert: 0.13 W/mK.', hashtags: '#LocLab #NachhaltigesBauen #Holzbau #Südtirol', likes: '142' },
-  { type: 'Behind the Scenes', image: '/images/timeline-construction.png', caption: 'Tag 47 am Reallabor. Heute: Strohballen rein, Zukunft rauf. 🌾', hashtags: '#Reallabor #Strohbau #BehindTheScenes', likes: '234' },
-  { type: 'Materialien', image: '/images/materials-overview.png', caption: '6 Materialien. Alle lokal. Alle zirkulär. Alle lowtech. Welches ist dein Favorit? 👇', hashtags: '#Lehmbau #Hanfkalk #Naturstein #CircularBuilding', likes: '198' },
-  { type: 'Workshop', image: '/images/workshops-community.png', caption: '🔨 Nächster Material-Workshop: 12. Juli, Bozen. Lehm in der Hand, Zukunft im Kopf.', hashtags: '#Workshop #HandsOn #Lehm #Südtirol', likes: '176' },
-  { type: 'Architektur', image: '/images/hero-modular-house.png', caption: 'Lowtech heißt nicht Low-Design. Unser Modulhaus in den Alpen. ⛰️', hashtags: '#Architektur #Lowtech #ModularesBauen', likes: '312' },
-  { type: 'Forschung', image: '/images/material-stroh.png', caption: 'Stroh: CO₂-negativ. Hanf-Kalk: CO₂-negativ. Lehm: klimaneutral. Beton: 8% der globalen Emissionen.', hashtags: '#CO2 #Klimaschutz #Bauwende', likes: '267' },
+  { type: 'Material Monday', image: '/images/material-holz.png', caption: 'Lokal gewachsen, CO₂ gespeichert, 100% recyclierbar. Südtiroler Fichte ist das Rückgrat unserer Häuser. λ-Wert: 0.13 W/mK.\n\n🇪🇺 Kofinanziert von der Europäischen Union – EFRE-FESR 2021–2027', hashtags: '#LocLab #NachhaltigesBauen #Holzbau #Südtirol #euinmyregion #eufunds @europedirect_southtyrol', likes: '142' },
+  { type: 'Behind the Scenes', image: '/images/timeline-construction.png', caption: 'Tag 47 am Reallabor. Heute: Strohballen rein, Zukunft rauf. 🌾\n\n🇪🇺 Kofinanziert von der Europäischen Union – EFRE-FESR 2021–2027', hashtags: '#Reallabor #Strohbau #BehindTheScenes #euinmyregion #eufunds @europedirect_southtyrol', likes: '234' },
+  { type: 'Materialien', image: '/images/materials-overview.png', caption: '6 Materialien. Alle lokal. Alle zirkulär. Alle lowtech. Welches ist dein Favorit? 👇\n\n🇪🇺 Kofinanziert von der Europäischen Union – EFRE-FESR 2021–2027', hashtags: '#Lehmbau #Hanfkalk #Naturstein #CircularBuilding #euinmyregion #eufunds @europedirect_southtyrol', likes: '198' },
+  { type: 'Workshop', image: '/images/workshops-community.png', caption: '🔨 Nächster Material-Workshop: 12. Juli, Bozen. Lehm in der Hand, Zukunft im Kopf.\n\n🇪🇺 Kofinanziert von der Europäischen Union – EFRE-FESR 2021–2027', hashtags: '#Workshop #HandsOn #Lehm #Südtirol #euinmyregion #eufunds @europedirect_southtyrol', likes: '176' },
+  { type: 'Architektur', image: '/images/hero-modular-house.png', caption: 'Lowtech heißt nicht Low-Design. Unser Modulhaus in den Alpen. ⛰️\n\n🇪🇺 Kofinanziert von der Europäischen Union – EFRE-FESR 2021–2027', hashtags: '#Architektur #Lowtech #ModularesBauen #euinmyregion #eufunds @europedirect_southtyrol', likes: '312' },
+  { type: 'Forschung', image: '/images/material-stroh.png', caption: 'Stroh: CO₂-negativ. Hanf-Kalk: CO₂-negativ. Lehm: klimaneutral. Beton: 8% der globalen Emissionen.\n\n🇪🇺 Kofinanziert von der Europäischen Union – EFRE-FESR 2021–2027', hashtags: '#CO2 #Klimaschutz #Bauwende #euinmyregion #eufunds @europedirect_southtyrol', likes: '267' },
 ];
 
 const LINKEDIN_POSTS = [
-  { author: 'LocLab Research', role: 'EU-gefördertes Reallabor · NOI Techpark', content: '📍 Meilenstein erreicht: Materialkartierung WP2 abgeschlossen. 6 lokale Baustoffe — Holz, Lehm, Stroh, Hanf-Kalk, Naturstein und Recycling-Zuschläge — dokumentiert inkl. λ-Werte, CO₂-Bilanz und Kreislauffähigkeit.\n\nNächster Schritt: Integration in die modularen Reallabore.\n\n→ loclab-website.netlify.app/de/materialien', reactions: '87', comments: '12' },
-  { author: 'LocLab Research', role: 'EU-gefördertes Reallabor · NOI Techpark', content: 'Die Frage ist nicht: Können wir nachhaltig bauen?\nDie Frage ist: Warum bauen wir es nicht längst?\n\nLocLab zeigt: Mit lokalen Materialien ohne High-Tech-Abhängigkeit erreicht man U-Werte, die jeden KfW-Standard erfüllen.\n\nLowtech ≠ Low Performance.', reactions: '134', comments: '23' },
-  { author: 'LocLab Research', role: 'EU-gefördertes Reallabor · NOI Techpark', content: '📢 Jetzt anmelden: Material-Workshop am 12. Juli in Bozen.\n\nLehm, Stroh, Hanf-Kalk — hands-on erleben. Für Architekten, Planer, Studierende und alle, die Bauen neu denken wollen.\n\n5 Plätze frei → Link im Kommentar', reactions: '56', comments: '8' },
+  { author: 'LocLab Research', role: 'Kofinanziert von der EU · EFRE-FESR 2021–2027 · NOI Techpark', content: '📍 Meilenstein erreicht: Materialkartierung WP2 abgeschlossen. 6 lokale Baustoffe — Holz, Lehm, Stroh, Hanf-Kalk, Naturstein und Recycling-Zuschläge — dokumentiert inkl. λ-Werte, CO₂-Bilanz und Kreislauffähigkeit.\n\nNächster Schritt: Integration in die modularen Reallabore.\n\n🇪🇺 Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027\n\n→ loclab-website.netlify.app/de/materialien\n\n#euinmyregion #eufunds #LocLab #NachhaltigesBauen', reactions: '87', comments: '12' },
+  { author: 'LocLab Research', role: 'Kofinanziert von der EU · EFRE-FESR 2021–2027 · NOI Techpark', content: 'Die Frage ist nicht: Können wir nachhaltig bauen?\nDie Frage ist: Warum bauen wir es nicht längst?\n\nLocLab zeigt: Mit lokalen Materialien ohne High-Tech-Abhängigkeit erreicht man U-Werte, die jeden KfW-Standard erfüllen.\n\nLowtech ≠ Low Performance.\n\n🇪🇺 Kofinanziert von der Europäischen Union – EFRE-FESR 2021–2027\n\n#euinmyregion #eufunds #Bauwende', reactions: '134', comments: '23' },
+  { author: 'LocLab Research', role: 'Kofinanziert von der EU · EFRE-FESR 2021–2027 · NOI Techpark', content: '📢 Jetzt anmelden: Material-Workshop am 12. Juli in Bozen.\n\nLehm, Stroh, Hanf-Kalk — hands-on erleben. Für Architekten, Planer, Studierende und alle, die Bauen neu denken wollen.\n\n🇪🇺 Kofinanziert von der Europäischen Union – EFRE-FESR 2021–2027\n\n5 Plätze frei → Link im Kommentar\n\n#euinmyregion #eufunds #Workshop', reactions: '56', comments: '8' },
 ];
 
 const CALENDAR = [
@@ -162,6 +162,10 @@ export default function MarketingPage() {
           <p className={styles.igSectionIntro}>
             Visuelle Stories: Materialien, Baustelle, Team, Workshops. 3× pro Woche.
           </p>
+          <div className={styles.complianceNote}>
+            <span className={styles.complianceTag}>EU-Richtlinie</span>
+            <p>Jeder Post enthält den Pflichthinweis zur EU-Kofinanzierung im Caption und die empfohlenen Hashtags <strong>#euinmyregion #eufunds</strong>. Tagging: <strong>@europedirect_southtyrol</strong>. Die Profilbeschreibung muss ebenfalls die EU-Unterstützung erwähnen (Kap. 4.1, Richtlinien v2.0).</p>
+          </div>
 
           <div className={styles.igGrid}>
             {INSTAGRAM_POSTS.map((post, i) => (
@@ -198,6 +202,10 @@ export default function MarketingPage() {
           <p className={styles.sectionIntro}>
             2× pro Woche: Forschungsergebnisse, Partner-Spotlights, Einladungen.
           </p>
+          <div className={styles.complianceNote}>
+            <span className={styles.complianceTag}>EU-Richtlinie</span>
+            <p>Jeder LinkedIn-Post enthält den Pflichthinweis zur EU-Kofinanzierung. Die Profilbeschreibung zeigt: <strong>„Kofinanziert von der EU · EFRE-FESR 2021–2027"</strong>. Hashtags <strong>#euinmyregion #eufunds</strong> werden in jedem Post verwendet. Tagging: <strong>@edsouthtyrol</strong> (Facebook-Pendant).</p>
+          </div>
 
           <div className={styles.liGrid}>
             {LINKEDIN_POSTS.map((post, i) => (
