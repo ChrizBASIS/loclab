@@ -12,7 +12,7 @@ const PARTNERS = [
     detail: 'Fakultät für Design und Fakultät für Ingenieurwesen',
     logo: '/logos/partners/unibz.png',
     url: 'https://www.unibz.it',
-    logoHeight: 48,
+    logoHeight: 64,
   },
   {
     name: 'Pfeifer & Partners',
@@ -21,7 +21,7 @@ const PARTNERS = [
     detail: 'Architektur und Planung',
     logo: '/logos/partners/pfeifer-partners.png',
     url: 'https://www.pfeiferpartners.com',
-    logoHeight: 48,
+    logoHeight: 64,
   },
   {
     name: "LokHaus+",
@@ -30,7 +30,7 @@ const PARTNERS = [
     detail: 'Nachhaltiges Bauen & Konstruktion',
     logo: '/logos/partners/lokhaus.jpg',
     url: '#',
-    logoHeight: 56,
+    logoHeight: 72,
   },
   {
     name: 'Energytech',
@@ -39,7 +39,7 @@ const PARTNERS = [
     detail: 'Energieeffizienz & Anlagentechnik',
     logo: '/logos/partners/energytech-1.jpg',
     url: '#',
-    logoHeight: 48,
+    logoHeight: 60,
   },
   {
     name: 'Elektro A. Haller',
@@ -48,7 +48,7 @@ const PARTNERS = [
     detail: 'Elektrotechnik & Gebäudeautomation',
     logo: '/logos/partners/elektro-haller.png',
     url: '#',
-    logoHeight: 48,
+    logoHeight: 60,
   },
 ];
 
