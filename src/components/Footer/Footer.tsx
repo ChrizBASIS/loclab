@@ -5,6 +5,39 @@ import styles from './Footer.module.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
+const PARTNER_LOGOS = [
+  {
+    name: 'Freie Universität Bozen',
+    src: '/logos/partners/unibz.png',
+    url: 'https://www.unibz.it',
+    height: 36,
+  },
+  {
+    name: 'Pfeifer & Partners',
+    src: '/logos/partners/pfeifer-partners.png',
+    url: 'https://www.pfeiferpartners.com',
+    height: 36,
+  },
+  {
+    name: 'LokHaus+',
+    src: '/logos/partners/lokhaus.jpg',
+    url: '#',
+    height: 40,
+  },
+  {
+    name: 'Energytech',
+    src: '/logos/partners/energytech-1.jpg',
+    url: '#',
+    height: 36,
+  },
+  {
+    name: 'Elektro A. Haller',
+    src: '/logos/partners/elektro-haller.png',
+    url: '#',
+    height: 36,
+  },
+];
+
 export default function Footer() {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -17,7 +50,7 @@ export default function Footer() {
 
   return (
     <footer className={styles.footer} id="contact" ref={containerRef}>
-      {/* Warm background section */}
+      {/* Top: contact info */}
       <div className={styles.top}>
         <div className="wrapper">
           <div className={styles.topGrid}>
@@ -44,7 +77,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Partner links – Projektkonsortium */}
+      {/* Partner text links */}
       <div className={styles.partners}>
         <div className="wrapper">
           <div className={styles.partnersInner}>
@@ -56,15 +89,9 @@ export default function Footer() {
               <a href="https://www.pfeiferpartners.com" target="_blank" rel="noopener noreferrer" className={styles.partnerLink}>
                 Pfeifer &amp; Partners
               </a>
-              <a href="#" className={styles.partnerLink}>
-                LokHaus+
-              </a>
-              <a href="#" className={styles.partnerLink}>
-                Energytech
-              </a>
-              <a href="#" className={styles.partnerLink}>
-                Elektro A. Haller
-              </a>
+              <a href="#" className={styles.partnerLink}>LokHaus+</a>
+              <a href="#" className={styles.partnerLink}>Energytech</a>
+              <a href="#" className={styles.partnerLink}>Elektro A. Haller</a>
             </nav>
           </div>
         </div>
@@ -74,7 +101,6 @@ export default function Footer() {
       <div className={styles.funding}>
         <div className="wrapper">
           <div className={styles.fundingInner}>
-            {/* EU funding logos group – linked to official program pages */}
             <div className={styles.fundingLogos}>
               {/* 1. EU Emblem + FESR – always first per guidelines */}
               <a
@@ -82,7 +108,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.logoItem}
-                aria-label="EFRE FESR Programm 2021–2027 – Autonome Provinz Bozen"
+                aria-label="EFRE FESR Programm 2021–2027"
               >
                 <Image
                   src="/logos/fesr-eu-logo.png"
@@ -110,30 +136,25 @@ export default function Footer() {
               </a>
             </div>
 
-            {/* Mandatory co-funding text (IT + DE) per Kap. 4.1 */}
+            {/* Mandatory co-funding text (IT + DE) */}
             <div className={styles.fundingText}>
-              <p>
-                Realizzato con il cofinanziamento dell&apos;Unione europea nell&apos;ambito del programma EFRE-FESR 2021–2027
-              </p>
-              <p>
-                Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027
-              </p>
+              <p>Realizzato con il cofinanziamento dell&apos;Unione europea nell&apos;ambito del programma EFRE-FESR 2021–2027</p>
+              <p>Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027</p>
             </div>
 
-            {/* Vertical divider */}
             <div className={styles.fundingDivider} aria-hidden="true" />
 
-            {/* 3. Unibz – linked to official website per Unibz CD guidelines */}
+            {/* 3. Unibz */}
             <a
               href="https://www.unibz.it"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.logoItem}
-              aria-label="Freie Universität Bozen – Libera Università di Bolzano"
+              aria-label="Freie Universität Bozen"
             >
               <Image
                 src="/logos/unibz-logo.png"
-                alt="Freie Universität Bozen – Libera Università di Bolzano – Free University of Bozen-Bolzano"
+                alt="Freie Universität Bozen – Libera Università di Bolzano"
                 width={200}
                 height={80}
                 style={{ objectFit: 'contain', width: 'auto', height: '56px' }}
@@ -148,6 +169,35 @@ export default function Footer() {
         <motion.div style={{ scale, opacity }} className={styles.wordmark}>
           LOCLAB
         </motion.div>
+
+        {/* Partner logo strip – directly under LOCLAB wordmark */}
+        <div className={`wrapper ${styles.logoStrip}`}>
+          {PARTNER_LOGOS.map((p) => (
+            <a
+              key={p.name}
+              href={p.url}
+              target={p.url !== '#' ? '_blank' : undefined}
+              rel={p.url !== '#' ? 'noopener noreferrer' : undefined}
+              className={styles.stripItem}
+              aria-label={p.name}
+            >
+              <Image
+                src={p.src}
+                alt={`Logo ${p.name}`}
+                width={160}
+                height={p.height}
+                style={{
+                  objectFit: 'contain',
+                  width: 'auto',
+                  height: `${p.height}px`,
+                  maxWidth: '120px',
+                }}
+              />
+            </a>
+          ))}
+        </div>
+
+        {/* Legal row */}
         <div className={`wrapper ${styles.legal}`}>
           <span>© 2026 — Alle Rechte vorbehalten</span>
           <span>Co-funded by the European Union · EFRE1088</span>

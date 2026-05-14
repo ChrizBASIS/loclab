@@ -162,10 +162,10 @@
   flex-shrink: 0;
 }
 
-/* Bottom section: giant wordmark */
+/* Bottom section: giant wordmark + logo strip + legal */
 .bottom {
   background-color: var(--color-bg-warm);
-  padding-bottom: 2rem;
+  padding-bottom: 0;
 }
 
 .wordmark {
@@ -176,7 +176,39 @@
   line-height: 0.85;
   text-align: center;
   color: var(--color-text);
-  padding: 4vw 0;
+  padding: 4vw 0 3vw;
+}
+
+/* Partner logo strip – one line under LOCLAB */
+.logoStrip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+  gap: 1rem;
+}
+
+.stripItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-decoration: none;
+  opacity: 0.6;
+  filter: grayscale(20%);
+  transition: opacity 0.25s ease, filter 0.25s ease;
+  padding: 0.5rem 1rem;
+}
+
+.stripItem + .stripItem {
+  border-left: 1px solid var(--color-border);
+}
+
+.stripItem:hover {
+  opacity: 1;
+  filter: grayscale(0%);
 }
 
 .legal {
@@ -187,8 +219,7 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   opacity: 0.5;
-  padding-top: 2rem;
-  border-top: 1px solid var(--color-border);
+  padding: 2rem 0;
 }
 
 /* Mobile */
@@ -220,5 +251,21 @@
   }
   .fundingDivider {
     display: none;
+  }
+  .logoStrip {
+    flex-wrap: wrap;
+  }
+  .stripItem {
+    flex: none;
+    width: 33.333%;
+  }
+  .stripItem + .stripItem {
+    border-left: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .stripItem {
+    width: 50%;
   }
 }
