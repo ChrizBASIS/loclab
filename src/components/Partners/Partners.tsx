@@ -3,56 +3,12 @@
 import Image from 'next/image';
 import styles from './Partners.module.css';
 import { motion } from 'framer-motion';
-
-const PARTNERS = [
-  {
-    name: 'Freie Universität Bozen',
-    nameShort: 'unibz',
-    role: 'Lead Partner',
-    detail: 'Fakultät für Design und Fakultät für Ingenieurwesen',
-    logo: '/logos/partners/unibz.png',
-    url: 'https://www.unibz.it',
-    logoHeight: 64,
-  },
-  {
-    name: 'Pfeifer & Partners',
-    nameShort: 'Pfeifer & Partners',
-    role: 'Projektpartner',
-    detail: 'Architektur und Planung',
-    logo: '/logos/partners/pfeifer-partners.png',
-    url: 'https://www.pfeiferpartners.com',
-    logoHeight: 64,
-  },
-  {
-    name: "LokHaus+",
-    nameShort: 'LokHaus+',
-    role: 'Projektpartner',
-    detail: 'Nachhaltiges Bauen & Konstruktion',
-    logo: '/logos/partners/lokhaus.jpg',
-    url: '#',
-    logoHeight: 72,
-  },
-  {
-    name: 'Energytech',
-    nameShort: 'Energytech',
-    role: 'Projektpartner',
-    detail: 'Energieeffizienz & Anlagentechnik',
-    logo: '/logos/partners/energytech-1.jpg',
-    url: '#',
-    logoHeight: 60,
-  },
-  {
-    name: 'Elektro A. Haller',
-    nameShort: 'Elektro A. Haller',
-    role: 'Projektpartner',
-    detail: 'Elektrotechnik & Gebäudeautomation',
-    logo: '/logos/partners/elektro-haller.png',
-    url: '#',
-    logoHeight: 60,
-  },
-];
+import { useTranslations } from 'next-intl';
+import { PARTNERS } from '@/data/partners';
 
 export default function Partners() {
+  const t = useTranslations('Partners');
+
   return (
     <section className={styles.section}>
       <div className="wrapper">
@@ -63,7 +19,7 @@ export default function Partners() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
         >
-          Konsortium
+          {t('sectionLabel')}
         </motion.div>
 
         <motion.h2
@@ -73,7 +29,7 @@ export default function Partners() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ delay: 0.15, duration: 1 }}
         >
-          Inter- und transdisziplinäre Zusammenarbeit.
+          {t('heading')}
         </motion.h2>
 
         <div className={styles.grid}>
@@ -106,7 +62,7 @@ export default function Partners() {
               </div>
 
               {/* Info */}
-              <span className={styles.role}>{partner.role}</span>
+              <span className={styles.role}>{t(partner.role === 'Lead Partner' ? 'leadPartner' : 'projektpartner')}</span>
               <h3 className={styles.name}>{partner.nameShort}</h3>
               <p className={styles.detail}>{partner.detail}</p>
             </motion.a>

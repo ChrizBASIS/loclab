@@ -1,10 +1,13 @@
 'use client';
 
+import Image from 'next/image';
 import styles from './Hero.module.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function Hero() {
+  const t = useTranslations('Hero');
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -19,12 +22,16 @@ export default function Hero() {
     <section className={styles.hero} ref={containerRef} data-section="hero">
       {/* Full-bleed hero image with parallax */}
       <div className={styles.imageContainer}>
-        <motion.img
-          style={{ y: imageY }}
-          src="/images/hero-modular-house.png"
-          alt="Modulares Haus in alpiner Landschaft"
-          className={styles.image}
-        />
+        <motion.div style={{ y: imageY }} className={styles.imageMotion}>
+          <Image
+            src="/images/hero-modular-house.png"
+            alt={t('sectionLabel')}
+            fill
+            priority
+            sizes="100vw"
+            style={{ objectFit: 'cover' }}
+          />
+        </motion.div>
         <div className={styles.imageOverlay} />
       </div>
 
@@ -38,7 +45,7 @@ export default function Hero() {
           transition={{ delay: 0.2, duration: 0.8 }}
         >
           <span className={styles.labelLine} />
-          <span>Reallabor Südtirol</span>
+          <span>{t('sectionLabel')}</span>
         </motion.div>
 
         {/* Main headline — split layout for visual impact */}
@@ -48,13 +55,13 @@ export default function Hero() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <span className={styles.titleWord}>Local</span>
+          <span className={styles.titleWord}>{t('local')}</span>
           <span className={styles.titleDot}>.</span>
           <br />
-          <span className={styles.titleWord}>Circular</span>
+          <span className={styles.titleWord}>{t('circular')}</span>
           <span className={styles.titleDot}>.</span>
           <br />
-          <span className={styles.titleWord}>Low‑Tech</span>
+          <span className={styles.titleWord}>{t('lowTech')}</span>
           <span className={styles.titleDot}>.</span>
         </motion.h1>
 
@@ -66,9 +73,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 1 }}
           >
-            Ein EU-gefördertes Forschungsprojekt für
+            {t('taglineLine1')}
             <br />
-            innovatives und nachhaltiges Bauen.
+            {t('taglineLine2')}
           </motion.p>
 
           <motion.div
@@ -78,7 +85,7 @@ export default function Hero() {
             transition={{ delay: 1.5, duration: 1 }}
           >
             <div className={styles.scrollLine} />
-            <span>Scroll</span>
+            <span>{t('scroll')}</span>
           </motion.div>
         </div>
       </motion.div>

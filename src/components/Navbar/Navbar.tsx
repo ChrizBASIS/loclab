@@ -1,27 +1,28 @@
 'use client';
 
 import { usePathname, useRouter, routing, Link } from '@/i18n/routing';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import styles from './Navbar.module.css';
 import { useState, useEffect, useCallback } from 'react';
 import Logo from './Logo';
-
-const NAV_LINKS = [
-  { href: '/projekt', label: 'Projekt' },
-  { href: '/materialien', label: 'Materialien' },
-  { href: '/karte', label: 'Materialkarte' },
-  { href: '/workshops', label: 'Workshops' },
-  { href: '/timeline', label: 'Timeline' },
-  { href: '/konsortium', label: 'Konsortium' },
-  { href: '/dokumentation', label: 'Dokumentation' },
-];
 
 export default function Navbar() {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
+  const t = useTranslations('Nav');
   const [open, setOpen] = useState(false);
   const [isOverDark, setIsOverDark] = useState(false);
+
+  const NAV_LINKS = [
+    { href: '/projekt', label: t('projekt') },
+    { href: '/materialien', label: t('materialien') },
+    { href: '/karte', label: t('materialkarte') },
+    { href: '/workshops', label: t('workshops') },
+    { href: '/timeline', label: t('timeline') },
+    { href: '/konsortium', label: t('konsortium') },
+    { href: '/dokumentation', label: t('dokumentation') },
+  ] as const;
 
   // Detect if navbar is over a dark section (hero image)
   const checkBackground = useCallback(() => {
@@ -77,7 +78,7 @@ export default function Navbar() {
           <button
             className={`${styles.burger} ${open ? styles.burgerOpen : ''}`}
             onClick={() => setOpen(!open)}
-            aria-label="Menü öffnen"
+            aria-label={t('menuOpen')}
           >
             <span className={styles.line} />
             <span className={styles.line} />
@@ -116,8 +117,8 @@ export default function Navbar() {
               ))}
             </div>
             <div className={styles.menuContact}>
-              <span>hello@loclab.eu</span>
-              <span>NOI Techpark, Bozen</span>
+              <span>{t('email')}</span>
+              <span>{t('location')}</span>
             </div>
           </div>
         </div>

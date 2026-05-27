@@ -1,1 +1,97 @@
-{"Index":{"title":"Local. Circular. Low-tech."}}
+{
+  "Metadata": {
+    "homeTitle": "LocLab — Local. Circular. Low-tech.",
+    "homeDescription": "An EU-funded real-world laboratory for innovative and sustainable building in South Tyrol.",
+    "projektTitle": "LocLab — The Project",
+    "projektDescription": "An EU-funded real-world laboratory for innovative building in South Tyrol.",
+    "materialienTitle": "LocLab — Materials",
+    "materialienDescription": "Mapping local, circular building materials in South Tyrol.",
+    "karteTitle": "LocLab — Material Map",
+    "karteDescription": "Interactive map of local building materials in South Tyrol — wood, clay, straw, hempcrete, natural stone, and recycled materials.",
+    "workshopsTitle": "LocLab — Workshops & Residency",
+    "workshopsDescription": "Participatory workshops, real-world labs and Designer in Residence programmes.",
+    "timelineTitle": "LocLab — Timeline",
+    "timelineDescription": "Project phases and milestones over 36 months.",
+    "konsortiumTitle": "LocLab — Consortium",
+    "konsortiumDescription": "Project partners: unibz, Pfeifer & Partners, LokHaus+, Energytech, Elektro A. Haller.",
+    "dokumentationTitle": "LocLab — Documentation",
+    "dokumentationDescription": "Project phases, milestones and scientific publications."
+  },
+  "Nav": {
+    "projekt": "Project",
+    "materialien": "Materials",
+    "materialkarte": "Material Map",
+    "workshops": "Workshops",
+    "timeline": "Timeline",
+    "konsortium": "Consortium",
+    "dokumentation": "Documentation",
+    "menuOpen": "Open menu",
+    "email": "hello@loclab.eu",
+    "location": "NOI Techpark, Bolzano"
+  },
+  "Hero": {
+    "sectionLabel": "Real-world Lab South Tyrol",
+    "local": "Local",
+    "circular": "Circular",
+    "lowTech": "Low‑Tech",
+    "taglineLine1": "An EU-funded research project for",
+    "taglineLine2": "innovative and sustainable building.",
+    "scroll": "Scroll"
+  },
+  "HomeTeaser": {
+    "projektLabel": "The Project",
+    "projektTitle": "A real-world lab for the architecture of tomorrow.",
+    "projektDescription": "LOCLAB researches sustainable building with local materials in the Alps. As a Living Lab, we connect science, architecture and craftsmanship — in a real construction project that sets new standards.",
+    "materialienLabel": "Materials",
+    "materialienTitle": "Local materials, global impact.",
+    "materialienDescription": "Wood, clay, straw, hempcrete and natural stone — all from the region. We analyse and test traditional building materials with modern methods to unlock their future potential.",
+    "workshopsLabel": "Workshops & Residency",
+    "workshopsTitle": "Sharing knowledge, building together.",
+    "workshopsDescription": "In interdisciplinary workshops and residencies, we bring together researchers, architects and craftspeople. Hands-on, directly on the building site — for a genuine knowledge transfer.",
+    "cta": "Learn more",
+    "timelineLabel": "Timeline",
+    "timelineTitle": "Phases & milestones over 36 months.",
+    "konsortiumLabel": "Consortium",
+    "konsortiumTitle": "Inter- and transdisciplinary collaboration.",
+    "dokumentationLabel": "Documentation",
+    "dokumentationTitle": "Making research transparent."
+  },
+  "PartnerLogos": {
+    "label": "Project Partners",
+    "cta": "View all partners →"
+  },
+  "About": {
+    "sectionLabel": "The Project",
+    "heading": "A real-world lab for innovative building.",
+    "bodyLarge": "LocLab is an EU-funded real-world lab for local, circular and low-tech building in South Tyrol.",
+    "bodySmall": "At the centre are two modular houses serving as physical and digital test fields. Through transdisciplinary research, we focus on material life cycles, community participation and structural sensing — for a new era of sustainable building.",
+    "quote": "Two modular houses as physical and digital real-world laboratories.",
+    "heroAlt": "Modular construction in South Tyrol",
+    "interiorAlt": "Interior of a modular house"
+  },
+  "Partners": {
+    "sectionLabel": "Consortium",
+    "heading": "Inter- and transdisciplinary collaboration.",
+    "leadPartner": "Lead Partner",
+    "projektpartner": "Project Partner"
+  },
+  "Footer": {
+    "ctaText": "Let's talk about your project",
+    "contactLabel": "Contact",
+    "locationLabel": "Location",
+    "locationValue": "NOI Techpark, Bolzano / South Tyrol",
+    "fundingLabel": "Funding",
+    "fundingValue": "ERDF 2021–2027 · Project EFRE1088",
+    "consortiumLabel": "Consortium",
+    "leadPartner": "Lead Partner",
+    "fundingTextIt": "Realizzato con il cofinanziamento dell'Unione europea nell'ambito del programma EFRE-FESR 2021–2027",
+    "fundingTextDe": "Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027",
+    "legalCopyright": "© 2026 — All rights reserved",
+    "legalFunding": "Co-funded by the European Union · EFRE1088",
+    "legalPrivacy": "Privacy Policy"
+  },
+  "EuBadge": {
+    "text": "Co-funded by the EU",
+    "ariaLabel": "EU funding information"
+  }
+}

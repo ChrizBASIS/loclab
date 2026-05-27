@@ -1,10 +1,13 @@
 'use client';
 
+import Image from 'next/image';
 import styles from './About.module.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function About() {
+  const t = useTranslations('About');
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -12,6 +15,7 @@ export default function About() {
   });
 
   const imgY = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"]);
+  const img2Y = useTransform(scrollYProgress, [0.3, 1], ["-5%", "5%"]);
 
   return (
     <section className={styles.section} ref={sectionRef}>
@@ -25,7 +29,7 @@ export default function About() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
         >
-          Das Projekt
+          {t('sectionLabel')}
         </motion.div>
 
         <motion.h2
@@ -35,20 +39,23 @@ export default function About() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ delay: 0.15, duration: 1, ease: [0.16, 1, 0.3, 1] }}
         >
-          Ein Reallabor für innovatives Bauen.
+          {t('heading')}
         </motion.h2>
 
         {/* Row 2: Image Left + Text Right */}
         <div className={styles.grid}>
           <div className={styles.imageCol}>
             <div className={styles.imageWrap}>
-              <motion.img
-                style={{ y: imgY }}
-                src="/images/about-reallabor.png"
-                alt="Modulare Bauweise in Südtirol"
-                className={styles.image}
-                loading="lazy"
-              />
+              <motion.div style={{ y: imgY }} className={styles.imageMotion}>
+                <Image
+                  src="/images/about-reallabor.png"
+                  alt={t('heroAlt')}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  style={{ objectFit: 'cover' }}
+                  loading="lazy"
+                />
+              </motion.div>
             </div>
           </div>
 
@@ -60,7 +67,7 @@ export default function About() {
               viewport={{ once: true, margin: "-80px" }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              LocLab ist ein EU-gefördertes Reallabor für lokales, zirkuläres und lowtech Bauen in Südtirol.
+              {t('bodyLarge')}
             </motion.p>
             <motion.p
               className={styles.bodySmall}
@@ -69,9 +76,7 @@ export default function About() {
               viewport={{ once: true, margin: "-80px" }}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              Im Mittelpunkt stehen zwei modulare Häuser, die als physische und digitale Testfelder dienen. 
-              Durch transdisziplinäre Forschung konzentrieren wir uns auf Materiallebenszyklen, 
-              Gemeinschaftsbeteiligung und strukturelle Sensorik — für eine neue Ära des nachhaltigen Bauens.
+              {t('bodySmall')}
             </motion.p>
           </div>
         </div>
@@ -86,18 +91,21 @@ export default function About() {
               viewport={{ once: true, margin: "-80px" }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              Zwei modulare Häuser als physische und digitale Reallabore.
+              {t('quote')}
             </motion.blockquote>
           </div>
           <div className={styles.imageCol2}>
             <div className={styles.imageWrap2}>
-              <motion.img
-                style={{ y: useTransform(scrollYProgress, [0.3, 1], ["-5%", "5%"]) }}
-                src="/images/about-interior.png"
-                alt="Interieur eines modularen Hauses"
-                className={styles.image}
-                loading="lazy"
-              />
+              <motion.div style={{ y: img2Y }} className={styles.imageMotion}>
+                <Image
+                  src="/images/about-interior.png"
+                  alt={t('interiorAlt')}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  style={{ objectFit: 'cover' }}
+                  loading="lazy"
+                />
+              </motion.div>
             </div>
           </div>
         </div>

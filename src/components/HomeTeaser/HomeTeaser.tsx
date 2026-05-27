@@ -1,38 +1,10 @@
 'use client';
 
+import Image from 'next/image';
 import styles from './HomeTeaser.module.css';
 import { motion } from 'framer-motion';
 import { Link } from '@/i18n/routing';
-
-const SECTIONS = [
-  {
-    href: '/projekt',
-    label: 'Das Projekt',
-    title: 'Ein Reallabor für die Architektur von morgen.',
-    description:
-      'LOCLAB erforscht nachhaltiges Bauen mit lokalen Materialien in den Alpen. Als Living Lab verbinden wir Wissenschaft, Architektur und Handwerk – in einem realen Bauprojekt, das neue Standards setzt.',
-    image: '/images/about-reallabor.png',
-    imageRight: true,
-  },
-  {
-    href: '/materialien',
-    label: 'Materialien',
-    title: 'Lokale Materialien, globale Wirkung.',
-    description:
-      'Holz, Lehm, Stroh, Hanfkalk und Naturstein – alles aus der Region. Wir analysieren und testen traditionelle Baustoffe mit modernen Methoden, um deren Potenzial für die Zukunft freizulegen.',
-    image: '/images/materials-overview.png',
-    imageRight: false,
-  },
-  {
-    href: '/workshops',
-    label: 'Workshops & Residency',
-    title: 'Wissen teilen, gemeinsam bauen.',
-    description:
-      'In interdisziplinären Workshops und Residencies bringen wir Forscher, Architekten und Handwerker zusammen. Praxisnah, direkt auf der Baustelle – für einen echten Wissenstransfer.',
-    image: '/images/workshops-community.png',
-    imageRight: true,
-  },
-];
+import { useTranslations } from 'next-intl';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 48 },
@@ -40,9 +12,38 @@ const fadeUp = {
 };
 
 export default function HomeTeaser() {
+  const t = useTranslations('HomeTeaser');
+
+  const SECTIONS = [
+    {
+      href: '/projekt' as const,
+      label: t('projektLabel'),
+      title: t('projektTitle'),
+      description: t('projektDescription'),
+      image: '/images/about-reallabor.png',
+      imageRight: true,
+    },
+    {
+      href: '/materialien' as const,
+      label: t('materialienLabel'),
+      title: t('materialienTitle'),
+      description: t('materialienDescription'),
+      image: '/images/materials-overview.png',
+      imageRight: false,
+    },
+    {
+      href: '/workshops' as const,
+      label: t('workshopsLabel'),
+      title: t('workshopsTitle'),
+      description: t('workshopsDescription'),
+      image: '/images/workshops-community.png',
+      imageRight: true,
+    },
+  ];
+
   return (
     <section className={styles.section}>
-      {SECTIONS.map((item, index) => (
+      {SECTIONS.map((item) => (
         <motion.div
           key={item.href}
           className={styles.block}
@@ -59,16 +60,19 @@ export default function HomeTeaser() {
                 <h2 className={styles.title}>{item.title}</h2>
                 <p className={styles.description}>{item.description}</p>
                 <Link href={item.href} className={styles.cta}>
-                  Mehr erfahren
+                  {t('cta')}
                   <span className={styles.ctaArrow}>→</span>
                 </Link>
               </div>
               <div className={styles.imageCol}>
-                <img
+                <Image
                   src={item.image}
                   alt={item.label}
                   className={styles.img}
+                  width={800}
+                  height={600}
                   loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -80,18 +84,18 @@ export default function HomeTeaser() {
       <div className="wrapper">
         <div className={styles.quickLinks}>
           <Link href="/timeline" className={styles.quickLink}>
-            <span className={styles.quickLabel}>Timeline</span>
-            <span className={styles.quickTitle}>Phases &amp; Milestones über 36 Monate.</span>
+            <span className={styles.quickLabel}>{t('timelineLabel')}</span>
+            <span className={styles.quickTitle}>{t('timelineTitle')}</span>
             <span className={styles.quickArrow}>→</span>
           </Link>
           <Link href="/konsortium" className={styles.quickLink}>
-            <span className={styles.quickLabel}>Konsortium</span>
-            <span className={styles.quickTitle}>Inter- und transdisziplinäre Zusammenarbeit.</span>
+            <span className={styles.quickLabel}>{t('konsortiumLabel')}</span>
+            <span className={styles.quickTitle}>{t('konsortiumTitle')}</span>
             <span className={styles.quickArrow}>→</span>
           </Link>
           <Link href="/dokumentation" className={styles.quickLink}>
-            <span className={styles.quickLabel}>Dokumentation</span>
-            <span className={styles.quickTitle}>Forschung transparent machen.</span>
+            <span className={styles.quickLabel}>{t('dokumentationLabel')}</span>
+            <span className={styles.quickTitle}>{t('dokumentationTitle')}</span>
             <span className={styles.quickArrow}>→</span>
           </Link>
         </div>

@@ -1,6 +1,8 @@
 /* =============================================
-   ARCHIDOMO-EXACT FONT DECLARATIONS
+   FONT DECLARATIONS — Local hosting (GDPR-compliant)
    Canela (Headlines weight 300) + Maison Neue (Body weight 400/500)
+   Place licensed .woff2 files in /public/fonts/ — see /public/fonts/README.md
+   Until then, the Google Font fallbacks in the CSS vars below will render.
    ============================================= */
 
 @font-face {
@@ -8,14 +10,14 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('https://fonts.cdnfonts.com/s/86518/CanelaText-Light-Trial.woff') format('woff');
+  src: url('/fonts/CanelaText-Light.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Canela';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('https://fonts.cdnfonts.com/s/86518/CanelaText-Regular-Trial.woff') format('woff');
+  src: url('/fonts/CanelaText-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -23,15 +25,16 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('https://fonts.cdnfonts.com/s/29652/MaisonNeueBook.woff') format('woff');
+  src: url('/fonts/MaisonNeue-Book.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Maison Neue';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('https://fonts.cdnfonts.com/s/29652/MaisonNeueMedium.woff') format('woff');
+  src: url('/fonts/MaisonNeue-Medium.woff2') format('woff2');
 }
+
 
 
 /* =============================================

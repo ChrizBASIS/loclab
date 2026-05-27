@@ -2,10 +2,11 @@ import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import { Instrument_Serif, Inter, Space_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar/Navbar";
+import EuBadge from "@/components/EuBadge/EuBadge";
 import LenisProvider from "@/components/LenisProvider";
 import "../globals.css";
 
-/* Google Fonts as FALLBACKS only — Canela & Maison Neue load via @font-face */
+/* Google Fonts — primary web fonts (Canela & Maison Neue available via local @font-face when licensed) */
 const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif",
   subsets: ["latin"],
@@ -44,6 +45,7 @@ export default async function RootLayout({
         <LenisProvider>
           <NextIntlClientProvider messages={messages}>
             <Navbar />
+            <EuBadge />
             {children}
           </NextIntlClientProvider>
         </LenisProvider>

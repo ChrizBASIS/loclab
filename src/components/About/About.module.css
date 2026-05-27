@@ -51,11 +51,10 @@
   position: relative;
 }
 
-.image {
+.imageMotion {
+  position: relative;
   width: 100%;
   height: 120%;
-  object-fit: cover;
-  /* No filter — images stay in full color */
 }
 
 .textCol {

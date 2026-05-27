@@ -1,1 +1,97 @@
-{"Index":{"title":"Lokal. Zirkulär. Lowtech."}}
+{
+  "Metadata": {
+    "homeTitle": "LocLab — Lokal. Zirkulär. Lowtech.",
+    "homeDescription": "Ein EU-gefördertes Reallabor für innovatives und nachhaltiges Bauen in Südtirol.",
+    "projektTitle": "LocLab — Das Projekt",
+    "projektDescription": "Ein EU-gefördertes Reallabor für innovatives Bauen in Südtirol.",
+    "materialienTitle": "LocLab — Materialien",
+    "materialienDescription": "Kartierung lokaler, zirkulärer Baumaterialien in Südtirol.",
+    "karteTitle": "LocLab — Materialkarte",
+    "karteDescription": "Interaktive Karte lokaler Baumaterialien in Südtirol — Holz, Lehm, Stroh, Hanf-Kalk, Naturstein und Recycling.",
+    "workshopsTitle": "LocLab — Workshops & Residency",
+    "workshopsDescription": "Partizipative Workshops, Reallabore und Designer in Residence Programme.",
+    "timelineTitle": "LocLab — Timeline",
+    "timelineDescription": "Projektphasen und Milestones über 36 Monate.",
+    "konsortiumTitle": "LocLab — Konsortium",
+    "konsortiumDescription": "Die Projektpartner: unibz, Pfeifer & Partners, LokHaus+, Energytech, Elektro A. Haller.",
+    "dokumentationTitle": "LocLab — Dokumentation",
+    "dokumentationDescription": "Projektphasen, Meilensteine und wissenschaftliche Publikationen."
+  },
+  "Nav": {
+    "projekt": "Projekt",
+    "materialien": "Materialien",
+    "materialkarte": "Materialkarte",
+    "workshops": "Workshops",
+    "timeline": "Timeline",
+    "konsortium": "Konsortium",
+    "dokumentation": "Dokumentation",
+    "menuOpen": "Menü öffnen",
+    "email": "hello@loclab.eu",
+    "location": "NOI Techpark, Bozen"
+  },
+  "Hero": {
+    "sectionLabel": "Reallabor Südtirol",
+    "local": "Local",
+    "circular": "Circular",
+    "lowTech": "Low‑Tech",
+    "taglineLine1": "Ein EU-gefördertes Forschungsprojekt für",
+    "taglineLine2": "innovatives und nachhaltiges Bauen.",
+    "scroll": "Scroll"
+  },
+  "HomeTeaser": {
+    "projektLabel": "Das Projekt",
+    "projektTitle": "Ein Reallabor für die Architektur von morgen.",
+    "projektDescription": "LOCLAB erforscht nachhaltiges Bauen mit lokalen Materialien in den Alpen. Als Living Lab verbinden wir Wissenschaft, Architektur und Handwerk – in einem realen Bauprojekt, das neue Standards setzt.",
+    "materialienLabel": "Materialien",
+    "materialienTitle": "Lokale Materialien, globale Wirkung.",
+    "materialienDescription": "Holz, Lehm, Stroh, Hanfkalk und Naturstein – alles aus der Region. Wir analysieren und testen traditionelle Baustoffe mit modernen Methoden, um deren Potenzial für die Zukunft freizulegen.",
+    "workshopsLabel": "Workshops & Residency",
+    "workshopsTitle": "Wissen teilen, gemeinsam bauen.",
+    "workshopsDescription": "In interdisziplinären Workshops und Residencies bringen wir Forscher, Architekten und Handwerker zusammen. Praxisnah, direkt auf der Baustelle – für einen echten Wissenstransfer.",
+    "cta": "Mehr erfahren",
+    "timelineLabel": "Timeline",
+    "timelineTitle": "Phases & Milestones über 36 Monate.",
+    "konsortiumLabel": "Konsortium",
+    "konsortiumTitle": "Inter- und transdisziplinäre Zusammenarbeit.",
+    "dokumentationLabel": "Dokumentation",
+    "dokumentationTitle": "Forschung transparent machen."
+  },
+  "PartnerLogos": {
+    "label": "Projektpartner",
+    "cta": "Alle Partner ansehen →"
+  },
+  "About": {
+    "sectionLabel": "Das Projekt",
+    "heading": "Ein Reallabor für innovatives Bauen.",
+    "bodyLarge": "LocLab ist ein EU-gefördertes Reallabor für lokales, zirkuläres und lowtech Bauen in Südtirol.",
+    "bodySmall": "Im Mittelpunkt stehen zwei modulare Häuser, die als physische und digitale Testfelder dienen. Durch transdisziplinäre Forschung konzentrieren wir uns auf Materiallebenszyklen, Gemeinschaftsbeteiligung und strukturelle Sensorik — für eine neue Ära des nachhaltigen Bauens.",
+    "quote": "Zwei modulare Häuser als physische und digitale Reallabore.",
+    "heroAlt": "Modulare Bauweise in Südtirol",
+    "interiorAlt": "Interieur eines modularen Hauses"
+  },
+  "Partners": {
+    "sectionLabel": "Konsortium",
+    "heading": "Inter- und transdisziplinäre Zusammenarbeit.",
+    "leadPartner": "Lead Partner",
+    "projektpartner": "Projektpartner"
+  },
+  "Footer": {
+    "ctaText": "Sprechen wir über Ihr Projekt",
+    "contactLabel": "Kontakt",
+    "locationLabel": "Standort",
+    "locationValue": "NOI Techpark, Bozen / Südtirol",
+    "fundingLabel": "Förderung",
+    "fundingValue": "EFRE 2021–2027 · Projekt EFRE1088",
+    "consortiumLabel": "Konsortium",
+    "leadPartner": "Lead Partner",
+    "fundingTextIt": "Realizzato con il cofinanziamento dell'Unione europea nell'ambito del programma EFRE-FESR 2021–2027",
+    "fundingTextDe": "Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027",
+    "legalCopyright": "© 2026 — Alle Rechte vorbehalten",
+    "legalFunding": "Co-funded by the European Union · EFRE1088",
+    "legalPrivacy": "Datenschutz"
+  },
+  "EuBadge": {
+    "text": "Kofinanziert von der EU",
+    "ariaLabel": "Informationen zur EU-Förderung"
+  }
+}

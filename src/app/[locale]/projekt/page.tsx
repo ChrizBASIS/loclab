@@ -1,10 +1,14 @@
+import { getTranslations } from 'next-intl/server';
 import About from '@/components/About/About';
 import Footer from '@/components/Footer/Footer';
 
-export const metadata = {
-  title: 'LocLab — Das Projekt',
-  description: 'Ein EU-gefördertes Reallabor für innovatives Bauen in Südtirol.',
-};
+export async function generateMetadata() {
+  const t = await getTranslations('Metadata');
+  return {
+    title: t('projektTitle'),
+    description: t('projektDescription'),
+  };
+}
 
 export default function ProjektPage() {
   return (

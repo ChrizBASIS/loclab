@@ -1,1 +1,97 @@
-{"Index":{"title":"Locale. Circolare. Low-tech."}}
+{
+  "Metadata": {
+    "homeTitle": "LocLab — Locale. Circolare. Low-tech.",
+    "homeDescription": "Un laboratorio reale finanziato dall'UE per l'edilizia innovativa e sostenibile in Alto Adige.",
+    "projektTitle": "LocLab — Il progetto",
+    "projektDescription": "Un laboratorio reale finanziato dall'UE per l'edilizia innovativa in Alto Adige.",
+    "materialienTitle": "LocLab — Materiali",
+    "materialienDescription": "Mappatura di materiali edili locali e circolari in Alto Adige.",
+    "karteTitle": "LocLab — Mappa dei materiali",
+    "karteDescription": "Mappa interattiva dei materiali edili locali in Alto Adige — legno, argilla, paglia, canapa-calce, pietra naturale e riciclaggio.",
+    "workshopsTitle": "LocLab — Workshop & Residency",
+    "workshopsDescription": "Workshop partecipativi, laboratori reali e programmi Designer in Residence.",
+    "timelineTitle": "LocLab — Timeline",
+    "timelineDescription": "Fasi del progetto e milestone su 36 mesi.",
+    "konsortiumTitle": "LocLab — Consorzio",
+    "konsortiumDescription": "I partner di progetto: unibz, Pfeifer & Partners, LokHaus+, Energytech, Elektro A. Haller.",
+    "dokumentationTitle": "LocLab — Documentazione",
+    "dokumentationDescription": "Fasi del progetto, milestone e pubblicazioni scientifiche."
+  },
+  "Nav": {
+    "projekt": "Progetto",
+    "materialien": "Materiali",
+    "materialkarte": "Mappa materiali",
+    "workshops": "Workshop",
+    "timeline": "Timeline",
+    "konsortium": "Consorzio",
+    "dokumentation": "Documentazione",
+    "menuOpen": "Apri menu",
+    "email": "hello@loclab.eu",
+    "location": "NOI Techpark, Bolzano"
+  },
+  "Hero": {
+    "sectionLabel": "Laboratorio reale Alto Adige",
+    "local": "Locale",
+    "circular": "Circolare",
+    "lowTech": "Low‑Tech",
+    "taglineLine1": "Un progetto di ricerca finanziato dall'UE per",
+    "taglineLine2": "un'edilizia innovativa e sostenibile.",
+    "scroll": "Scroll"
+  },
+  "HomeTeaser": {
+    "projektLabel": "Il progetto",
+    "projektTitle": "Un laboratorio reale per l'architettura di domani.",
+    "projektDescription": "LOCLAB studia l'edilizia sostenibile con materiali locali nelle Alpi. Come Living Lab uniamo scienza, architettura e artigianato — in un progetto edilizio reale che definisce nuovi standard.",
+    "materialienLabel": "Materiali",
+    "materialienTitle": "Materiali locali, impatto globale.",
+    "materialienDescription": "Legno, argilla, paglia, canapa-calce e pietra naturale — tutto dalla regione. Analizziamo e testiamo materiali edili tradizionali con metodi moderni per sbloccarne il potenziale futuro.",
+    "workshopsLabel": "Workshop & Residency",
+    "workshopsTitle": "Condividere conoscenze, costruire insieme.",
+    "workshopsDescription": "In workshop e residenze interdisciplinari riuniamo ricercatori, architetti e artigiani. Pratico, direttamente in cantiere — per un vero trasferimento di conoscenze.",
+    "cta": "Scopri di più",
+    "timelineLabel": "Timeline",
+    "timelineTitle": "Fasi e milestone su 36 mesi.",
+    "konsortiumLabel": "Consorzio",
+    "konsortiumTitle": "Collaborazione inter- e transdisciplinare.",
+    "dokumentationLabel": "Documentazione",
+    "dokumentationTitle": "Rendere trasparente la ricerca."
+  },
+  "PartnerLogos": {
+    "label": "Partner di progetto",
+    "cta": "Vedi tutti i partner →"
+  },
+  "About": {
+    "sectionLabel": "Il progetto",
+    "heading": "Un laboratorio reale per l'edilizia innovativa.",
+    "bodyLarge": "LocLab è un laboratorio reale finanziato dall'UE per l'edilizia locale, circolare e low-tech in Alto Adige.",
+    "bodySmall": "Al centro ci sono due case modulari che fungono da campi di prova fisici e digitali. Attraverso la ricerca transdisciplinare ci concentriamo sui cicli di vita dei materiali, la partecipazione comunitaria e la sensoristica strutturale — per una nuova era dell'edilizia sostenibile.",
+    "quote": "Due case modulari come laboratori reali fisici e digitali.",
+    "heroAlt": "Costruzione modulare in Alto Adige",
+    "interiorAlt": "Interiore di una casa modulare"
+  },
+  "Partners": {
+    "sectionLabel": "Consorzio",
+    "heading": "Collaborazione inter- e transdisciplinare.",
+    "leadPartner": "Lead Partner",
+    "projektpartner": "Partner di progetto"
+  },
+  "Footer": {
+    "ctaText": "Parliamo del vostro progetto",
+    "contactLabel": "Contatto",
+    "locationLabel": "Sede",
+    "locationValue": "NOI Techpark, Bolzano / Alto Adige",
+    "fundingLabel": "Finanziamento",
+    "fundingValue": "FESR 2021–2027 · Progetto EFRE1088",
+    "consortiumLabel": "Consorzio",
+    "leadPartner": "Lead Partner",
+    "fundingTextIt": "Realizzato con il cofinanziamento dell'Unione europea nell'ambito del programma EFRE-FESR 2021–2027",
+    "fundingTextDe": "Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027",
+    "legalCopyright": "© 2026 — Tutti i diritti riservati",
+    "legalFunding": "Cofinanziato dall'Unione Europea · EFRE1088",
+    "legalPrivacy": "Privacy"
+  },
+  "EuBadge": {
+    "text": "Cofinanziato dall'UE",
+    "ariaLabel": "Informazioni sul finanziamento UE"
+  }
+}

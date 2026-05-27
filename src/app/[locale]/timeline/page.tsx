@@ -1,12 +1,15 @@
-import { getLocale } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 import GanttChart from '@/components/Gantt/GanttChart';
 import Footer from '@/components/Footer/Footer';
 import { client } from '@/sanity/lib/client';
 
-export const metadata = {
-  title: 'LocLab — Timeline',
-  description: 'Projektphasen und Milestones über 36 Monate.',
-};
+export async function generateMetadata() {
+  const t = await getTranslations('Metadata');
+  return {
+    title: t('timelineTitle'),
+    description: t('timelineDescription'),
+  };
+}
 
 async function getWorkPackages() {
   try {

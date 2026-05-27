@@ -3,8 +3,12 @@
 import Image from 'next/image';
 import styles from './Footer.module.css';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
+import { PARTNERS } from '@/data/partners';
 
 export default function Footer() {
+  const t = useTranslations('Footer');
+
   return (
     <footer className={styles.footer} id="contact">
       {/* Top: contact info */}
@@ -13,21 +17,21 @@ export default function Footer() {
           <div className={styles.topGrid}>
             <div className={styles.ctaCol}>
               <p className={styles.ctaText}>
-                Sprechen wir über Ihr Projekt
+                {t('ctaText')}
               </p>
             </div>
             <div className={styles.infoCol}>
               <div className={styles.infoBlock}>
-                <span className={styles.infoLabel}>Kontakt</span>
+                <span className={styles.infoLabel}>{t('contactLabel')}</span>
                 <span className={styles.infoValue}>hello@loclab.eu</span>
               </div>
               <div className={styles.infoBlock}>
-                <span className={styles.infoLabel}>Standort</span>
-                <span className={styles.infoValue}>NOI Techpark, Bozen / Südtirol</span>
+                <span className={styles.infoLabel}>{t('locationLabel')}</span>
+                <span className={styles.infoValue}>{t('locationValue')}</span>
               </div>
               <div className={styles.infoBlock}>
-                <span className={styles.infoLabel}>Förderung</span>
-                <span className={styles.infoValue}>EFRE 2021–2027 · Projekt EFRE1088</span>
+                <span className={styles.infoLabel}>{t('fundingLabel')}</span>
+                <span className={styles.infoValue}>{t('fundingValue')}</span>
               </div>
             </div>
           </div>
@@ -38,17 +42,22 @@ export default function Footer() {
       <div className={styles.partners}>
         <div className="wrapper">
           <div className={styles.partnersInner}>
-            <span className={styles.partnersLabel}>Konsortium</span>
-            <nav className={styles.partnersList} aria-label="Projektpartner">
-              <a href="https://www.unibz.it" target="_blank" rel="noopener noreferrer" className={styles.partnerLink}>
-                Freie Universität Bozen <span className={styles.partnerRole}>(Lead Partner)</span>
-              </a>
-              <a href="https://www.pfeiferpartners.com" target="_blank" rel="noopener noreferrer" className={styles.partnerLink}>
-                Pfeifer &amp; Partners
-              </a>
-              <a href="#" className={styles.partnerLink}>LokHaus+</a>
-              <a href="#" className={styles.partnerLink}>Energytech</a>
-              <a href="#" className={styles.partnerLink}>Elektro A. Haller</a>
+            <span className={styles.partnersLabel}>{t('consortiumLabel')}</span>
+            <nav className={styles.partnersList} aria-label={t('consortiumLabel')}>
+              {PARTNERS.map((partner) => (
+                <a
+                  key={partner.name}
+                  href={partner.url}
+                  target={partner.url !== '#' ? '_blank' : undefined}
+                  rel={partner.url !== '#' ? 'noopener noreferrer' : undefined}
+                  className={styles.partnerLink}
+                >
+                  {partner.name}
+                  {partner.role === 'Lead Partner' && (
+                    <span className={styles.partnerRole}> ({t('leadPartner')})</span>
+                  )}
+                </a>
+              ))}
             </nav>
           </div>
         </div>
@@ -79,7 +88,7 @@ export default function Footer() {
               >
                 <Image
                   src="/logos/fesr-eu-logo.png"
-                  alt="Kofinanziert von der Europäischen Union – EFRE FESR 2021–2027"
+                  alt={t('fundingTextDe')}
                   width={200}
                   height={150}
                   style={{ objectFit: 'contain', width: 'auto', height: '72px' }}
@@ -103,8 +112,8 @@ export default function Footer() {
             </div>
 
             <div className={styles.fundingText}>
-              <p>Realizzato con il cofinanziamento dell&apos;Unione europea nell&apos;ambito del programma EFRE-FESR 2021–2027</p>
-              <p>Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027</p>
+              <p>{t('fundingTextIt')}</p>
+              <p>{t('fundingTextDe')}</p>
             </div>
 
             <div className={styles.fundingDivider} aria-hidden="true" />
@@ -130,9 +139,9 @@ export default function Footer() {
         {/* Legal row */}
         <div className="wrapper">
           <div className={styles.legal}>
-            <span>© 2026 — Alle Rechte vorbehalten</span>
-            <span>Co-funded by the European Union · EFRE1088</span>
-            <span>Datenschutz</span>
+            <span>{t('legalCopyright')}</span>
+            <span>{t('legalFunding')}</span>
+            <span>{t('legalPrivacy')}</span>
           </div>
         </div>
       </div>

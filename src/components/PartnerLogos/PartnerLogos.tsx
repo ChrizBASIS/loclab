@@ -1,44 +1,15 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import styles from './PartnerLogos.module.css';
 import { motion } from 'framer-motion';
-
-const PARTNERS = [
-  {
-    name: 'Freie Universität Bozen',
-    logo: '/logos/partners/unibz.png',
-    url: 'https://www.unibz.it',
-    logoHeight: 72,
-  },
-  {
-    name: 'Pfeifer & Partners',
-    logo: '/logos/partners/pfeifer-partners.png',
-    url: 'https://www.pfeiferpartners.com',
-    logoHeight: 72,
-  },
-  {
-    name: "LokHaus+",
-    logo: '/logos/partners/lokhaus.jpg',
-    url: '#',
-    logoHeight: 80,
-  },
-  {
-    name: 'Energytech',
-    logo: '/logos/partners/energytech-1.jpg',
-    url: '#',
-    logoHeight: 72,
-  },
-  {
-    name: 'Elektro A. Haller',
-    logo: '/logos/partners/elektro-haller.png',
-    url: '#',
-    logoHeight: 72,
-  },
-];
+import { useTranslations } from 'next-intl';
+import { PARTNERS } from '@/data/partners';
 
 export default function PartnerLogos() {
+  const t = useTranslations('PartnerLogos');
+
   return (
     <section className={styles.section}>
       <div className="wrapper">
@@ -50,7 +21,7 @@ export default function PartnerLogos() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7 }}
           >
-            Projektpartner
+            {t('label')}
           </motion.div>
 
           <motion.div
@@ -97,7 +68,7 @@ export default function PartnerLogos() {
             transition={{ delay: 0.5, duration: 0.6 }}
           >
             <Link href="/konsortium" className={styles.ctaLink}>
-              Alle Partner ansehen →
+              {t('cta')}
             </Link>
           </motion.div>
         </div>
