@@ -27,9 +27,9 @@ export default function EuBadge() {
       <Image
         src="/logos/fesr-eu-logo.png"
         alt="EU Emblem – EFRE FESR"
-        width={120}
-        height={80}
-        style={{ objectFit: 'contain', width: 'auto', height: '40px' }}
+        width={160}
+        height={100}
+        style={{ objectFit: 'contain', width: 'auto', height: '64px' }}
         className={styles.logo}
       />
       <span className={styles.divider} aria-hidden="true" />
