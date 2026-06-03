@@ -65,6 +65,27 @@
   --side-padding: max(1.5rem, 2vw);             /* ~15px each side */
   --heading-indent: 8.2vw;                      /* ~131px on 1600px */
   --section-gap: 12vw;                          /* Massive breathing room */
+
+  /* EU Logo Bar clearance */
+  --eu-bar-clearance: 76px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --eu-bar-clearance: 68px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --eu-bar-clearance: 54px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --eu-bar-clearance: 50px;
+  }
 }
 
 /* Lenis smooth scroll config */
