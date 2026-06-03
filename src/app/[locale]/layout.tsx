@@ -44,8 +44,9 @@ export default async function RootLayout({
       <body>
         <LenisProvider>
           <NextIntlClientProvider messages={messages}>
-            <Navbar />
+            {/* EU logo bar: fixed at top, always visible (above the fold) */}
             <EuBadge />
+            <Navbar />
             {children}
           </NextIntlClientProvider>
         </LenisProvider>

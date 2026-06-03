@@ -1,78 +1,100 @@
 /* ===================
-   EU FUNDING BADGE — Fixed, always visible above the fold
+   EU FUNDING BAR — Static header bar, always visible above the fold
    EU Reg. 2021/1060 best practice compliance
-   EU emblem minimum height: 1cm ≈ 38px at 96dpi
+   Positioned fixed below the navbar so it never scrolls away.
    =================== */
 
-.badge {
+.bar {
   position: fixed;
-  bottom: 1.25rem;
-  right: 1.25rem;
-  z-index: 150;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 190;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.06);
+}
+
+.inner {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  padding: 0.5rem 0.75rem;
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(17, 17, 17, 0.08);
-  border-radius: 6px;
+  gap: 1rem;
+  max-width: var(--max-width, 1440px);
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  opacity: 0.9;
-  transition: opacity 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
-}
-
-.badge:hover {
-  opacity: 1;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
   flex-shrink: 0;
+}
+
+/* Logo: the PNG is 1035×294, we render it so visible emblems are ≥ 1cm.
+   At height 56px the visible logos inside are ~35–40px ≈ 1cm at 96dpi. */
+.logo {
+  width: auto;
+  height: 56px;
+  object-fit: contain;
 }
 
 .divider {
   width: 1px;
-  height: 28px;
+  height: 32px;
   background-color: rgba(17, 17, 17, 0.12);
   flex-shrink: 0;
 }
 
 .text {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   color: var(--color-text);
   line-height: 1.3;
   white-space: nowrap;
+  opacity: 0.6;
 }
 
-/* Mobile: slightly more compact */
+/* ---- Tablet ---- */
+@media (max-width: 1024px) {
+  .logo {
+    height: 48px;
+  }
+}
+
+/* ---- Mobile ---- */
 @media (max-width: 768px) {
-  .badge {
-    bottom: 0.75rem;
-    right: 0.75rem;
-    padding: 0.4rem 0.6rem;
-    gap: 0.4rem;
+  .bar {
+    padding: 0.4rem 1rem;
+  }
+
+  .logo {
+    height: 40px;
   }
 
   .text {
-    font-size: 0.5rem;
-    max-width: 12ch;
+    font-size: 0.55rem;
+    max-width: 14ch;
     white-space: normal;
     line-height: 1.2;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .text {
     display: none;
   }
 
   .divider {
     display: none;
+  }
+
+  .logo {
+    height: 36px;
   }
 }

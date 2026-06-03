@@ -4,13 +4,13 @@
 
 .nav {
   position: fixed;
-  top: 0;
+  top: 72px; /* Below the EU logo bar */
   left: 0;
   width: 100%;
   z-index: 200;
   padding: 1.5rem 0;
   background: transparent;
-  transition: color 0.4s ease;
+  transition: color 0.4s ease, top 0.3s ease;
 }
 
 .inner {

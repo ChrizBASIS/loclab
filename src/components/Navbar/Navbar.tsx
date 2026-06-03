@@ -32,8 +32,9 @@ export default function Navbar() {
       return;
     }
     const heroRect = hero.getBoundingClientRect();
-    // Navbar is "over dark" when the hero section covers the top of viewport
-    setIsOverDark(heroRect.bottom > 60);
+    // Navbar is "over dark" when the hero section covers the navbar area
+    // (EU bar 72px + navbar ~60px = 132px, use 140 for safety)
+    setIsOverDark(heroRect.bottom > 140);
   }, []);
 
   useEffect(() => {
