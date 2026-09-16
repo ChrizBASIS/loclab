@@ -5,6 +5,7 @@ import styles from './Footer.module.css';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { PARTNERS } from '@/data/partners';
+import { Link } from '@/i18n/routing';
 
 export default function Footer() {
   const t = useTranslations('Footer');
@@ -130,7 +131,10 @@ export default function Footer() {
           <div className={styles.legal}>
             <span>{t('legalCopyright')}</span>
             <span>{t('legalFunding')}</span>
-            <span>{t('legalPrivacy')}</span>
+            <span className={styles.legalLinks}>
+              <Link href="/impressum" className={styles.legalLink}>{t('legalImprint')}</Link>
+              <Link href="/datenschutz" className={styles.legalLink}>{t('legalPrivacy')}</Link>
+            </span>
           </div>
         </div>
       </div>

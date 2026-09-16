@@ -15,7 +15,11 @@
     "forschungTitle": "LocLab — Research & Testing",
     "forschungDescription": "Energy efficiency, indoor quality, well-being and life cycle assessment – research under real conditions.",
     "workshopsTitle": "LocLab — Events & Workshops",
-    "workshopsDescription": "Events, workshops and participatory formats on sustainable building in South Tyrol."
+    "workshopsDescription": "Events, workshops and participatory formats on sustainable building in South Tyrol.",
+    "impressumTitle": "LocLab — Legal notice",
+    "impressumDescription": "Information about the operator of loc-lab.it.",
+    "datenschutzTitle": "LocLab — Privacy policy",
+    "datenschutzDescription": "Privacy policy of loc-lab.it in accordance with the GDPR."
   },
   "Nav": {
     "projekt": "Project",
@@ -447,10 +451,129 @@
     "fundingTextDe": "Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027",
     "legalCopyright": "© 2026 — All rights reserved",
     "legalFunding": "Co-funded by the European Union · EFRE1088",
-    "legalPrivacy": "Privacy"
+    "legalPrivacy": "Privacy policy",
+    "legalImprint": "Legal notice"
   },
   "EuBadge": {
     "ariaLabel": "Information on EU funding",
     "partnersLabel": "Project Partners"
+  },
+  "Legal": {
+    "impressum": {
+      "label": "Legal",
+      "heading": "Legal notice.",
+      "intro": [
+        "Information about the operator of this website in accordance with the applicable disclosure requirements."
+      ],
+      "sections": [
+        {
+          "title": "Website operator",
+          "paragraphs": [
+            "Free University of Bozen-Bolzano (Libera Università di Bolzano), Piazza Università 1, 39100 Bolzano, Italy – as Lead Partner of the LocLab research project.",
+            "Tax code: 94060760215. Legal representative: the President of the University.",
+            "Project contact: info@loc-lab.it"
+          ]
+        },
+        {
+          "title": "Project",
+          "paragraphs": [
+            "LocLab – a real-world lab for innovative building: local, circular and low-tech. ERDF project no. EFRE1088, CUP I53C25001610009, programme “Investment for Growth and Jobs” ERDF 2021–2027 of the Autonomous Province of Bolzano – South Tyrol, co-funded by the European Union.",
+            "Project partners: Free University of Bozen-Bolzano (Lead Partner), LokHaus+ GmbH, Elektro A. Haller, Pfeifer Partners, Energytech Ingenieure GmbH."
+          ]
+        },
+        {
+          "title": "Concept, design and implementation",
+          "paragraphs": [
+            "Website concept, design and technical implementation: BASIS Vinschgau, Schlanders.",
+            "Images: the images used are visualisations and illustrative pictures. Project photographs will be added with credits as the project progresses."
+          ]
+        },
+        {
+          "title": "Copyright",
+          "paragraphs": [
+            "All content on this website (texts, images, graphics, logos) is protected by copyright. The logos of the project partners and funding bodies are subject to the rights of their respective owners. Any use beyond the statutory exceptions requires prior consent."
+          ]
+        },
+        {
+          "title": "Disclaimer",
+          "paragraphs": [
+            "The content of this website has been prepared with the greatest care. However, no guarantee is given for its accuracy, completeness or timeliness. The operators of external websites linked here are solely responsible for their content.",
+            "The content reflects the views of the project partners only. The European Union and the Managing Authority are not liable for any use that may be made of the information contained therein."
+          ]
+        }
+      ]
+    },
+    "datenschutz": {
+      "label": "Legal",
+      "heading": "Privacy policy.",
+      "intro": [
+        "Information pursuant to Article 13 of Regulation (EU) 2016/679 (GDPR) on the processing of personal data when visiting this website."
+      ],
+      "sections": [
+        {
+          "title": "Controller",
+          "paragraphs": [
+            "Free University of Bozen-Bolzano, Piazza Università 1, 39100 Bolzano, Italy, in its capacity as Lead Partner of the LocLab project. Contact: info@loc-lab.it",
+            "Data Protection Officer of the Free University of Bozen-Bolzano: privacy@unibz.it"
+          ]
+        },
+        {
+          "title": "What data we process",
+          "paragraphs": [
+            "This website has no registration, no contact form, no newsletter and uses no analytics or tracking tools. Only the technically necessary data generated when a website is accessed is processed, plus one functional cookie for the language setting."
+          ]
+        },
+        {
+          "title": "Hosting and server logs",
+          "paragraphs": [
+            "The website is hosted by Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, CA 94107, USA. When you access the site, the hosting provider processes, for technical reasons, your IP address, date and time, page accessed, data volume transferred, browser type and operating system in server logs.",
+            "The legal basis is Article 6(1)(f) GDPR (legitimate interest in secure and stable operation). Logs are kept only as long as necessary for operation and security. Transfers to the USA are based on the EU-US Data Privacy Framework and the European Commission's standard contractual clauses."
+          ]
+        },
+        {
+          "title": "Cookies",
+          "paragraphs": [
+            "Only one strictly necessary cookie is set: NEXT_LOCALE stores the selected language (German, Italian, English) for the duration of the session. It contains no personal data and is not used for tracking. No consent is required for it (Article 122 of the Italian Data Protection Code, Article 5(3) of Directive 2002/58/EC)."
+          ]
+        },
+        {
+          "title": "Material map (OpenStreetMap)",
+          "paragraphs": [
+            "On the “Material map” page, map tiles are loaded from OpenStreetMap. Your IP address is transmitted to the OpenStreetMap Foundation, St John's Innovation Centre, Cowley Road, Cambridge CB4 0WS, United Kingdom. This only happens when you open that page. The legal basis is Article 6(1)(f) GDPR. The United Kingdom is covered by an adequacy decision of the European Commission."
+          ]
+        },
+        {
+          "title": "Fonts and media",
+          "paragraphs": [
+            "All fonts are served locally from our server. No connection is made to external font services. Images and logos are also served from our server."
+          ]
+        },
+        {
+          "title": "Contact by e-mail",
+          "paragraphs": [
+            "If you contact us by e-mail, we process your details in order to handle your enquiry (Article 6(1)(b) and (f) GDPR). The data is deleted once it is no longer required for this purpose and no statutory retention obligations apply."
+          ]
+        },
+        {
+          "title": "External links",
+          "paragraphs": [
+            "This website contains links to the websites of project partners and funding bodies. Their operators are solely responsible for the data processing on those sites."
+          ]
+        },
+        {
+          "title": "Your rights",
+          "paragraphs": [
+            "You have the right of access (Article 15 GDPR), rectification (Article 16), erasure (Article 17), restriction of processing (Article 18), data portability (Article 20) and objection (Article 21). Please contact info@loc-lab.it or privacy@unibz.it.",
+            "You also have the right to lodge a complaint with the supervisory authority: Garante per la protezione dei dati personali, Piazza Venezia 11, 00187 Rome, Italy, www.garanteprivacy.it."
+          ]
+        },
+        {
+          "title": "Changes",
+          "paragraphs": [
+            "This privacy policy will be updated as necessary, for example when new features such as an event calendar or a newsletter are added. Last updated: September 2026."
+          ]
+        }
+      ]
+    }
   }
 }

@@ -15,7 +15,11 @@
     "forschungTitle": "LocLab — Forschung & Testverfahren",
     "forschungDescription": "Energieeffizienz, Innenraumqualität, Wohlbefinden und Lebenszyklusanalyse – Forschung unter realen Bedingungen.",
     "workshopsTitle": "LocLab — Events & Workshops",
-    "workshopsDescription": "Veranstaltungen, Workshops und partizipative Formate rund um nachhaltiges Bauen in Südtirol."
+    "workshopsDescription": "Veranstaltungen, Workshops und partizipative Formate rund um nachhaltiges Bauen in Südtirol.",
+    "impressumTitle": "LocLab — Impressum",
+    "impressumDescription": "Angaben zur Betreiberin der Website loc-lab.it.",
+    "datenschutzTitle": "LocLab — Datenschutz",
+    "datenschutzDescription": "Datenschutzerklärung der Website loc-lab.it gemäß DSGVO."
   },
   "Nav": {
     "projekt": "Projekt",
@@ -447,10 +451,129 @@
     "fundingTextDe": "Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027",
     "legalCopyright": "© 2026 — Alle Rechte vorbehalten",
     "legalFunding": "Co-funded by the European Union · EFRE1088",
-    "legalPrivacy": "Datenschutz"
+    "legalPrivacy": "Datenschutz",
+    "legalImprint": "Impressum"
   },
   "EuBadge": {
     "ariaLabel": "Informationen zur EU-Förderung",
     "partnersLabel": "Projektpartner"
+  },
+  "Legal": {
+    "impressum": {
+      "label": "Rechtliches",
+      "heading": "Impressum.",
+      "intro": [
+        "Angaben zur Betreiberin dieser Website gemäß den geltenden Informationspflichten."
+      ],
+      "sections": [
+        {
+          "title": "Betreiberin der Website",
+          "paragraphs": [
+            "Freie Universität Bozen (Libera Università di Bolzano), Universitätsplatz 1, 39100 Bozen, Italien – als Lead Partner des Forschungsprojekts LocLab.",
+            "Steuernummer: 94060760215. Gesetzliche Vertretung: die Präsidentin bzw. der Präsident der Universität.",
+            "Kontakt Projekt: info@loc-lab.it"
+          ]
+        },
+        {
+          "title": "Projekt",
+          "paragraphs": [
+            "LocLab – Reallabor für innovatives Bauen: lokal, zirkulär und low-tech. EFRE-Projekt Nr. EFRE1088, CUP I53C25001610009, Programm „Investitionen in Wachstum und Beschäftigung“ EFRE 2021–2027 der Autonomen Provinz Bozen – Südtirol, kofinanziert von der Europäischen Union.",
+            "Projektpartner: Freie Universität Bozen (Lead Partner), LokHaus+ GmbH, Elektro A. Haller, Pfeifer Partners, Energytech Ingenieure GmbH."
+          ]
+        },
+        {
+          "title": "Konzept, Gestaltung und Umsetzung",
+          "paragraphs": [
+            "Website-Konzept, Design und technische Umsetzung: BASIS Vinschgau, Schlanders.",
+            "Bildmaterial: Die verwendeten Bilder sind Visualisierungen und Symbolbilder. Projekteigene Fotografien werden im Projektverlauf mit Quellenangabe ergänzt."
+          ]
+        },
+        {
+          "title": "Urheberrecht",
+          "paragraphs": [
+            "Alle Inhalte dieser Website (Texte, Bilder, Grafiken, Logos) sind urheberrechtlich geschützt. Die Logos der Projektpartner und der Fördergeber unterliegen den Rechten der jeweiligen Inhaber. Eine Verwendung außerhalb der gesetzlichen Schranken bedarf der vorherigen Zustimmung."
+          ]
+        },
+        {
+          "title": "Haftungshinweis",
+          "paragraphs": [
+            "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für Richtigkeit, Vollständigkeit und Aktualität wird jedoch keine Gewähr übernommen. Für die Inhalte externer Websites, auf die verlinkt wird, sind ausschließlich deren Betreiber verantwortlich.",
+            "Die Inhalte geben ausschließlich die Meinung der Projektpartner wieder. Die Europäische Union und die Verwaltungsbehörde haften nicht für die Verwendung der darin enthaltenen Informationen."
+          ]
+        }
+      ]
+    },
+    "datenschutz": {
+      "label": "Rechtliches",
+      "heading": "Datenschutz.",
+      "intro": [
+        "Information gemäß Art. 13 der Verordnung (EU) 2016/679 (DSGVO) über die Verarbeitung personenbezogener Daten beim Besuch dieser Website."
+      ],
+      "sections": [
+        {
+          "title": "Verantwortliche",
+          "paragraphs": [
+            "Freie Universität Bozen, Universitätsplatz 1, 39100 Bozen, Italien, in ihrer Funktion als Lead Partner des Projekts LocLab. Kontakt: info@loc-lab.it",
+            "Datenschutzbeauftragte/r der Freien Universität Bozen: privacy@unibz.it"
+          ]
+        },
+        {
+          "title": "Welche Daten wir verarbeiten",
+          "paragraphs": [
+            "Diese Website erhebt keine Registrierungen, betreibt kein Kontaktformular, keinen Newsletter und setzt keine Analyse- oder Tracking-Werkzeuge ein. Verarbeitet werden ausschließlich die technisch notwendigen Daten, die beim Aufruf einer Website anfallen, sowie ein funktionales Cookie für die Spracheinstellung."
+          ]
+        },
+        {
+          "title": "Hosting und Server-Protokolle",
+          "paragraphs": [
+            "Die Website wird bei Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, CA 94107, USA gehostet. Beim Aufruf verarbeitet der Hosting-Anbieter technisch bedingt IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, übertragene Datenmenge, Browsertyp und Betriebssystem in Server-Protokollen.",
+            "Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und stabilen Betrieb). Die Protokolle werden nur so lange gespeichert, wie es für den Betrieb und die Sicherheit erforderlich ist. Die Übermittlung in die USA erfolgt auf Grundlage des EU-US Data Privacy Framework sowie der Standardvertragsklauseln der Europäischen Kommission."
+          ]
+        },
+        {
+          "title": "Cookies",
+          "paragraphs": [
+            "Es wird ausschließlich ein technisch notwendiges Cookie gesetzt: NEXT_LOCALE speichert die gewählte Sprache (Deutsch, Italienisch, Englisch) für die Dauer der Sitzung. Es enthält keine personenbezogenen Daten und wird nicht zur Nachverfolgung verwendet. Eine Einwilligung ist hierfür nicht erforderlich (Art. 122 des italienischen Datenschutzkodex, Art. 5 Abs. 3 Richtlinie 2002/58/EG)."
+          ]
+        },
+        {
+          "title": "Materialkarte (OpenStreetMap)",
+          "paragraphs": [
+            "Auf der Seite „Materialkarte“ werden Kartenkacheln von OpenStreetMap geladen. Dabei wird Ihre IP-Adresse an die OpenStreetMap Foundation, St John's Innovation Centre, Cowley Road, Cambridge CB4 0WS, Vereinigtes Königreich übermittelt. Die Übermittlung erfolgt erst beim Aufruf dieser Seite. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Für das Vereinigte Königreich liegt ein Angemessenheitsbeschluss der Europäischen Kommission vor."
+          ]
+        },
+        {
+          "title": "Schriften und Medien",
+          "paragraphs": [
+            "Alle Schriften werden lokal von unserem Server ausgeliefert. Es findet keine Verbindung zu externen Schriftdiensten statt. Bilder und Logos werden ebenfalls von unserem Server bereitgestellt."
+          ]
+        },
+        {
+          "title": "Kontakt per E-Mail",
+          "paragraphs": [
+            "Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir Ihre Angaben zur Bearbeitung der Anfrage (Art. 6 Abs. 1 lit. b und f DSGVO). Die Daten werden gelöscht, sobald sie für den Zweck nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen."
+          ]
+        },
+        {
+          "title": "Externe Links",
+          "paragraphs": [
+            "Diese Website enthält Links zu Websites der Projektpartner und der Fördergeber. Für deren Datenverarbeitung sind ausschließlich die jeweiligen Betreiber verantwortlich."
+          ]
+        },
+        {
+          "title": "Ihre Rechte",
+          "paragraphs": [
+            "Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Wenden Sie sich dazu an info@loc-lab.it oder privacy@unibz.it.",
+            "Sie haben zudem das Recht, Beschwerde bei der Aufsichtsbehörde einzulegen: Garante per la protezione dei dati personali, Piazza Venezia 11, 00187 Rom, Italien, www.garanteprivacy.it."
+          ]
+        },
+        {
+          "title": "Änderungen",
+          "paragraphs": [
+            "Diese Datenschutzerklärung wird bei Bedarf angepasst, etwa wenn neue Funktionen wie ein Veranstaltungskalender oder ein Newsletter hinzukommen. Stand: September 2026."
+          ]
+        }
+      ]
+    }
   }
 }

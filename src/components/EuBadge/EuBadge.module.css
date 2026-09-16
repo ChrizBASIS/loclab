@@ -39,7 +39,9 @@
   flex-shrink: 0;
 }
 
-/* EU-Block: PNG 1035×294, Flagge = 58 % der PNG-Höhe.
+/* EU-Block: offizielle Logo-Kombination des Landes, vertikale POS-Version
+   (EN_CI-Co-funded-Rep-Prov_vertical_POS.png, 1035×294, byte-identisch mit dem Download
+   von europa.provinz.bz.it). Flagge = 58 % der PNG-Höhe, Schutzzone im PNG enthalten.
    Leitlinie 2.4: Emblem mindestens 1 cm (37,8 px bei 96 dpi) → PNG ≥ 66 px.
    Leitlinie 2.5: kein horizontales Logo darf höher sein als das Emblem
    → Partnerlogos bleiben unter der Flaggenhöhe. */
@@ -97,7 +99,7 @@
     padding: 0.4rem 1rem 0.4rem 3.5rem;
     margin-left: 0;
   }
-  /* Mobil: 1 cm physisch wäre ~60 CSS-px – nicht sinnvoll; Flagge bleibt ≥ 32 px
+  /* Mobil: 1 cm physisch wäre ~60 CSS-px – nicht sinnvoll; Flagge bleibt ≈ 32 px
      und größer als jedes andere Logo in der Leiste. */
   .euLogo { height: 56px; }
   .partnerLogo { height: 24px; }

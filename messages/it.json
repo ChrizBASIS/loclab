@@ -15,7 +15,11 @@
     "forschungTitle": "LocLab — Ricerca e test",
     "forschungDescription": "Efficienza energetica, qualità degli ambienti interni, benessere e analisi del ciclo di vita – ricerca in condizioni reali.",
     "workshopsTitle": "LocLab — Eventi e workshop",
-    "workshopsDescription": "Eventi, workshop e formati partecipativi sull'edilizia sostenibile in Alto Adige."
+    "workshopsDescription": "Eventi, workshop e formati partecipativi sull'edilizia sostenibile in Alto Adige.",
+    "impressumTitle": "LocLab — Note legali",
+    "impressumDescription": "Informazioni sul gestore del sito loc-lab.it.",
+    "datenschutzTitle": "LocLab — Privacy",
+    "datenschutzDescription": "Informativa sulla privacy del sito loc-lab.it ai sensi del GDPR."
   },
   "Nav": {
     "projekt": "Progetto",
@@ -447,10 +451,129 @@
     "fundingTextDe": "Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027",
     "legalCopyright": "© 2026 — Tutti i diritti riservati",
     "legalFunding": "Co-funded by the European Union · EFRE1088",
-    "legalPrivacy": "Privacy"
+    "legalPrivacy": "Privacy",
+    "legalImprint": "Note legali"
   },
   "EuBadge": {
     "ariaLabel": "Informazioni sul finanziamento UE",
     "partnersLabel": "Partner di progetto"
+  },
+  "Legal": {
+    "impressum": {
+      "label": "Note legali",
+      "heading": "Note legali.",
+      "intro": [
+        "Informazioni sul gestore di questo sito web ai sensi degli obblighi informativi vigenti."
+      ],
+      "sections": [
+        {
+          "title": "Gestore del sito",
+          "paragraphs": [
+            "Libera Università di Bolzano (Freie Universität Bozen), Piazza Università 1, 39100 Bolzano, Italia – in qualità di Lead Partner del progetto di ricerca LocLab.",
+            "Codice fiscale: 94060760215. Rappresentante legale: la/il Presidente dell'Università.",
+            "Contatto progetto: info@loc-lab.it"
+          ]
+        },
+        {
+          "title": "Progetto",
+          "paragraphs": [
+            "LocLab – laboratorio reale per un'edilizia innovativa: locale, circolare e low-tech. Progetto FESR n. EFRE1088, CUP I53C25001610009, Programma “Investimenti a favore dell'occupazione e della crescita” FESR 2021–2027 della Provincia autonoma di Bolzano – Alto Adige, cofinanziato dall'Unione europea.",
+            "Partner di progetto: Libera Università di Bolzano (Lead Partner), LokHaus+ GmbH, Elektro A. Haller, Pfeifer Partners, Energytech Ingenieure GmbH."
+          ]
+        },
+        {
+          "title": "Concetto, design e realizzazione",
+          "paragraphs": [
+            "Concetto, design e realizzazione tecnica del sito: BASIS Vinschgau, Silandro.",
+            "Immagini: le immagini utilizzate sono visualizzazioni e immagini simboliche. Le fotografie del progetto verranno aggiunte con indicazione della fonte nel corso del progetto."
+          ]
+        },
+        {
+          "title": "Diritto d'autore",
+          "paragraphs": [
+            "Tutti i contenuti di questo sito (testi, immagini, grafica, loghi) sono protetti dal diritto d'autore. I loghi dei partner di progetto e degli enti finanziatori sono soggetti ai diritti dei rispettivi titolari. Qualsiasi utilizzo oltre i limiti di legge richiede il previo consenso."
+          ]
+        },
+        {
+          "title": "Esclusione di responsabilità",
+          "paragraphs": [
+            "I contenuti di questo sito sono stati redatti con la massima cura. Non si garantisce tuttavia la loro esattezza, completezza e attualità. Dei contenuti dei siti esterni collegati sono responsabili esclusivamente i rispettivi gestori.",
+            "I contenuti riflettono esclusivamente l'opinione dei partner di progetto. L'Unione europea e l'Autorità di gestione non sono responsabili dell'uso che può essere fatto delle informazioni ivi contenute."
+          ]
+        }
+      ]
+    },
+    "datenschutz": {
+      "label": "Note legali",
+      "heading": "Privacy.",
+      "intro": [
+        "Informativa ai sensi dell'art. 13 del Regolamento (UE) 2016/679 (GDPR) sul trattamento dei dati personali durante la visita di questo sito."
+      ],
+      "sections": [
+        {
+          "title": "Titolare del trattamento",
+          "paragraphs": [
+            "Libera Università di Bolzano, Piazza Università 1, 39100 Bolzano, Italia, in qualità di Lead Partner del progetto LocLab. Contatto: info@loc-lab.it",
+            "Responsabile della protezione dei dati della Libera Università di Bolzano: privacy@unibz.it"
+          ]
+        },
+        {
+          "title": "Quali dati trattiamo",
+          "paragraphs": [
+            "Questo sito non prevede registrazioni, non ha moduli di contatto né newsletter e non utilizza strumenti di analisi o tracciamento. Vengono trattati esclusivamente i dati tecnicamente necessari generati dalla consultazione di un sito web, oltre a un cookie funzionale per l'impostazione della lingua."
+          ]
+        },
+        {
+          "title": "Hosting e log del server",
+          "paragraphs": [
+            "Il sito è ospitato da Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, CA 94107, USA. Alla consultazione, il fornitore di hosting tratta per motivi tecnici indirizzo IP, data e ora, pagina richiesta, volume di dati trasferiti, tipo di browser e sistema operativo nei log del server.",
+            "La base giuridica è l'art. 6, par. 1, lett. f GDPR (interesse legittimo a un funzionamento sicuro e stabile). I log vengono conservati solo per il tempo necessario al funzionamento e alla sicurezza. Il trasferimento negli USA avviene sulla base dell'EU-US Data Privacy Framework e delle clausole contrattuali standard della Commissione europea."
+          ]
+        },
+        {
+          "title": "Cookie",
+          "paragraphs": [
+            "Viene impostato un solo cookie tecnicamente necessario: NEXT_LOCALE memorizza la lingua selezionata (tedesco, italiano, inglese) per la durata della sessione. Non contiene dati personali e non viene utilizzato per il tracciamento. Non è richiesto alcun consenso (art. 122 del Codice in materia di protezione dei dati personali, art. 5, par. 3, direttiva 2002/58/CE)."
+          ]
+        },
+        {
+          "title": "Mappa dei materiali (OpenStreetMap)",
+          "paragraphs": [
+            "Nella pagina “Mappa dei materiali” vengono caricate le tessere cartografiche di OpenStreetMap. Il vostro indirizzo IP viene trasmesso alla OpenStreetMap Foundation, St John's Innovation Centre, Cowley Road, Cambridge CB4 0WS, Regno Unito. La trasmissione avviene solo all'apertura di questa pagina. La base giuridica è l'art. 6, par. 1, lett. f GDPR. Per il Regno Unito esiste una decisione di adeguatezza della Commissione europea."
+          ]
+        },
+        {
+          "title": "Caratteri e media",
+          "paragraphs": [
+            "Tutti i caratteri vengono forniti localmente dal nostro server. Non viene stabilita alcuna connessione a servizi di font esterni. Anche immagini e loghi sono forniti dal nostro server."
+          ]
+        },
+        {
+          "title": "Contatto via e-mail",
+          "paragraphs": [
+            "Se ci contattate via e-mail, trattiamo i vostri dati per gestire la richiesta (art. 6, par. 1, lett. b ed f GDPR). I dati vengono cancellati quando non sono più necessari allo scopo e non sussistono obblighi legali di conservazione."
+          ]
+        },
+        {
+          "title": "Link esterni",
+          "paragraphs": [
+            "Questo sito contiene link ai siti dei partner di progetto e degli enti finanziatori. Del trattamento dei dati su tali siti sono responsabili esclusivamente i rispettivi gestori."
+          ]
+        },
+        {
+          "title": "I vostri diritti",
+          "paragraphs": [
+            "Avete diritto di accesso (art. 15 GDPR), rettifica (art. 16), cancellazione (art. 17), limitazione del trattamento (art. 18), portabilità dei dati (art. 20) e opposizione (art. 21). Potete rivolgervi a info@loc-lab.it o privacy@unibz.it.",
+            "Avete inoltre il diritto di proporre reclamo all'autorità di controllo: Garante per la protezione dei dati personali, Piazza Venezia 11, 00187 Roma, www.garanteprivacy.it."
+          ]
+        },
+        {
+          "title": "Modifiche",
+          "paragraphs": [
+            "La presente informativa verrà aggiornata se necessario, ad esempio in caso di nuove funzioni come un calendario eventi o una newsletter. Ultimo aggiornamento: settembre 2026."
+          ]
+        }
+      ]
+    }
   }
 }
