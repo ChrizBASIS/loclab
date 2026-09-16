@@ -1,9 +1,12 @@
 .section {
   padding: var(--section-gap) 0;
-  background-color: #ffffff;
+  background-color: var(--color-bg);
 }
 
 .sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
   font-family: var(--font-mono);
   font-size: var(--text-mono);
   text-transform: uppercase;
@@ -11,6 +14,14 @@
   color: var(--color-text);
   margin-bottom: 2rem;
   margin-left: var(--heading-indent);
+}
+
+.labelDash {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2px;
+  background: var(--cat-2);
+  flex-shrink: 0;
 }
 
 .heading {
@@ -21,43 +32,58 @@
   color: var(--color-text);
   margin-left: var(--heading-indent);
   max-width: 18ch;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
-/* Box grid – 3 columns for breathing room */
-.grid {
+.intro {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-lg);
+  line-height: 1.4;
+  color: var(--color-text);
+  opacity: 0.8;
+  max-width: 60ch;
+  margin-left: var(--heading-indent);
+  margin-bottom: var(--section-gap);
+}
+
+/* ---- Partnerliste ---- */
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
+  grid-template-columns: 3fr 1fr 8fr;
+  padding: 3.5rem 0;
+  border-top: 1px solid var(--color-border);
+  align-items: start;
+}
+
+.row:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.logoCol {
+  grid-column: 1 / 2;
+  display: flex;
+  align-items: center;
+  min-height: 96px;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 1.25rem 1.5rem;
   border: 1px solid var(--color-border);
 }
 
-.card {
+.textCol {
+  grid-column: 3 / 4;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  padding: 2rem;
-  border-right: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-  text-decoration: none;
-  color: inherit;
-  transition: background-color 0.3s ease;
-}
-
-.card:nth-child(3n) {
-  border-right: none;
-}
-
-.card:hover {
-  background-color: var(--color-bg-warm);
-}
-
-/* Logo display area */
-.logoWrap {
-  height: 96px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
 }
 
 .role {
@@ -76,35 +102,67 @@
   color: var(--color-text);
 }
 
-.detail {
+.description {
   font-family: var(--font-sans);
-  font-size: var(--text-body-lg);
-  font-weight: 400;
-  line-height: 1.3;
+  font-size: clamp(1.05rem, 1.3vw, 1.3rem);
+  line-height: 1.5;
   color: var(--color-text);
+  opacity: 0.75;
+  max-width: 62ch;
+  margin-top: 0.4rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+  margin-top: 1rem;
+}
+
+.link {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.15em;
   opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.link:hover {
+  opacity: 1;
 }
 
 @media (max-width: 1024px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  .card:nth-child(3n) {
-    border-right: 1px solid var(--color-border);
-  }
-  .card:nth-child(2n) {
-    border-right: none;
-  }
-  .sectionLabel, .heading {
+  .sectionLabel,
+  .heading,
+  .intro {
     margin-left: 0;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2.5rem 0;
+  }
+
+  .logoCol,
+  .textCol {
+    grid-column: 1 / -1;
+  }
+
+  .logoCol {
+    min-height: 0;
   }
 }
 
 @media (max-width: 600px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  .card {
-    border-right: none;
+  .heading {
+    font-size: clamp(2rem, 10.5vw, var(--text-hero));
+    hyphens: auto;
+    overflow-wrap: break-word;
   }
 }

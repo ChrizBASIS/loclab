@@ -145,8 +145,15 @@
 
 .iconSizes {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   gap: 3rem;
+}
+
+@media (max-width: 600px) {
+  .iconSizes {
+    gap: 1.5rem;
+  }
 }
 
 .iconSizeItem {

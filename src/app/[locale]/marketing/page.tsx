@@ -204,7 +204,7 @@ export default function MarketingPage() {
           </p>
           <div className={styles.complianceNote}>
             <span className={styles.complianceTag}>EU-Richtlinie</span>
-            <p>Jeder LinkedIn-Post enthält den Pflichthinweis zur EU-Kofinanzierung. Die Profilbeschreibung zeigt: <strong>„Kofinanziert von der EU · EFRE-FESR 2021–2027"</strong>. Hashtags <strong>#euinmyregion #eufunds</strong> werden in jedem Post verwendet. Tagging: <strong>@edsouthtyrol</strong> (Facebook-Pendant).</p>
+            <p>Jeder LinkedIn-Post enthält den Pflichthinweis zur EU-Kofinanzierung. Die Profilbeschreibung zeigt: <strong>„Kofinanziert von der EU · EFRE-FESR 2021–2027“</strong>. Hashtags <strong>#euinmyregion #eufunds</strong> werden in jedem Post verwendet. Tagging: <strong>@edsouthtyrol</strong> (Facebook-Pendant).</p>
           </div>
 
           <div className={styles.liGrid}>

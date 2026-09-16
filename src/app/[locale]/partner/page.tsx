@@ -1,19 +1,17 @@
 import { getTranslations } from 'next-intl/server';
-import Documentation from '@/components/Documentation/Documentation';
+import Partners from '@/components/Partners/Partners';
 import Footer from '@/components/Footer/Footer';
 
 export async function generateMetadata() {
   const t = await getTranslations('Metadata');
-  return {
-    title: t('dokumentationTitle'),
-    description: t('dokumentationDescription'),
-  };
+  return { title: t('partnerTitle'), description: t('partnerDescription') };
 }
 
-export default function DokumentationPage() {
+/** K2 – Projektpartner */
+export default function PartnerPage() {
   return (
     <main>
-      <Documentation />
+      <Partners />
       <Footer />
     </main>
   );

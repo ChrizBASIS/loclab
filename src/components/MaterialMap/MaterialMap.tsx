@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import styles from './MaterialMap.module.css';
 import { TreePine, BrickWall, Wheat, Sprout, Mountain, Recycle } from 'lucide-react';

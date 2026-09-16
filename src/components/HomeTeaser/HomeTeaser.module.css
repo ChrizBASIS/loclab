@@ -1,86 +1,159 @@
 /* ===================
-   HOME TEASER – Editorial text-image sections
+   HOME – Projektbeschreibung + sechs Kategorien
    =================== */
 
+/* ---- Intro ---- */
+.intro {
+  background-color: var(--color-bg);
+  padding: var(--section-gap) 0;
+}
+
+.introLabel {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+  margin-left: var(--heading-indent);
+}
+
+.introHeading {
+  font-family: var(--font-serif);
+  font-size: var(--text-hero);
+  font-weight: 300;
+  line-height: 1;
+  color: var(--color-text);
+  margin-left: var(--heading-indent);
+  max-width: 18ch;
+  margin-bottom: calc(var(--section-gap) * 0.5);
+}
+
+.introGrid {
+  display: grid;
+  grid-template-columns: 5fr 1fr 6fr;
+  align-items: start;
+}
+
+.introLead {
+  grid-column: 1 / 2;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  font-family: var(--font-serif);
+  font-size: var(--text-h2);
+  font-weight: 300;
+  line-height: 1.15;
+  color: var(--color-text);
+}
+
+.introBody {
+  grid-column: 3 / 4;
+  font-family: var(--font-sans);
+  font-size: var(--text-body-lg);
+  line-height: 1.4;
+  color: var(--color-text);
+  opacity: 0.8;
+  max-width: 55ch;
+}
+
+/* ---- Kategorien ---- */
 .section {
   background-color: var(--color-bg-warm);
   padding: var(--section-gap) 0;
 }
 
-.block {
-  margin-bottom: 6rem;
-}
-
-.block:last-of-type {
-  margin-bottom: 0;
-}
-
-/* Row: always text first in DOM, image second – swap via CSS order */
-.row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-/* Default: text left (order 1), image right (order 2) – no change needed */
-/* Variant: image left */
-.imageLeft .imageCol {
-  order: -1;
-}
-
-/* Image */
-.imageCol {
-  overflow: hidden;
-  border-radius: 6px;
-}
-
-.img {
-  width: 100%;
-  aspect-ratio: 4/3;
-  object-fit: cover;
-  display: block;
-  border-radius: 6px;
-  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.row:hover .img {
-  transform: scale(1.03);
-}
-
-/* Text */
-.textCol {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem 0;
-}
-
-.label {
+.gridLabel {
   font-family: var(--font-mono);
   font-size: var(--text-mono);
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  opacity: 0.45;
+  opacity: 0.5;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.imageWrap {
+  overflow: hidden;
+  border-radius: 6px;
+  position: relative;
+}
+
+/* Farbige Kategorie-Kante (Anmerkung Gerda: Kategorien graphisch unterscheidbar) */
+.imageWrap::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--accent, var(--color-text));
+}
+
+.img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card:hover .img {
+  transform: scale(1.03);
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.number {
+  color: var(--accent, var(--color-text));
+}
+
+.label {
+  opacity: 0.55;
 }
 
 .title {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(1.7rem, 2.6vw, 2.6rem);
   font-weight: 300;
   line-height: 1.1;
   color: var(--color-text);
-  max-width: 16ch;
+  max-width: 20ch;
 }
 
 .description {
   font-family: var(--font-sans);
-  font-size: var(--text-body-lg);
-  font-weight: 400;
-  line-height: 1.6;
+  font-size: clamp(1rem, 1.25vw, 1.2rem);
+  line-height: 1.5;
   color: var(--color-text);
   opacity: 0.7;
-  max-width: 38ch;
+  max-width: 48ch;
 }
 
 .cta {
@@ -92,105 +165,55 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--color-text);
-  text-decoration: none;
-  padding-top: 1rem;
+  padding-top: 0.4rem;
   transition: gap 0.3s ease;
 }
 
-.cta:hover {
+.card:hover .cta {
   gap: 1.2rem;
 }
 
 .ctaArrow {
   font-size: 1.2rem;
-  transition: transform 0.3s ease;
 }
 
-.cta:hover .ctaArrow {
-  transform: translateX(4px);
-}
-
-/* Quick-link row for remaining sections */
-.quickLinks {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border: 1px solid var(--color-border);
-  margin-top: 6rem;
-}
-
-.quickLink {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  padding: 2.5rem 2rem;
-  text-decoration: none;
-  color: inherit;
-  border-right: 1px solid var(--color-border);
-  transition: background-color 0.3s ease;
-}
-
-.quickLink:last-child {
-  border-right: none;
-}
-
-.quickLink:hover {
-  background-color: color-mix(in srgb, var(--color-text) 3%, transparent);
-}
-
-.quickLabel {
-  font-family: var(--font-mono);
-  font-size: var(--text-mono);
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  opacity: 0.45;
-}
-
-.quickTitle {
-  font-family: var(--font-serif);
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
-  font-weight: 300;
-  line-height: 1.2;
-  color: var(--color-text);
-}
-
-.quickArrow {
-  font-size: 1.3rem;
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  transform: translateX(-8px);
-}
-
-.quickLink:hover .quickArrow {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-/* Mobile */
+/* ---- Responsive ---- */
 @media (max-width: 1024px) {
-  .row {
-    grid-template-columns: 1fr;
+  .introLabel,
+  .introHeading {
+    margin-left: 0;
+  }
+
+  .introHeading {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    max-width: none;
+  }
+
+  .introGrid {
+    grid-template-columns: minmax(0, 1fr);
     gap: 2rem;
   }
 
-  .imageLeft .imageCol {
-    order: 0;
+  .introLead,
+  .introBody {
+    grid-column: 1 / -1;
   }
 
-  .block {
-    margin-bottom: 4rem;
+  .grid {
+    gap: 3rem;
   }
+}
 
-  .quickLinks {
+@media (max-width: 768px) {
+  .grid {
     grid-template-columns: 1fr;
-    margin-top: 4rem;
   }
+}
 
-  .quickLink {
-    border-right: none;
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  .quickLink:last-child {
-    border-bottom: none;
+@media (max-width: 600px) {
+  .introHeading {
+    font-size: clamp(2rem, 10.5vw, 4rem);
+    hyphens: auto;
+    overflow-wrap: break-word;
   }
 }

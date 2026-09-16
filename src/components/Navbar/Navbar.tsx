@@ -14,14 +14,14 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [isOverDark, setIsOverDark] = useState(false);
 
+  // Sechs Kategorien (K1–K6) – Reihenfolge wie auf der Startseite und bei Instagram
   const NAV_LINKS = [
     { href: '/projekt', label: t('projekt') },
+    { href: '/partner', label: t('partner') },
     { href: '/materialien', label: t('materialien') },
-    { href: '/karte', label: t('materialkarte') },
+    { href: '/modular-houses', label: t('modularHouses') },
+    { href: '/forschung', label: t('forschung') },
     { href: '/workshops', label: t('workshops') },
-    { href: '/timeline', label: t('timeline') },
-    { href: '/konsortium', label: t('konsortium') },
-    { href: '/dokumentation', label: t('dokumentation') },
   ] as const;
 
   // Detect if navbar is over a dark section (hero image)
@@ -37,19 +37,24 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    checkBackground();
+    // Initial check after paint (kein synchrones setState im Effect)
+    const raf = requestAnimationFrame(checkBackground);
     window.addEventListener('scroll', checkBackground, { passive: true });
     window.addEventListener('resize', checkBackground, { passive: true });
     return () => {
+      cancelAnimationFrame(raf);
       window.removeEventListener('scroll', checkBackground);
       window.removeEventListener('resize', checkBackground);
     };
   }, [checkBackground, pathname]);
 
-  // Close menu on route change
-  useEffect(() => {
+  // Close menu on route change – State während des Renders anpassen
+  // (React-Muster „adjusting state when a prop changes"), statt Effect + setState
+  const [menuPathname, setMenuPathname] = useState(pathname);
+  if (menuPathname !== pathname) {
+    setMenuPathname(pathname);
     setOpen(false);
-  }, [pathname]);
+  }
 
   // Prevent body scroll when menu is open
   useEffect(() => {

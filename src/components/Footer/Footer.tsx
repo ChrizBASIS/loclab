@@ -23,7 +23,7 @@ export default function Footer() {
             <div className={styles.infoCol}>
               <div className={styles.infoBlock}>
                 <span className={styles.infoLabel}>{t('contactLabel')}</span>
-                <span className={styles.infoValue}>hello@loclab.eu</span>
+                <a href={`mailto:${t('contactValue')}`} className={styles.infoValue}>{t('contactValue')}</a>
               </div>
               <div className={styles.infoBlock}>
                 <span className={styles.infoLabel}>{t('locationLabel')}</span>
@@ -48,8 +48,8 @@ export default function Footer() {
                 <a
                   key={partner.name}
                   href={partner.url}
-                  target={partner.url !== '#' ? '_blank' : undefined}
-                  rel={partner.url !== '#' ? 'noopener noreferrer' : undefined}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={styles.partnerLink}
                 >
                   {partner.name}

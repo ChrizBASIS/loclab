@@ -3,31 +3,30 @@
     "homeTitle": "LocLab — Lokal. Zirkulär. Lowtech.",
     "homeDescription": "Ein EU-gefördertes Reallabor für innovatives und nachhaltiges Bauen in Südtirol.",
     "projektTitle": "LocLab — Das Projekt",
-    "projektDescription": "Ein EU-gefördertes Reallabor für innovatives Bauen in Südtirol.",
+    "projektDescription": "Reallabor für innovatives Bauen in Südtirol – lokal, zirkulär und low-tech. Ausgangslage, Ansatz, Ziele und Meilensteine.",
+    "partnerTitle": "LocLab — Projektpartner",
+    "partnerDescription": "Freie Universität Bozen, LokHaus+, Elektro A. Haller, Pfeifer Partners und Energytech: das Projektteam von LocLab.",
     "materialienTitle": "LocLab — Materialien",
-    "materialienDescription": "Kartierung lokaler, zirkulärer Baumaterialien in Südtirol.",
+    "materialienDescription": "Materialpass und getestete Materialien: regionale, erneuerbare und kreislauffähige Baustoffe in Südtirol.",
     "karteTitle": "LocLab — Materialkarte",
     "karteDescription": "Interaktive Karte lokaler Baumaterialien in Südtirol — Holz, Lehm, Stroh, Hanf-Kalk, Naturstein und Recycling.",
-    "workshopsTitle": "LocLab — Workshops & Residency",
-    "workshopsDescription": "Partizipative Workshops, Reallabore und Designer in Residence Programme.",
-    "timelineTitle": "LocLab — Timeline",
-    "timelineDescription": "Projektphasen und Milestones über 36 Monate.",
-    "konsortiumTitle": "LocLab — Konsortium",
-    "konsortiumDescription": "Die Projektpartner: unibz, Pfeifer & Partners, LokHaus+, Energytech, Elektro A. Haller.",
-    "dokumentationTitle": "LocLab — Dokumentation",
-    "dokumentationDescription": "Projektphasen, Meilensteine und wissenschaftliche Publikationen."
+    "modularHousesTitle": "LocLab — Modular Houses",
+    "modularHousesDescription": "Planung, Bau und Betrieb der zwei Modular Houses in Schlanders und Bozen.",
+    "forschungTitle": "LocLab — Forschung & Testverfahren",
+    "forschungDescription": "Energieeffizienz, Innenraumqualität, Wohlbefinden und Lebenszyklusanalyse – Forschung unter realen Bedingungen.",
+    "workshopsTitle": "LocLab — Events & Workshops",
+    "workshopsDescription": "Veranstaltungen, Workshops und partizipative Formate rund um nachhaltiges Bauen in Südtirol."
   },
   "Nav": {
     "projekt": "Projekt",
+    "partner": "Projektpartner",
     "materialien": "Materialien",
-    "materialkarte": "Materialkarte",
-    "workshops": "Workshops",
-    "timeline": "Timeline",
-    "konsortium": "Konsortium",
-    "dokumentation": "Dokumentation",
+    "modularHouses": "Modular Houses",
+    "forschung": "Forschung & Testverfahren",
+    "workshops": "Events & Workshops",
     "menuOpen": "Menü öffnen",
-    "email": "hello@loclab.eu",
-    "location": "NOI Techpark, Bozen"
+    "email": "info@loc-lab.it",
+    "location": "Freie Universität Bozen"
   },
   "Hero": {
     "sectionLabel": "Reallabor Südtirol",
@@ -38,51 +37,411 @@
     "taglineLine2": "innovatives und nachhaltiges Bauen.",
     "scroll": "Scroll"
   },
-  "HomeTeaser": {
-    "projektLabel": "Das Projekt",
-    "projektTitle": "Ein Reallabor für die Architektur von morgen.",
-    "projektDescription": "LOCLAB erforscht nachhaltiges Bauen mit lokalen Materialien in den Alpen. Als Living Lab verbinden wir Wissenschaft, Architektur und Handwerk – in einem realen Bauprojekt, das neue Standards setzt.",
-    "materialienLabel": "Materialien",
-    "materialienTitle": "Lokale Materialien, globale Wirkung.",
-    "materialienDescription": "Holz, Lehm, Stroh, Hanfkalk und Naturstein – alles aus der Region. Wir analysieren und testen traditionelle Baustoffe mit modernen Methoden, um deren Potenzial für die Zukunft freizulegen.",
-    "workshopsLabel": "Workshops & Residency",
-    "workshopsTitle": "Wissen teilen, gemeinsam bauen.",
-    "workshopsDescription": "In interdisziplinären Workshops und Residencies bringen wir Forscher, Architekten und Handwerker zusammen. Praxisnah, direkt auf der Baustelle – für einen echten Wissenstransfer.",
+  "Home": {
+    "introLabel": "Das Projekt",
+    "introHeading": "Ein Reallabor für innovatives Bauen.",
+    "introLead": "Im Mittelpunkt des Projekts stehen zwei modulare Häuser, die als physische Prototypen und digitale Testfelder für die Entwicklung und Erprobung innovativer Wohn- und Baukonzepte dienen.",
+    "introBody": "Durch die enge Verknüpfung von Forschung, Praxis und gesellschaftlicher Beteiligung werden Materiallebenszyklen, partizipative Gestaltungsprozesse und das Wohnwohlbefinden ganzheitlich untersucht. Im Rahmen eines transdisziplinären Forschungsansatzes entstehen neue Erkenntnisse und Lösungsansätze für die nachhaltige Transformation des Bausektors. Ziel ist es, innovative Wege für ein ressourcenschonendes, kreislauffähiges und menschenorientiertes Bauen aufzuzeigen und die Zukunft des Wohnens aktiv mitzugestalten.",
+    "heroAlt": "Modulares Holzhaus in Südtirol",
+    "gridLabel": "Themen",
     "cta": "Mehr erfahren",
-    "timelineLabel": "Timeline",
-    "timelineTitle": "Phases & Milestones über 36 Monate.",
-    "konsortiumLabel": "Konsortium",
-    "konsortiumTitle": "Inter- und transdisziplinäre Zusammenarbeit.",
-    "dokumentationLabel": "Dokumentation",
-    "dokumentationTitle": "Forschung transparent machen."
+    "cards": {
+      "projekt": {
+        "label": "Projekt",
+        "title": "Reallabor für innovatives Bauen – lokal, zirkulär und low-tech.",
+        "text": "Ausgangslage, Ansatz und Ziele des EU-geförderten Forschungsprojekts – von der Idee bis zu den Meilensteinen."
+      },
+      "partner": {
+        "label": "Projektpartner",
+        "title": "Wissenschaft, Architektur, Ingenieurwesen und Handwerk.",
+        "text": "Die Freie Universität Bozen und vier Südtiroler Unternehmen entwickeln gemeinsam Lösungen für zirkuläres Bauen."
+      },
+      "materialien": {
+        "label": "Materialien",
+        "title": "Regionale Ressourcen, sichtbar gemacht.",
+        "text": "Materialpass, Kartierung und die im Projekt neu erforschten Materialien – von der leimfreien Holzwand bis zur Lehm-Hobelspan-Dämmung."
+      },
+      "modularHouses": {
+        "label": "Modular Houses",
+        "title": "Zwei Gebäude, zwei Standorte, ein Experiment.",
+        "text": "Planung, BIM-Modelle und Realisierung der beiden Modular Houses in Schlanders und Bozen."
+      },
+      "forschung": {
+        "label": "Forschung & Testverfahren",
+        "title": "Messen, vergleichen, verstehen.",
+        "text": "Energieeffizienz, Innenraumqualität, Wohlbefinden und Lebenszyklusanalyse unter realen Bedingungen."
+      },
+      "workshops": {
+        "label": "Events & Workshops",
+        "title": "Wissen teilen, gemeinsam bauen.",
+        "text": "Veranstaltungen, Workshops und partizipative Formate für Fachwelt, Bevölkerung und Schulen."
+      }
+    }
   },
   "PartnerLogos": {
     "label": "Projektpartner",
     "cta": "Alle Partner ansehen →"
   },
-  "About": {
-    "sectionLabel": "Das Projekt",
-    "heading": "Ein Reallabor für innovatives Bauen.",
-    "bodyLarge": "LocLab ist ein EU-gefördertes Reallabor für lokales, zirkuläres und lowtech Bauen in Südtirol.",
-    "bodySmall": "Im Mittelpunkt stehen zwei modulare Häuser, die als physische und digitale Testfelder dienen. Durch transdisziplinäre Forschung konzentrieren wir uns auf Materiallebenszyklen, Gemeinschaftsbeteiligung und strukturelle Sensorik — für eine neue Ära des nachhaltigen Bauens.",
-    "quote": "Zwei modulare Häuser als physische und digitale Reallabore.",
-    "heroAlt": "Modulare Bauweise in Südtirol",
-    "interiorAlt": "Interieur eines modularen Hauses"
+  "Projekt": {
+    "label": "Das Projekt · Lokal, zirkulär, low-tech",
+    "heading": "Reallabor für innovatives Bauen.",
+    "intro": [
+      "Der Bausektor steht im Zentrum aktueller Nachhaltigkeits- und Transformationsbestrebungen. Als einer der ressourcen- und emissionsintensivsten Wirtschaftsbereiche trägt er maßgeblich zum Energieverbrauch, zu Treibhausgasemissionen und zum weltweiten Materialverbrauch bei. Gleichzeitig wächst der Bedarf an innovativen Bauweisen, die Klimaschutz, Ressourceneffizienz, Kreislaufwirtschaft und hohe Wohnqualität miteinander verbinden.",
+      "Vor diesem Hintergrund untersucht das Forschungsprojekt LocLab neue Wege für ein nachhaltiges, regional verankertes und kreislauffähiges Bauen. Ziel ist die Entwicklung, Erprobung und wissenschaftliche Evaluierung innovativer Bau- und Materialkonzepte, die ökologische, technische, wirtschaftliche und soziale Anforderungen gleichermaßen berücksichtigen.",
+      "Im Mittelpunkt des Projekts stehen zwei modulare Gebäude, die als physische und digitale Reallabore dienen. Diese sogenannten Modular Houses werden an zwei Standorten aufgestellt – bei BASIS Vinschgau in Schlanders und im NOI Techpark in Bozen – und ermöglichen die Entwicklung, Umsetzung und Untersuchung neuartiger Bau- und Materialsysteme unter realen Bedingungen. Dabei werden unterschiedliche Lösungsansätze hinsichtlich ihrer Umweltwirkungen, Energieeffizienz, Innenraumqualität sowie ihrer Wahrnehmung durch Nutzerinnen und Nutzer analysiert und mit bestehenden Bauweisen verglichen."
+    ],
+    "imageAlt": "Modulares Holzhaus vor Bergkulisse",
+    "sections": [
+      {
+        "title": "Zirkuläre Bauweisen auf Basis regionaler Ressourcen",
+        "paragraphs": [
+          "Südtirol verfügt über umfangreiche natürliche Ressourcen sowie über hohe Kompetenzen im Holzbau und in der Verarbeitung lokaler Rohstoffe. Das Projekt nutzt dieses Potenzial, um innovative kreislauffähige Bausysteme zu entwickeln, die regionale Wertschöpfung stärken und gleichzeitig den ökologischen Fußabdruck von Gebäuden reduzieren.",
+          "Im ersten Reallabor wird eine neuartige Holzrahmenwand entwickelt und getestet, die weitgehend auf den Einsatz von Leimen und synthetischen Abdichtungssystemen verzichtet. Ziel ist es, eine luftdichte, ressourcenschonende und kreislauffähige Konstruktion zu schaffen, bei der die verwendeten Materialien am Ende ihres Lebenszyklus einfacher wiederverwendet oder recycelt werden können. Gleichzeitig sollen potenzielle Schadstoffemissionen reduziert und ein gesundes Innenraumklima gefördert werden.",
+          "Das zweite Reallabor fokussiert sich auf die Entwicklung einer innovativen Dämmung aus Lehm und regional anfallenden Holzhobelspänen. Letztere entstehen als Nebenprodukt lokaler Holzverarbeitungsbetriebe und besitzen ein bislang wenig genutztes Potenzial für nachhaltige Bauanwendungen. Durch die Kombination mit Lehm entsteht ein Dämmstoff, der regionale Stoffkreisläufe stärkt, Transportwege reduziert und gleichzeitig positive Eigenschaften hinsichtlich Feuchteregulierung und Raumklima aufweisen kann."
+        ]
+      },
+      {
+        "title": "Forschung unter realen Bedingungen",
+        "paragraphs": [
+          "Ein wesentliches Merkmal von LocLab ist der Reallaboransatz. Die beiden modularen Gebäude dienen nicht nur als Forschungsinfrastruktur, sondern auch als Orte des Austauschs und der praktischen Erprobung. Innovative Bau- und Innenraumkonzepte werden unter realen Nutzungsbedingungen getestet und wissenschaftlich begleitet.",
+          "Dabei werden die entwickelten Systeme umfassend untersucht. Im Mittelpunkt stehen unter anderem die Energieeffizienz, die Innenraumqualität, das thermische Verhalten der Materialien, die Kreislauffähigkeit der eingesetzten Ressourcen sowie die Wahrnehmung der Nutzerinnen und Nutzer. Ergänzend werden digitale Methoden wie Building Information Modeling (BIM) und Virtual Reality (VR) eingesetzt, um unterschiedliche Szenarien abzubilden und neue Formen der Beteiligung zu ermöglichen.",
+          "Zur Bewertung der Umweltwirkungen kommt eine ganzheitliche Lebenszyklusanalyse (Life Cycle Assessment, LCA) zum Einsatz. Durch die direkte Datenerhebung im Rahmen des Projekts sollen belastbare Erkenntnisse über die tatsächlichen ökologischen Auswirkungen der entwickelten Bauweisen gewonnen werden."
+        ]
+      },
+      {
+        "title": "Innovation durch Zusammenarbeit",
+        "paragraphs": [
+          "LocLab versteht nachhaltiges Bauen als gemeinschaftliche Herausforderung. Deshalb verbindet das Projekt wissenschaftliche Forschung mit den Kompetenzen regionaler Unternehmen sowie dem Wissen und den Erfahrungen der Bevölkerung.",
+          "In Workshops und partizipativen Formaten werden regionale Rohstoffe und Nebenprodukte kartiert, Potenziale identifiziert und gemeinsam innovative Produkte und Innenraumlösungen entwickelt. Die daraus entstehenden Prototypen werden in den Reallaboren ausgestellt, erprobt und weiterentwickelt. Auf diese Weise entstehen neue Impulse für eine ressourcenschonende und zukunftsfähige Baukultur in Südtirol."
+        ]
+      },
+      {
+        "title": "Ziele des Projekts",
+        "paragraphs": [
+          "Ziel von LocLab ist die Entwicklung, Umsetzung und wissenschaftliche Evaluierung innovativer, kreislauffähiger Bau- und Materiallösungen auf Basis regionaler Ressourcen. Im Rahmen der Reallabore werden deren ökologische, technische und soziale Wirkungen untersucht, um evidenzbasierte Grundlagen für nachhaltige Bauweisen zu schaffen, die regionale Kreislaufwirtschaft zu stärken und Transformationsprozesse hin zu einer ressourceneffizienten und klimaverträglichen Baukultur in Südtirol zu unterstützen."
+        ]
+      }
+    ]
+  },
+  "Milestones": {
+    "label": "Meilensteine",
+    "heading": "Projektverlauf.",
+    "intro": "Die Projektlaufzeit beträgt 36 Monate. Die Phasen überlappen sich – der Projektverlauf ist nicht linear. CUP EFRE: I53C25001610009.",
+    "status": {
+      "done": "abgeschlossen",
+      "active": "in Arbeit",
+      "planned": "geplant"
+    },
+    "phases": [
+      {
+        "phase": "Phase 1",
+        "date": "M1–M6",
+        "title": "Kick-off & Arbeitsplan",
+        "milestone": "M1 Kick-off · M2 Finaler Zeitplan",
+        "status": "done"
+      },
+      {
+        "phase": "Phase 2",
+        "date": "M7–M14",
+        "title": "Realisierung & Bau der Modular Houses",
+        "milestone": "M3 Modular Houses fertiggestellt · M4 Reallabor-Standorte betriebsbereit",
+        "status": "active"
+      },
+      {
+        "phase": "Phase 3",
+        "date": "M15–M24",
+        "title": "Messungen, LCA & Workshops",
+        "milestone": "M5 Abschluss Messungen · M6 Abschluss Reallabore Schlanders & Bozen",
+        "status": "planned"
+      },
+      {
+        "phase": "Phase 4",
+        "date": "M25–M36",
+        "title": "Auswertung, Synthese & Publikation",
+        "milestone": "M7 Abschlussbericht · M8 Öffentliche Abschlussveranstaltung",
+        "status": "planned"
+      }
+    ]
   },
   "Partners": {
-    "sectionLabel": "Konsortium",
+    "label": "Projektpartner",
     "heading": "Inter- und transdisziplinäre Zusammenarbeit.",
+    "intro": "LocLab ist ein transdisziplinäres Forschungsprojekt, das Expertisen aus Wissenschaft, Architektur, Ingenieurwesen, Handwerk und Wirtschaft zusammenführt. Durch die enge Zusammenarbeit zwischen der Freien Universität Bozen und den Projektpartnern entstehen innovative Lösungen für zirkuläres und nachhaltiges Bauen, die wissenschaftlich fundiert entwickelt, praktisch erprobt und gemeinsam weitergedacht werden.",
     "leadPartner": "Lead Partner",
-    "projektpartner": "Projektpartner"
+    "projektpartner": "Projektpartner",
+    "website": "Zur Website",
+    "video": "Video-Interview",
+    "descriptions": {
+      "unibz": "Die Freie Universität Bozen leitet das Projekt als Lead Partner. Beteiligt sind die Fakultät für Design und Künste und die Fakultät für Ingenieurwesen, die Materialforschung, Gestaltung, Bauphysik und Nutzerstudien in einem gemeinsamen Forschungsansatz zusammenführen.",
+      "lokhaus": "LokHaus+ ist ein Südtiroler Holzbauunternehmen mit Sitz in Tisens, das sich auf nachhaltigen Holzbau, ökologische Sanierungen und kreislauffähige Baukonzepte spezialisiert hat. Mit dem Fokus auf regionale Materialien, kurze Transportwege und innovative, nahezu leimfreie Holzbausysteme entwickelt das Unternehmen zukunftsweisende Lösungen für gesundes und ressourcenschonendes Bauen.",
+      "haller": "Elektro A. Haller ist ein traditionsreiches Elektrotechnikunternehmen aus Eppan mit über 50 Jahren Erfahrung in Planung, Installation und Wartung elektrotechnischer Anlagen. Das Leistungsspektrum reicht von Gebäude- und Lichttechnik über Smart-Home-Lösungen bis hin zu Photovoltaik, Elektromobilität und intelligenter Gebäudesteuerung. Mit einem interdisziplinären Team entwickelt das Unternehmen maßgeschneiderte und energieeffiziente Lösungen für private und öffentliche Bauvorhaben.",
+      "pfeifer": "Pfeifer Partners ist ein innovatives Ingenieur- und Architekturunternehmen aus Südtirol, das nachhaltige Lösungen in den Bereichen Hochbau, Tiefbau, Mobilität und digitale Planung entwickelt. Das interdisziplinäre Team aus Ingenieur:innen, Architekt:innen und Geometer:innen setzt moderne Methoden wie Building Information Modeling (BIM) ein, um zukunftsorientierte und ressourcenschonende Bauprojekte für öffentliche und private Auftraggeber zu realisieren.",
+      "energytech": "Energytech Ingenieure ist ein Südtiroler Planungsbüro für Gebäudetechnik und Energieanlagen mit Sitz in Bozen. Das Unternehmen begleitet Projekte von der Beratung und Planung bis zur Umsetzung von wärmetechnischen, elektrischen und energetischen Systemen. Im Mittelpunkt stehen nachhaltige, CO₂-arme Lösungen, die ökologische Verantwortung mit wirtschaftlicher Effizienz verbinden und einen wichtigen Beitrag zur Energiewende leisten."
+    }
+  },
+  "Materials": {
+    "label": "Materialien",
+    "heading": "Regionale Ressourcen, sichtbar gemacht.",
+    "intro": [
+      "Ein zentraler Schwerpunkt von LocLab liegt auf der Erforschung und Sichtbarmachung regional verfügbarer, erneuerbarer und kreislauffähiger Materialien. Südtirol verfügt über ein großes Potenzial an natürlichen Rohstoffen sowie über handwerkliche Kompetenzen, die für eine nachhaltige und ressourcenschonende Bauweise genutzt werden können. Gleichzeitig entstehen in regionalen Produktionsprozessen wertvolle Neben- und Reststoffe, deren Potenzial bislang oft ungenutzt bleibt.",
+      "Im Rahmen des Projekts werden innovative Materiallösungen entwickelt und erprobt. Diese Materialien werden hinsichtlich ihrer technischen Leistungsfähigkeit, ihrer Umweltwirkungen und ihres Beitrags zur Kreislaufwirtschaft wissenschaftlich untersucht.",
+      "Ergänzend wird im Rahmen des Projekts eine Kartierung und Dokumentation regionaler zirkulärer Ressourcen erstellt. Dabei werden erneuerbare und kreislauffähige Materialien, ihre Verfügbarkeit, Standorte, Verarbeitungskompetenzen und relevante Akteure systematisch erfasst. Ziel ist es, bestehende Materialkreisläufe sichtbar zu machen, lokale Wertschöpfungsketten zu stärken und den Wissenstransfer zwischen Forschung, Wirtschaft und Gesellschaft zu fördern.",
+      "Die Ergebnisse werden in Form von Materialkarten, Materialpässen und einer wachsenden Materialsammlung aufbereitet. Dadurch entsteht eine wertvolle Wissensbasis für zukünftige Forschungs-, Bau- und Designprojekte und ein Beitrag zur nachhaltigen Nutzung regionaler Ressourcen in Südtirol."
+    ],
+    "passLabel": "Materialpass",
+    "passHeading": "Die Materialsammlung.",
+    "passIntro": "Der Materialpass dokumentiert regionale, erneuerbare und kreislauffähige Materialien mit ihren bauphysikalischen Kennwerten, ihrer Herkunft und ihrer Kreislauffähigkeit. Die Sammlung wächst im Projektverlauf auf 16 Materialien an – hier ein erster Auszug.",
+    "statLambda": "λ-Wert",
+    "statCo2": "CO₂",
+    "statRecycle": "Recyclierbar",
+    "testedLabel": "Getestete Materialien",
+    "testedHeading": "Neu erforscht im Reallabor.",
+    "testedIntro": "Zwei Materialsysteme werden im Projekt neu entwickelt und in den Modular Houses unter realen Bedingungen getestet. Testverlauf, Ergebnisse und Lebenszyklusanalyse (LCA) werden hier im Projektverlauf ergänzt.",
+    "tested": [
+      {
+        "label": "Reallabor 1",
+        "title": "Leimfreie Holzrahmenwand",
+        "text": "Eine neuartige Holzrahmenwand, die weitgehend auf Leime und synthetische Abdichtungssysteme verzichtet. Ziel: luftdicht, ressourcenschonend und am Lebensende sortenrein trennbar – bei reduzierten Schadstoffemissionen und gesundem Innenraumklima.",
+        "status": "Testverlauf folgt"
+      },
+      {
+        "label": "Reallabor 2",
+        "title": "Dämmung aus Lehm und Holzhobelspänen",
+        "text": "Ein Dämmstoff aus Lehm und Hobelspänen, die als Nebenprodukt lokaler Holzverarbeitungsbetriebe anfallen. Er stärkt regionale Stoffkreisläufe, verkürzt Transportwege und kann Feuchte regulieren und das Raumklima verbessern.",
+        "status": "Testverlauf folgt"
+      }
+    ],
+    "mapLabel": "Materialkarte",
+    "mapTitle": "Materialquellen in Südtirol.",
+    "mapText": "Interaktive Karte der kartierten Wälder, Steinbrüche, Landwirtschaftsflächen und Recyclinghöfe.",
+    "mapCta": "Zur Karte",
+    "items": {
+      "holz": {
+        "name": "Holz",
+        "subtitle": "Fichte · Lärche · Tanne",
+        "role": "Tragstruktur & Verschalung",
+        "co2Label": "CO₂-Speicher",
+        "recycle": "100%",
+        "description": "Südtirol verfügt über einen sehr hohen Waldanteil. Holz aus lokaler Forstwirtschaft ist der zentrale Baustoff – als Vollholz, Brettsperrholz oder im nahezu leimfreien System von LokHaus+. Kurze Transportwege, hohe CO₂-Speicherung und vollständige Wiederverwendbarkeit machen es zum Rückgrat des Projekts."
+      },
+      "lehm": {
+        "name": "Lehm",
+        "subtitle": "Stampflehm · Lehmputz",
+        "role": "Innenwände & Raumklima",
+        "co2Label": "Klimaneutral",
+        "recycle": "100%",
+        "description": "Lehm reguliert Raumfeuchte auf natürliche Weise, speichert Wärme und ist seit Jahrhunderten im alpinen Raum bewährt. Er benötigt keine energieintensiven Brennprozesse und kann am Lebensende vollständig zur Erde zurückgeführt werden."
+      },
+      "stroh": {
+        "name": "Stroh",
+        "subtitle": "Strohballen-Dämmung",
+        "role": "Dämmung",
+        "co2Label": "CO₂-Senke",
+        "recycle": "100%",
+        "description": "Strohballen bieten eine sehr gute Wärmedämmung. Als landwirtschaftliches Nebenprodukt ist Stroh lokal verfügbar, bindet während des Wachstums CO₂ und ist am Ende vollständig kompostierbar."
+      },
+      "hanf": {
+        "name": "Hanf-Kalk",
+        "subtitle": "Hempcrete · Hanfschäben",
+        "role": "Dämmung & Ausfachung",
+        "co2Label": "Netto-Senke",
+        "recycle": "100%",
+        "description": "Hanf-Kalk vereint die Dämmleistung von Hanfschäben mit der thermischen Masse von Naturkalk. Das Material ist diffusionsoffen, schimmelresistent und wirkt als CO₂-Senke. Am Lebensende kann es gebrochen und als Zuschlag wiederverwendet oder kompostiert werden."
+      },
+      "stein": {
+        "name": "Naturstein",
+        "subtitle": "Porphyr · Dolomit · Gneis",
+        "role": "Fundament & Sockel",
+        "co2Label": "Lokaler Abbau",
+        "recycle": "∞",
+        "description": "Naturstein aus Südtiroler Steinbrüchen bietet hohe thermische Masse und nahezu unbegrenzte Lebensdauer. Porphyr, Dolomit und Gneis sind seit Jahrhunderten Teil alpiner Architektur und lassen sich ohne Qualitätsverlust wiederverwenden."
+      },
+      "recycling": {
+        "name": "Recycling-Zuschläge",
+        "subtitle": "RC-Beton · Altholz · Ziegel",
+        "role": "Fundament & Tragwerk",
+        "co2Label": "Kreislaufgeführt",
+        "recycle": "Kreislauf",
+        "description": "Rückbaumaterialien aus bestehenden Gebäuden werden kartiert, getestet und als Zuschläge in neuen Baustoffen eingesetzt – ein Beitrag zu geschlossenen Stoffkreisläufen in der Region."
+      }
+    }
+  },
+  "ModularHouses": {
+    "label": "Modular Houses",
+    "heading": "Zwei Gebäude, zwei Standorte, ein Experiment.",
+    "intro": [
+      "Im Rahmen von LocLab werden zwei Modular Houses geplant, digital modelliert und realisiert. Die beiden Gebäude basieren auf unterschiedlichen innovativen Baukonzepten. Ziel des Projekts ist es, die Leistungsfähigkeit dieser Ansätze unter realen Bedingungen zu erforschen und miteinander zu vergleichen.",
+      "Die Planung erfolgt transdisziplinär durch die Zusammenarbeit aller Projektpartner. Für beide Gebäude werden BIM- und Virtual-Reality-Modelle entwickelt, die sowohl die Planung und Analyse als auch die digitale Vermittlung der Forschungsergebnisse unterstützen.",
+      "Die Modular Houses werden so konzipiert, dass Materialien, Konstruktionen und technische Lösungen des nachhaltigen Bauens sichtbar und nachvollziehbar werden. Nach der Fertigung werden die Module an zwei Standorten in Südtirol aufgebaut – bei BASIS Vinschgau in Schlanders und im NOI Techpark in Bozen –, als Reallabore genutzt und anschließend wieder demontiert. Dabei wird auch untersucht, wie Baumodule und Materialien am Ende ihres Lebenszyklus wiederverwendet, weiterverwertet oder in neue Nutzungskontexte überführt werden können."
+    ],
+    "imageAlt": "Vorgefertigte Holzmodule auf der Baustelle",
+    "factsLabel": "Auf einen Blick",
+    "factsHeading": "Zwei Baukonzepte im Vergleich.",
+    "facts": [
+      {
+        "label": "Standort 1",
+        "title": "BASIS Vinschgau, Schlanders",
+        "text": "Reallabor im Vinschgau – Kontakt zu Handwerk, Bevölkerung und Schulen."
+      },
+      {
+        "label": "Standort 2",
+        "title": "NOI Techpark, Bozen",
+        "text": "Reallabor im Innovationsquartier – Nähe zu Forschung und Unternehmen."
+      },
+      {
+        "label": "Modular House 1",
+        "title": "Leimfreie Holzrahmenwand",
+        "text": "Weitgehend ohne Leime und synthetische Abdichtungen – luftdicht, kreislauffähig, trennbar."
+      },
+      {
+        "label": "Modular House 2",
+        "title": "Dämmung aus Lehm und Holzhobelspänen",
+        "text": "Regionale Nebenprodukte als Dämmstoff – feuchteregulierend, kurze Transportwege."
+      },
+      {
+        "label": "Planung",
+        "title": "BIM- und VR-Modelle",
+        "text": "Digitale Zwillinge für Planung, Analyse und Vermittlung der Ergebnisse."
+      },
+      {
+        "label": "Lebenszyklus",
+        "title": "Aufbau, Betrieb, Rückbau",
+        "text": "Module werden nach der Nutzung demontiert und weiterverwendet."
+      }
+    ],
+    "stepsLabel": "Realisierung",
+    "stepsHeading": "Schritt für Schritt.",
+    "stepsIntro": "Fotos, Videos und Messwerte zur Ausgangssituation (Raumklima) werden hier mit dem Baufortschritt laufend ergänzt.",
+    "steps": [
+      {
+        "title": "Planung & digitale Modellierung",
+        "text": "Architektur, Tragwerk, Gebäudetechnik und BIM-Modell – gemeinsam mit allen Projektpartnern."
+      },
+      {
+        "title": "Vorfertigung der Module",
+        "text": "Produktion der Holzrahmenwände und der Lehm-Hobelspan-Dämmung in Südtirol."
+      },
+      {
+        "title": "Aufbau an den Standorten",
+        "text": "Montage bei BASIS Vinschgau in Schlanders und im NOI Techpark in Bozen."
+      },
+      {
+        "title": "Betrieb als Reallabor",
+        "text": "Messkampagnen, Nutzerstudien, Workshops und Besichtigungen."
+      },
+      {
+        "title": "Rückbau & Wiederverwendung",
+        "text": "Demontage der Module und Überführung der Materialien in neue Nutzungen."
+      }
+    ]
+  },
+  "Forschung": {
+    "label": "Forschung & Testverfahren",
+    "heading": "Messen, vergleichen, verstehen.",
+    "intro": [
+      "Im Zentrum von LocLab stehen zwei modulare Demonstrationsgebäude, die als Reallabore für die Entwicklung, Erprobung und wissenschaftliche Bewertung innovativer Bauweisen dienen. In diesen Modular Houses werden neuartige, kreislauffähige Konstruktions- und Materialsysteme unter realen Bedingungen getestet, darunter eine weitgehend leimfreie Holzrahmenbauweise sowie eine Dämmung aus Lehm und regionalen Holzhobelspänen.",
+      "Mithilfe von BIM- und Virtual-Reality-Modellen, umfangreichen Messkampagnen und Lebenszyklusanalysen (LCA) werden die Gebäude hinsichtlich Energieeffizienz, Innenraumqualität, Luftdichtheit, thermischem Komfort, Akustik, Umweltwirkungen und Kreislauffähigkeit untersucht. Die Tests erfolgen in unterschiedlichen Klimazonen Südtirols, um die Leistungsfähigkeit der Systeme unter verschiedenen Bedingungen zu analysieren.",
+      "Ergänzend werden die Reallabore für Workshops, Beteiligungsformate und Nutzerstudien genutzt. Dadurch können sowohl die technische Leistungsfähigkeit der entwickelten Lösungen als auch deren Wahrnehmung und Akzeptanz in der Bevölkerung wissenschaftlich untersucht werden. Die gewonnenen Erkenntnisse bilden die Grundlage für praxisnahe Handlungsempfehlungen und zukünftige Anwendungen im nachhaltigen Bauen."
+    ],
+    "imageAlt": "Messtechnik im Holzbau",
+    "categoriesLabel": "Testkategorien",
+    "categoriesHeading": "Was gemessen wird.",
+    "categories": [
+      {
+        "title": "Energieeffizienz",
+        "text": "Heiz- und Kühlbedarf, Wärmeverluste und Verhalten der Gebäudehülle im Jahresverlauf."
+      },
+      {
+        "title": "Innenraumqualität",
+        "text": "Luftqualität, Feuchte und Schadstoffemissionen der eingesetzten Materialien."
+      },
+      {
+        "title": "Luftdichtheit",
+        "text": "Dichtheit der leimfreien Konstruktion im Vergleich zu konventionellen Systemen."
+      },
+      {
+        "title": "Thermischer Komfort",
+        "text": "Oberflächen- und Raumtemperaturen, thermisches Verhalten der Materialien."
+      },
+      {
+        "title": "Akustik",
+        "text": "Schallschutz und Raumakustik der modularen Bauweise."
+      },
+      {
+        "title": "Umweltwirkungen (LCA)",
+        "text": "Ganzheitliche Lebenszyklusanalyse auf Basis direkt erhobener Daten."
+      },
+      {
+        "title": "Kreislauffähigkeit",
+        "text": "Trennbarkeit, Wiederverwendung und Recycling der Bauteile am Lebensende."
+      },
+      {
+        "title": "Wohlbefinden & Wahrnehmung",
+        "text": "Nutzerstudien zu Wohnqualität, Wahrnehmung und Akzeptanz."
+      }
+    ],
+    "strandsLabel": "Forschungsstränge",
+    "strandsHeading": "Drei Perspektiven, ein Reallabor.",
+    "strandsIntro": "Die Testverfahren der einzelnen Stränge werden im Projektverlauf hier im Detail beschrieben.",
+    "strands": [
+      {
+        "label": "Bauphysik",
+        "title": "Raumqualität",
+        "text": "Messkampagnen zu Energie, Feuchte, Luftdichtheit, Akustik und thermischem Komfort in beiden Modular Houses."
+      },
+      {
+        "label": "Design & Nutzerforschung",
+        "title": "Wohnqualität & Wohlbefinden",
+        "text": "Wahrnehmungsstudien mit Nutzerinnen und Nutzern – unter anderem mit Virtual Reality und Eye-Tracking."
+      },
+      {
+        "label": "Partizipation",
+        "title": "Transdisziplinärer Ansatz",
+        "text": "Beteiligungsformate, in denen Forschung, Unternehmen und Bevölkerung gemeinsam Lösungen entwickeln und bewerten."
+      }
+    ]
+  },
+  "Workshops": {
+    "label": "Events & Workshops",
+    "heading": "Wissen teilen, gemeinsam bauen.",
+    "intro": "Im Rahmen des Projekts finden regelmäßig Veranstaltungen, Workshops und partizipative Formate statt, um Wissen zu nachhaltigen Bauweisen, regionalen Materialien und Kreislaufwirtschaft zu vermitteln. Die Aktivitäten fördern den Dialog zwischen Wissenschaft, Unternehmen und Öffentlichkeit und unterstützen den Transfer der Projektergebnisse in Praxis und Gesellschaft.",
+    "imageAlt": "Gemeinsames Bauen im Workshop",
+    "formatsLabel": "Formate",
+    "formats": [
+      {
+        "title": "Material-Workshops",
+        "text": "Hands-on-Erfahrung mit Holz, Lehm und regionalen Nebenprodukten. Teilnehmende lernen traditionelle und innovative Verarbeitungstechniken unter Anleitung lokaler Handwerkerinnen und Handwerker."
+      },
+      {
+        "title": "Szenarien-Workshops",
+        "text": "Gemeinsam mit Bürgerinnen und Bürgern, Architektinnen und Architekten sowie Forschenden entwickeln wir Zukunftsszenarien für nachhaltiges Bauen in Südtirol."
+      },
+      {
+        "title": "Messkampagnen & Nutzerstudien",
+        "text": "Physikalische Messungen und Wahrnehmungsstudien in den Modular Houses – unter anderem mit Virtual Reality und Eye-Tracking."
+      },
+      {
+        "title": "Partizipative Interventionen",
+        "text": "Bewusstseinsbildende Aktionen in Schlanders und Bozen – die Reallabore öffnen ihre Türen für Öffentlichkeit, Schulen und lokale Gemeinschaften."
+      }
+    ],
+    "calendarLabel": "Kalender",
+    "calendarHeading": "16 Events in Südtirol.",
+    "calendarText": "Das Programm der 16 Veranstaltungen und Workshops wird gemeinsam mit BASIS Vinschgau erarbeitet. Die Workshops starten im Juni 2027; das Programm wird hier laufend veröffentlicht.",
+    "calendarStatus": "Programm folgt",
+    "calendarCta": "Einladung erhalten",
+    "calendarMail": "info@loc-lab.it",
+    "formatsHeading": "Vier Formate, ein Ziel."
   },
   "Footer": {
-    "ctaText": "Sprechen wir über Ihr Projekt",
-    "contactLabel": "Kontakt",
+    "ctaText": "Kontakt",
+    "contactLabel": "E-Mail",
+    "contactValue": "info@loc-lab.it",
     "locationLabel": "Standort",
-    "locationValue": "NOI Techpark, Bozen / Südtirol",
+    "locationValue": "Freie Universität Bozen",
     "fundingLabel": "Förderung",
     "fundingValue": "EFRE 2021–2027 · Projekt EFRE1088",
-    "consortiumLabel": "Konsortium",
+    "consortiumLabel": "Projektpartner",
     "leadPartner": "Lead Partner",
     "fundingTextIt": "Realizzato con il cofinanziamento dell'Unione europea nell'ambito del programma EFRE-FESR 2021–2027",
     "fundingTextDe": "Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027",
@@ -91,7 +450,7 @@
     "legalPrivacy": "Datenschutz"
   },
   "EuBadge": {
-    "text": "Kofinanziert von der EU",
-    "ariaLabel": "Informationen zur EU-Förderung"
+    "ariaLabel": "Informationen zur EU-Förderung",
+    "partnersLabel": "Projektpartner"
   }
 }

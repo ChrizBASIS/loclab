@@ -1,97 +1,456 @@
 {
   "Metadata": {
     "homeTitle": "LocLab — Locale. Circolare. Low-tech.",
-    "homeDescription": "Un laboratorio reale finanziato dall'UE per l'edilizia innovativa e sostenibile in Alto Adige.",
+    "homeDescription": "Un laboratorio reale finanziato dall'UE per un'edilizia innovativa e sostenibile in Alto Adige.",
     "projektTitle": "LocLab — Il progetto",
-    "projektDescription": "Un laboratorio reale finanziato dall'UE per l'edilizia innovativa in Alto Adige.",
+    "projektDescription": "Un laboratorio reale per un'edilizia innovativa in Alto Adige – locale, circolare e low-tech. Contesto, approccio, obiettivi e milestone.",
+    "partnerTitle": "LocLab — Partner di progetto",
+    "partnerDescription": "Libera Università di Bolzano, LokHaus+, Elektro A. Haller, Pfeifer Partners ed Energytech: il team di progetto LocLab.",
     "materialienTitle": "LocLab — Materiali",
-    "materialienDescription": "Mappatura di materiali edili locali e circolari in Alto Adige.",
+    "materialienDescription": "Passaporto dei materiali e materiali testati: materiali da costruzione regionali, rinnovabili e circolari in Alto Adige.",
     "karteTitle": "LocLab — Mappa dei materiali",
-    "karteDescription": "Mappa interattiva dei materiali edili locali in Alto Adige — legno, argilla, paglia, canapa-calce, pietra naturale e riciclaggio.",
-    "workshopsTitle": "LocLab — Workshop & Residency",
-    "workshopsDescription": "Workshop partecipativi, laboratori reali e programmi Designer in Residence.",
-    "timelineTitle": "LocLab — Timeline",
-    "timelineDescription": "Fasi del progetto e milestone su 36 mesi.",
-    "konsortiumTitle": "LocLab — Consorzio",
-    "konsortiumDescription": "I partner di progetto: unibz, Pfeifer & Partners, LokHaus+, Energytech, Elektro A. Haller.",
-    "dokumentationTitle": "LocLab — Documentazione",
-    "dokumentationDescription": "Fasi del progetto, milestone e pubblicazioni scientifiche."
+    "karteDescription": "Mappa interattiva dei materiali da costruzione locali in Alto Adige — legno, argilla, paglia, canapa-calce, pietra naturale e riciclo.",
+    "modularHousesTitle": "LocLab — Modular Houses",
+    "modularHousesDescription": "Progettazione, costruzione e gestione delle due Modular Houses a Silandro e Bolzano.",
+    "forschungTitle": "LocLab — Ricerca e test",
+    "forschungDescription": "Efficienza energetica, qualità degli ambienti interni, benessere e analisi del ciclo di vita – ricerca in condizioni reali.",
+    "workshopsTitle": "LocLab — Eventi e workshop",
+    "workshopsDescription": "Eventi, workshop e formati partecipativi sull'edilizia sostenibile in Alto Adige."
   },
   "Nav": {
     "projekt": "Progetto",
+    "partner": "Partner di progetto",
     "materialien": "Materiali",
-    "materialkarte": "Mappa materiali",
-    "workshops": "Workshop",
-    "timeline": "Timeline",
-    "konsortium": "Consorzio",
-    "dokumentation": "Documentazione",
-    "menuOpen": "Apri menu",
-    "email": "hello@loclab.eu",
-    "location": "NOI Techpark, Bolzano"
+    "modularHouses": "Modular Houses",
+    "forschung": "Ricerca e test",
+    "workshops": "Eventi e workshop",
+    "menuOpen": "Apri il menu",
+    "email": "info@loc-lab.it",
+    "location": "Libera Università di Bolzano"
   },
   "Hero": {
     "sectionLabel": "Laboratorio reale Alto Adige",
-    "local": "Locale",
-    "circular": "Circolare",
+    "local": "Local",
+    "circular": "Circular",
     "lowTech": "Low‑Tech",
     "taglineLine1": "Un progetto di ricerca finanziato dall'UE per",
     "taglineLine2": "un'edilizia innovativa e sostenibile.",
     "scroll": "Scroll"
   },
-  "HomeTeaser": {
-    "projektLabel": "Il progetto",
-    "projektTitle": "Un laboratorio reale per l'architettura di domani.",
-    "projektDescription": "LOCLAB studia l'edilizia sostenibile con materiali locali nelle Alpi. Come Living Lab uniamo scienza, architettura e artigianato — in un progetto edilizio reale che definisce nuovi standard.",
-    "materialienLabel": "Materiali",
-    "materialienTitle": "Materiali locali, impatto globale.",
-    "materialienDescription": "Legno, argilla, paglia, canapa-calce e pietra naturale — tutto dalla regione. Analizziamo e testiamo materiali edili tradizionali con metodi moderni per sbloccarne il potenziale futuro.",
-    "workshopsLabel": "Workshop & Residency",
-    "workshopsTitle": "Condividere conoscenze, costruire insieme.",
-    "workshopsDescription": "In workshop e residenze interdisciplinari riuniamo ricercatori, architetti e artigiani. Pratico, direttamente in cantiere — per un vero trasferimento di conoscenze.",
+  "Home": {
+    "introLabel": "Il progetto",
+    "introHeading": "Un laboratorio reale per un'edilizia innovativa.",
+    "introLead": "Al centro del progetto ci sono due case modulari che fungono da prototipi fisici e campi di prova digitali per lo sviluppo e la sperimentazione di concetti abitativi e costruttivi innovativi.",
+    "introBody": "Grazie allo stretto legame tra ricerca, pratica e partecipazione della società, il progetto studia in modo olistico i cicli di vita dei materiali, i processi di progettazione partecipativa e il benessere abitativo. Un approccio di ricerca transdisciplinare genera nuove conoscenze e soluzioni per la trasformazione sostenibile del settore edilizio. L'obiettivo è indicare vie innovative per un'edilizia efficiente nelle risorse, circolare e orientata alle persone – e contribuire attivamente a plasmare il futuro dell'abitare.",
+    "heroAlt": "Casa modulare in legno in Alto Adige",
+    "gridLabel": "Temi",
     "cta": "Scopri di più",
-    "timelineLabel": "Timeline",
-    "timelineTitle": "Fasi e milestone su 36 mesi.",
-    "konsortiumLabel": "Consorzio",
-    "konsortiumTitle": "Collaborazione inter- e transdisciplinare.",
-    "dokumentationLabel": "Documentazione",
-    "dokumentationTitle": "Rendere trasparente la ricerca."
+    "cards": {
+      "projekt": {
+        "label": "Progetto",
+        "title": "Un laboratorio reale per un'edilizia innovativa – locale, circolare e low-tech.",
+        "text": "Contesto, approccio e obiettivi del progetto di ricerca finanziato dall'UE – dall'idea alle milestone."
+      },
+      "partner": {
+        "label": "Partner di progetto",
+        "title": "Scienza, architettura, ingegneria e artigianato.",
+        "text": "La Libera Università di Bolzano e quattro aziende altoatesine sviluppano insieme soluzioni per un'edilizia circolare."
+      },
+      "materialien": {
+        "label": "Materiali",
+        "title": "Risorse regionali, rese visibili.",
+        "text": "Passaporto dei materiali, mappatura e i materiali di nuova ricerca del progetto – dalla parete in legno senza colle all'isolante in argilla e trucioli."
+      },
+      "modularHouses": {
+        "label": "Modular Houses",
+        "title": "Due edifici, due siti, un esperimento.",
+        "text": "Progettazione, modelli BIM e realizzazione delle due Modular Houses a Silandro e Bolzano."
+      },
+      "forschung": {
+        "label": "Ricerca e test",
+        "title": "Misurare, confrontare, capire.",
+        "text": "Efficienza energetica, qualità degli ambienti interni, benessere e analisi del ciclo di vita in condizioni reali."
+      },
+      "workshops": {
+        "label": "Eventi e workshop",
+        "title": "Condividere il sapere, costruire insieme.",
+        "text": "Eventi, workshop e formati partecipativi per professionisti, cittadinanza e scuole."
+      }
+    }
   },
   "PartnerLogos": {
     "label": "Partner di progetto",
-    "cta": "Vedi tutti i partner →"
+    "cta": "Tutti i partner →"
   },
-  "About": {
-    "sectionLabel": "Il progetto",
-    "heading": "Un laboratorio reale per l'edilizia innovativa.",
-    "bodyLarge": "LocLab è un laboratorio reale finanziato dall'UE per l'edilizia locale, circolare e low-tech in Alto Adige.",
-    "bodySmall": "Al centro ci sono due case modulari che fungono da campi di prova fisici e digitali. Attraverso la ricerca transdisciplinare ci concentriamo sui cicli di vita dei materiali, la partecipazione comunitaria e la sensoristica strutturale — per una nuova era dell'edilizia sostenibile.",
-    "quote": "Due case modulari come laboratori reali fisici e digitali.",
-    "heroAlt": "Costruzione modulare in Alto Adige",
-    "interiorAlt": "Interiore di una casa modulare"
+  "Projekt": {
+    "label": "Il progetto · Locale, circolare, low-tech",
+    "heading": "Un laboratorio reale per un'edilizia innovativa.",
+    "intro": [
+      "Il settore edilizio è al centro degli attuali sforzi di sostenibilità e trasformazione. Essendo uno dei comparti economici a maggiore intensità di risorse ed emissioni, contribuisce in modo determinante al consumo energetico, alle emissioni di gas serra e al consumo mondiale di materiali. Allo stesso tempo cresce la domanda di metodi costruttivi innovativi che coniughino tutela del clima, efficienza delle risorse, economia circolare ed elevata qualità abitativa.",
+      "In questo contesto, il progetto di ricerca LocLab esplora nuove vie per un'edilizia sostenibile, radicata nel territorio e circolare. L'obiettivo è sviluppare, sperimentare e valutare scientificamente concetti costruttivi e materiali innovativi che tengano conto in egual misura di esigenze ecologiche, tecniche, economiche e sociali.",
+      "Al centro del progetto ci sono due edifici modulari che fungono da laboratori reali fisici e digitali. Queste Modular Houses vengono installate in due siti – presso BASIS Vinschgau a Silandro e nel NOI Techpark a Bolzano – e consentono di sviluppare, realizzare e studiare nuovi sistemi costruttivi e materiali in condizioni reali. Le diverse soluzioni vengono analizzate in termini di impatto ambientale, efficienza energetica, qualità degli ambienti interni e percezione da parte degli utenti, e confrontate con i metodi costruttivi esistenti."
+    ],
+    "imageAlt": "Casa modulare in legno con sfondo montano",
+    "sections": [
+      {
+        "title": "Costruzione circolare basata su risorse regionali",
+        "paragraphs": [
+          "L'Alto Adige dispone di ampie risorse naturali e di elevate competenze nella costruzione in legno e nella lavorazione delle materie prime locali. Il progetto sfrutta questo potenziale per sviluppare sistemi costruttivi circolari innovativi che rafforzino la creazione di valore regionale e riducano al contempo l'impronta ecologica degli edifici.",
+          "Nel primo laboratorio reale viene sviluppata e testata una nuova parete a telaio in legno che rinuncia in larga misura a colle e sistemi di tenuta sintetici. L'obiettivo è una costruzione a tenuta d'aria, efficiente nelle risorse e circolare, i cui materiali possano essere riutilizzati o riciclati più facilmente a fine vita. Allo stesso tempo si intende ridurre le potenziali emissioni inquinanti e favorire un clima interno sano.",
+          "Il secondo laboratorio reale si concentra sullo sviluppo di un isolante innovativo a base di argilla e trucioli di legno di provenienza regionale. Questi ultimi sono un sottoprodotto delle aziende locali di lavorazione del legno e possiedono un potenziale finora poco sfruttato per applicazioni edilizie sostenibili. Combinati con l'argilla, danno origine a un isolante che rafforza i cicli regionali dei materiali, riduce i trasporti e può offrire proprietà positive in termini di regolazione dell'umidità e clima interno."
+        ]
+      },
+      {
+        "title": "Ricerca in condizioni reali",
+        "paragraphs": [
+          "Una caratteristica essenziale di LocLab è l'approccio del laboratorio reale. I due edifici modulari non sono solo infrastrutture di ricerca, ma anche luoghi di scambio e di sperimentazione pratica. Concetti costruttivi e di interni innovativi vengono testati in condizioni d'uso reali e accompagnati scientificamente.",
+          "I sistemi sviluppati vengono studiati in modo approfondito, con particolare attenzione a efficienza energetica, qualità degli ambienti interni, comportamento termico dei materiali, circolarità delle risorse impiegate e percezione da parte degli utenti. Metodi digitali come il Building Information Modeling (BIM) e la realtà virtuale (VR) vengono impiegati per rappresentare diversi scenari e rendere possibili nuove forme di partecipazione.",
+          "Per valutare gli impatti ambientali si ricorre a un'analisi del ciclo di vita (Life Cycle Assessment, LCA) completa. La raccolta diretta dei dati nell'ambito del progetto mira a ottenere conoscenze solide sugli effetti ecologici reali dei metodi costruttivi sviluppati."
+        ]
+      },
+      {
+        "title": "Innovazione attraverso la collaborazione",
+        "paragraphs": [
+          "LocLab intende l'edilizia sostenibile come una sfida collettiva. Per questo il progetto unisce la ricerca scientifica alle competenze delle aziende regionali e al sapere e all'esperienza della popolazione.",
+          "In workshop e formati partecipativi vengono mappate materie prime e sottoprodotti regionali, identificati i potenziali e sviluppati insieme prodotti e soluzioni per gli interni innovativi. I prototipi che ne derivano vengono esposti, testati e perfezionati nei laboratori reali. Nascono così nuovi impulsi per una cultura del costruire in Alto Adige efficiente nelle risorse e orientata al futuro."
+        ]
+      },
+      {
+        "title": "Obiettivi del progetto",
+        "paragraphs": [
+          "L'obiettivo di LocLab è sviluppare, realizzare e valutare scientificamente soluzioni costruttive e materiali innovativi e circolari basati su risorse regionali. Nei laboratori reali ne vengono studiati gli effetti ecologici, tecnici e sociali, per creare basi fondate su evidenze per un'edilizia sostenibile, rafforzare l'economia circolare regionale e sostenere i processi di trasformazione verso una cultura del costruire efficiente nelle risorse e compatibile con il clima in Alto Adige."
+        ]
+      }
+    ]
+  },
+  "Milestones": {
+    "label": "Milestone",
+    "heading": "Andamento del progetto.",
+    "intro": "Il progetto ha una durata di 36 mesi. Le fasi si sovrappongono – il percorso del progetto non è lineare. CUP FESR: I53C25001610009.",
+    "status": {
+      "done": "concluso",
+      "active": "in corso",
+      "planned": "pianificato"
+    },
+    "phases": [
+      {
+        "phase": "Fase 1",
+        "date": "M1–M6",
+        "title": "Kick-off e piano di lavoro",
+        "milestone": "M1 Kick-off · M2 Cronoprogramma definitivo",
+        "status": "done"
+      },
+      {
+        "phase": "Fase 2",
+        "date": "M7–M14",
+        "title": "Realizzazione e costruzione delle Modular Houses",
+        "milestone": "M3 Modular Houses completate · M4 Siti dei laboratori reali operativi",
+        "status": "active"
+      },
+      {
+        "phase": "Fase 3",
+        "date": "M15–M24",
+        "title": "Misurazioni, LCA e workshop",
+        "milestone": "M5 Conclusione misurazioni · M6 Conclusione laboratori reali Silandro e Bolzano",
+        "status": "planned"
+      },
+      {
+        "phase": "Fase 4",
+        "date": "M25–M36",
+        "title": "Valutazione, sintesi e pubblicazione",
+        "milestone": "M7 Relazione finale · M8 Evento pubblico conclusivo",
+        "status": "planned"
+      }
+    ]
   },
   "Partners": {
-    "sectionLabel": "Consorzio",
+    "label": "Partner di progetto",
     "heading": "Collaborazione inter- e transdisciplinare.",
+    "intro": "LocLab è un progetto di ricerca transdisciplinare che riunisce competenze di scienza, architettura, ingegneria, artigianato ed economia. Grazie alla stretta collaborazione tra la Libera Università di Bolzano e i partner di progetto nascono soluzioni innovative per un'edilizia circolare e sostenibile, sviluppate su basi scientifiche, sperimentate nella pratica e portate avanti insieme.",
     "leadPartner": "Lead Partner",
-    "projektpartner": "Partner di progetto"
+    "projektpartner": "Partner di progetto",
+    "website": "Vai al sito",
+    "video": "Video-intervista",
+    "descriptions": {
+      "unibz": "La Libera Università di Bolzano guida il progetto in qualità di Lead Partner. Partecipano la Facoltà di Design e Arti e la Facoltà di Ingegneria, che riuniscono ricerca sui materiali, design, fisica tecnica e studi sugli utenti in un approccio di ricerca comune.",
+      "lokhaus": "LokHaus+ è un'azienda altoatesina di costruzioni in legno con sede a Tesimo, specializzata in edilizia sostenibile in legno, risanamenti ecologici e concetti costruttivi circolari. Con un focus su materiali regionali, trasporti brevi e sistemi costruttivi in legno innovativi e quasi privi di colle, l'azienda sviluppa soluzioni all'avanguardia per un'edilizia sana ed efficiente nelle risorse.",
+      "haller": "Elektro A. Haller è un'azienda di elettrotecnica di lunga tradizione con sede ad Appiano, con oltre 50 anni di esperienza nella progettazione, installazione e manutenzione di impianti elettrici. L'offerta spazia dalla domotica e illuminotecnica alle soluzioni smart home, fino al fotovoltaico, alla mobilità elettrica e alla gestione intelligente degli edifici. Con un team interdisciplinare l'azienda sviluppa soluzioni su misura ed efficienti dal punto di vista energetico per committenti privati e pubblici.",
+      "pfeifer": "Pfeifer Partners è uno studio innovativo di ingegneria e architettura dell'Alto Adige che sviluppa soluzioni sostenibili nei settori dell'edilizia, delle infrastrutture, della mobilità e della progettazione digitale. Il team interdisciplinare di ingegneri, architetti e geometri utilizza metodi moderni come il Building Information Modeling (BIM) per realizzare progetti orientati al futuro ed efficienti nelle risorse per committenti pubblici e privati.",
+      "energytech": "Energytech Ingegneri è uno studio di progettazione altoatesino per impiantistica ed energia con sede a Bolzano. L'azienda accompagna i progetti dalla consulenza e progettazione alla realizzazione di sistemi termotecnici, elettrici ed energetici. Al centro vi sono soluzioni sostenibili e a basse emissioni di CO₂, che uniscono responsabilità ecologica ed efficienza economica e contribuiscono in modo significativo alla transizione energetica."
+    }
+  },
+  "Materials": {
+    "label": "Materiali",
+    "heading": "Risorse regionali, rese visibili.",
+    "intro": [
+      "Un punto centrale di LocLab è la ricerca e la valorizzazione di materiali regionali, rinnovabili e circolari. L'Alto Adige dispone di un grande potenziale di materie prime naturali e di competenze artigianali che possono essere impiegate per un'edilizia sostenibile ed efficiente nelle risorse. Allo stesso tempo, i processi produttivi regionali generano preziosi sottoprodotti e residui il cui potenziale resta spesso inutilizzato.",
+      "Nell'ambito del progetto vengono sviluppate e sperimentate soluzioni innovative nel campo dei materiali. Questi materiali vengono studiati scientificamente in termini di prestazioni tecniche, impatto ambientale e contributo all'economia circolare.",
+      "Inoltre, il progetto realizza una mappatura e documentazione delle risorse circolari regionali. Vengono rilevati sistematicamente materiali rinnovabili e circolari, la loro disponibilità, i siti, le competenze di lavorazione e gli attori rilevanti. L'obiettivo è rendere visibili i cicli dei materiali esistenti, rafforzare le catene del valore locali e promuovere il trasferimento di conoscenze tra ricerca, economia e società.",
+      "I risultati vengono elaborati sotto forma di mappe dei materiali, passaporti dei materiali e una collezione di materiali in crescita. Nasce così una preziosa base di conoscenza per futuri progetti di ricerca, costruzione e design e un contributo all'uso sostenibile delle risorse regionali in Alto Adige."
+    ],
+    "passLabel": "Passaporto dei materiali",
+    "passHeading": "La collezione di materiali.",
+    "passIntro": "Il passaporto dei materiali documenta materiali regionali, rinnovabili e circolari con i loro valori di fisica tecnica, la loro provenienza e la loro circolarità. Nel corso del progetto la collezione crescerà fino a 16 materiali – qui un primo estratto.",
+    "statLambda": "Valore λ",
+    "statCo2": "CO₂",
+    "statRecycle": "Riciclabile",
+    "testedLabel": "Materiali testati",
+    "testedHeading": "Nuova ricerca nel laboratorio reale.",
+    "testedIntro": "Due sistemi di materiali vengono sviluppati ex novo nel progetto e testati nelle Modular Houses in condizioni reali. Svolgimento dei test, risultati e analisi del ciclo di vita (LCA) verranno integrati qui nel corso del progetto.",
+    "tested": [
+      {
+        "label": "Laboratorio reale 1",
+        "title": "Parete a telaio in legno senza colle",
+        "text": "Una nuova parete a telaio in legno che rinuncia in larga misura a colle e sistemi di tenuta sintetici. Obiettivo: tenuta all'aria, efficienza nelle risorse e separabilità dei materiali a fine vita – con emissioni ridotte e un clima interno sano.",
+        "status": "Test in arrivo"
+      },
+      {
+        "label": "Laboratorio reale 2",
+        "title": "Isolante in argilla e trucioli di legno",
+        "text": "Un isolante a base di argilla e trucioli, sottoprodotto delle aziende locali di lavorazione del legno. Rafforza i cicli regionali dei materiali, accorcia i trasporti e può regolare l'umidità e migliorare il clima interno.",
+        "status": "Test in arrivo"
+      }
+    ],
+    "mapLabel": "Mappa dei materiali",
+    "mapTitle": "Fonti di materiali in Alto Adige.",
+    "mapText": "Mappa interattiva di boschi, cave, superfici agricole e centri di riciclo mappati.",
+    "mapCta": "Apri la mappa",
+    "items": {
+      "holz": {
+        "name": "Legno",
+        "subtitle": "Abete rosso · Larice · Abete bianco",
+        "role": "Struttura e rivestimento",
+        "co2Label": "Stoccaggio CO₂",
+        "recycle": "100%",
+        "description": "L'Alto Adige ha una copertura boschiva molto elevata. Il legno della silvicoltura locale è il materiale centrale – come legno massiccio, X-Lam o nel sistema quasi privo di colle di LokHaus+. Trasporti brevi, elevato stoccaggio di CO₂ e piena riutilizzabilità lo rendono la spina dorsale del progetto."
+      },
+      "lehm": {
+        "name": "Argilla",
+        "subtitle": "Terra battuta · Intonaco di argilla",
+        "role": "Pareti interne e clima interno",
+        "co2Label": "Neutro per il clima",
+        "recycle": "100%",
+        "description": "L'argilla regola naturalmente l'umidità degli ambienti, accumula calore e si è affermata da secoli nell'area alpina. Non richiede processi di cottura energivori e a fine vita può essere restituita completamente alla terra."
+      },
+      "stroh": {
+        "name": "Paglia",
+        "subtitle": "Isolamento in balle di paglia",
+        "role": "Isolamento",
+        "co2Label": "Pozzo di CO₂",
+        "recycle": "100%",
+        "description": "Le balle di paglia offrono un ottimo isolamento termico. Come sottoprodotto agricolo la paglia è disponibile localmente, assorbe CO₂ durante la crescita ed è completamente compostabile a fine vita."
+      },
+      "hanf": {
+        "name": "Canapa-calce",
+        "subtitle": "Hempcrete · Canapulo",
+        "role": "Isolamento e tamponamento",
+        "co2Label": "Pozzo netto",
+        "recycle": "100%",
+        "description": "La canapa-calce unisce le prestazioni isolanti del canapulo alla massa termica della calce naturale. Il materiale è traspirante, resistente alla muffa e funge da pozzo di CO₂. A fine vita può essere frantumato e riutilizzato come inerte o compostato."
+      },
+      "stein": {
+        "name": "Pietra naturale",
+        "subtitle": "Porfido · Dolomia · Gneiss",
+        "role": "Fondazione e zoccolo",
+        "co2Label": "Estrazione locale",
+        "recycle": "∞",
+        "description": "La pietra naturale delle cave altoatesine offre elevata massa termica e una durata pressoché illimitata. Porfido, dolomia e gneiss fanno parte da secoli dell'architettura alpina e possono essere riutilizzati senza perdita di qualità."
+      },
+      "recycling": {
+        "name": "Inerti riciclati",
+        "subtitle": "Calcestruzzo RC · Legno di recupero · Laterizio",
+        "role": "Fondazione e struttura",
+        "co2Label": "In ciclo chiuso",
+        "recycle": "Circolare",
+        "description": "I materiali di demolizione degli edifici esistenti vengono mappati, testati e impiegati come inerti in nuovi materiali da costruzione – un contributo a cicli dei materiali chiusi nella regione."
+      }
+    }
+  },
+  "ModularHouses": {
+    "label": "Modular Houses",
+    "heading": "Due edifici, due siti, un esperimento.",
+    "intro": [
+      "Nell'ambito di LocLab vengono progettate, modellate digitalmente e realizzate due Modular Houses. I due edifici si basano su concetti costruttivi innovativi diversi. L'obiettivo del progetto è studiare le prestazioni di questi approcci in condizioni reali e confrontarli tra loro.",
+      "La progettazione avviene in modo transdisciplinare, grazie alla collaborazione di tutti i partner di progetto. Per entrambi gli edifici vengono sviluppati modelli BIM e di realtà virtuale che supportano sia la progettazione e l'analisi sia la comunicazione digitale dei risultati della ricerca.",
+      "Le Modular Houses sono concepite in modo da rendere visibili e comprensibili materiali, costruzioni e soluzioni tecniche dell'edilizia sostenibile. Dopo la produzione, i moduli vengono montati in due siti dell'Alto Adige – presso BASIS Vinschgau a Silandro e nel NOI Techpark a Bolzano –, utilizzati come laboratori reali e poi nuovamente smontati. Si studia così anche come moduli e materiali possano essere riutilizzati, recuperati o trasferiti in nuovi contesti d'uso a fine vita."
+    ],
+    "imageAlt": "Moduli prefabbricati in legno in cantiere",
+    "factsLabel": "In sintesi",
+    "factsHeading": "Due concetti costruttivi a confronto.",
+    "facts": [
+      {
+        "label": "Sito 1",
+        "title": "BASIS Vinschgau, Silandro",
+        "text": "Laboratorio reale in Val Venosta – vicino ad artigianato, cittadinanza e scuole."
+      },
+      {
+        "label": "Sito 2",
+        "title": "NOI Techpark, Bolzano",
+        "text": "Laboratorio reale nel quartiere dell'innovazione – vicino a ricerca e imprese."
+      },
+      {
+        "label": "Modular House 1",
+        "title": "Parete a telaio in legno senza colle",
+        "text": "In larga misura senza colle e guarnizioni sintetiche – a tenuta d'aria, circolare, separabile."
+      },
+      {
+        "label": "Modular House 2",
+        "title": "Isolante in argilla e trucioli di legno",
+        "text": "Sottoprodotti regionali come isolante – regola l'umidità, trasporti brevi."
+      },
+      {
+        "label": "Progettazione",
+        "title": "Modelli BIM e VR",
+        "text": "Gemelli digitali per progettazione, analisi e comunicazione dei risultati."
+      },
+      {
+        "label": "Ciclo di vita",
+        "title": "Montaggio, esercizio, smontaggio",
+        "text": "Dopo l'uso i moduli vengono smontati e riutilizzati."
+      }
+    ],
+    "stepsLabel": "Realizzazione",
+    "stepsHeading": "Passo dopo passo.",
+    "stepsIntro": "Foto, video e misurazioni della situazione di partenza (clima interno) verranno aggiunti qui man mano che la costruzione avanza.",
+    "steps": [
+      {
+        "title": "Progettazione e modellazione digitale",
+        "text": "Architettura, struttura, impianti e modello BIM – insieme a tutti i partner di progetto."
+      },
+      {
+        "title": "Prefabbricazione dei moduli",
+        "text": "Produzione delle pareti a telaio in legno e dell'isolante in argilla e trucioli in Alto Adige."
+      },
+      {
+        "title": "Montaggio nei siti",
+        "text": "Installazione presso BASIS Vinschgau a Silandro e nel NOI Techpark a Bolzano."
+      },
+      {
+        "title": "Esercizio come laboratorio reale",
+        "text": "Campagne di misura, studi sugli utenti, workshop e visite."
+      },
+      {
+        "title": "Smontaggio e riutilizzo",
+        "text": "Smontaggio dei moduli e trasferimento dei materiali a nuovi usi."
+      }
+    ]
+  },
+  "Forschung": {
+    "label": "Ricerca e test",
+    "heading": "Misurare, confrontare, capire.",
+    "intro": [
+      "Al centro di LocLab ci sono due edifici dimostrativi modulari che fungono da laboratori reali per lo sviluppo, la sperimentazione e la valutazione scientifica di metodi costruttivi innovativi. In queste Modular Houses vengono testati in condizioni reali nuovi sistemi costruttivi e materiali circolari, tra cui una costruzione a telaio in legno in larga misura senza colle e un isolante in argilla e trucioli di legno regionali.",
+      "Con l'aiuto di modelli BIM e di realtà virtuale, ampie campagne di misura e analisi del ciclo di vita (LCA), gli edifici vengono studiati in termini di efficienza energetica, qualità degli ambienti interni, tenuta all'aria, comfort termico, acustica, impatto ambientale e circolarità. I test si svolgono in diverse zone climatiche dell'Alto Adige, per analizzare le prestazioni dei sistemi in condizioni differenti.",
+      "I laboratori reali vengono inoltre utilizzati per workshop, formati partecipativi e studi sugli utenti. È così possibile studiare scientificamente sia le prestazioni tecniche delle soluzioni sviluppate sia la loro percezione e accettazione da parte della popolazione. Le conoscenze acquisite costituiscono la base per raccomandazioni pratiche e applicazioni future nell'edilizia sostenibile."
+    ],
+    "imageAlt": "Strumentazione di misura in un edificio in legno",
+    "categoriesLabel": "Categorie di test",
+    "categoriesHeading": "Cosa viene misurato.",
+    "categories": [
+      {
+        "title": "Efficienza energetica",
+        "text": "Fabbisogno di riscaldamento e raffrescamento, dispersioni e comportamento dell'involucro nel corso dell'anno."
+      },
+      {
+        "title": "Qualità degli ambienti interni",
+        "text": "Qualità dell'aria, umidità ed emissioni inquinanti dei materiali impiegati."
+      },
+      {
+        "title": "Tenuta all'aria",
+        "text": "Tenuta della costruzione senza colle rispetto ai sistemi convenzionali."
+      },
+      {
+        "title": "Comfort termico",
+        "text": "Temperature superficiali e ambientali, comportamento termico dei materiali."
+      },
+      {
+        "title": "Acustica",
+        "text": "Isolamento acustico e acustica degli ambienti della costruzione modulare."
+      },
+      {
+        "title": "Impatto ambientale (LCA)",
+        "text": "Analisi completa del ciclo di vita basata su dati rilevati direttamente."
+      },
+      {
+        "title": "Circolarità",
+        "text": "Separabilità, riutilizzo e riciclo dei componenti a fine vita."
+      },
+      {
+        "title": "Benessere e percezione",
+        "text": "Studi sugli utenti su qualità abitativa, percezione e accettazione."
+      }
+    ],
+    "strandsLabel": "Filoni di ricerca",
+    "strandsHeading": "Tre prospettive, un laboratorio reale.",
+    "strandsIntro": "Le procedure di test dei singoli filoni verranno descritte qui in dettaglio nel corso del progetto.",
+    "strands": [
+      {
+        "label": "Fisica tecnica",
+        "title": "Qualità degli ambienti",
+        "text": "Campagne di misura su energia, umidità, tenuta all'aria, acustica e comfort termico in entrambe le Modular Houses."
+      },
+      {
+        "label": "Design e ricerca sugli utenti",
+        "title": "Qualità abitativa e benessere",
+        "text": "Studi di percezione con gli utenti – anche con realtà virtuale ed eye tracking."
+      },
+      {
+        "label": "Partecipazione",
+        "title": "Approccio transdisciplinare",
+        "text": "Formati partecipativi in cui ricerca, imprese e cittadinanza sviluppano e valutano soluzioni insieme."
+      }
+    ]
+  },
+  "Workshops": {
+    "label": "Eventi e workshop",
+    "heading": "Condividere il sapere, costruire insieme.",
+    "intro": "Nell'ambito del progetto si svolgono regolarmente eventi, workshop e formati partecipativi per trasmettere conoscenze su metodi costruttivi sostenibili, materiali regionali ed economia circolare. Le attività promuovono il dialogo tra scienza, imprese e pubblico e sostengono il trasferimento dei risultati del progetto nella pratica e nella società.",
+    "imageAlt": "Costruire insieme in un workshop",
+    "formatsLabel": "Formati",
+    "formats": [
+      {
+        "title": "Workshop sui materiali",
+        "text": "Esperienza pratica con legno, argilla e sottoprodotti regionali. I partecipanti apprendono tecniche di lavorazione tradizionali e innovative sotto la guida di artigiani locali."
+      },
+      {
+        "title": "Workshop di scenario",
+        "text": "Insieme a cittadini, architetti e ricercatori sviluppiamo scenari futuri per un'edilizia sostenibile in Alto Adige."
+      },
+      {
+        "title": "Campagne di misura e studi sugli utenti",
+        "text": "Misurazioni fisiche e studi di percezione nelle Modular Houses – anche con realtà virtuale ed eye tracking."
+      },
+      {
+        "title": "Interventi partecipativi",
+        "text": "Azioni di sensibilizzazione a Silandro e Bolzano – i laboratori reali aprono le porte a pubblico, scuole e comunità locali."
+      }
+    ],
+    "calendarLabel": "Calendario",
+    "calendarHeading": "16 eventi in Alto Adige.",
+    "calendarText": "Il programma dei 16 eventi e workshop viene elaborato insieme a BASIS Vinschgau. I workshop iniziano a giugno 2027; il programma verrà pubblicato qui progressivamente.",
+    "calendarStatus": "Programma in arrivo",
+    "calendarCta": "Ricevi l'invito",
+    "calendarMail": "info@loc-lab.it",
+    "formatsHeading": "Quattro formati, un obiettivo."
   },
   "Footer": {
-    "ctaText": "Parliamo del vostro progetto",
-    "contactLabel": "Contatto",
+    "ctaText": "Contatti",
+    "contactLabel": "E-mail",
+    "contactValue": "info@loc-lab.it",
     "locationLabel": "Sede",
-    "locationValue": "NOI Techpark, Bolzano / Alto Adige",
+    "locationValue": "Libera Università di Bolzano",
     "fundingLabel": "Finanziamento",
     "fundingValue": "FESR 2021–2027 · Progetto EFRE1088",
-    "consortiumLabel": "Consorzio",
+    "consortiumLabel": "Partner di progetto",
     "leadPartner": "Lead Partner",
     "fundingTextIt": "Realizzato con il cofinanziamento dell'Unione europea nell'ambito del programma EFRE-FESR 2021–2027",
     "fundingTextDe": "Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027",
     "legalCopyright": "© 2026 — Tutti i diritti riservati",
-    "legalFunding": "Cofinanziato dall'Unione Europea · EFRE1088",
+    "legalFunding": "Co-funded by the European Union · EFRE1088",
     "legalPrivacy": "Privacy"
   },
   "EuBadge": {
-    "text": "Cofinanziato dall'UE",
-    "ariaLabel": "Informazioni sul finanziamento UE"
+    "ariaLabel": "Informazioni sul finanziamento UE",
+    "partnersLabel": "Partner di progetto"
   }
 }

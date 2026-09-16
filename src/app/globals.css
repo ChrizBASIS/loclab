@@ -48,6 +48,14 @@
   --color-text: #111111;          /* rgb(17, 17, 17) — NOT pure black */
   --color-border: rgba(17, 17, 17, 0.15);
 
+  /* Kategorie-Akzente K1–K6 (Startseite, Seitenköpfe) – gedeckt, aus Forêt/Kohle/Erde abgeleitet */
+  --cat-1: #1B3A2D;   /* Projekt – Forêt */
+  --cat-2: #111111;   /* Projektpartner – Kohle */
+  --cat-3: #8C6A3F;   /* Materialien – Lehm */
+  --cat-4: #A8763E;   /* Modular Houses – Holz */
+  --cat-5: #5B6C74;   /* Forschung – Schiefer */
+  --cat-6: #C8963E;   /* Events & Workshops – Ocker */
+
   /* Exact Font Stacks */
   --font-serif: 'Canela', var(--font-instrument-serif), 'Times New Roman', serif;
   --font-sans: 'Maison Neue', var(--font-inter), -apple-system, sans-serif;

@@ -3,21 +3,21 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import styles from './EuBadge.module.css';
+import Logo from '@/components/Navbar/Logo';
+import { PARTNERS } from '@/data/partners';
 
 /**
- * EU funding logo bar — rendered statically in the header area (below navbar).
+ * Logo-Leiste am unteren Rand (fixiert, immer sichtbar).
  *
- * EU Regulation 2021/1060, best practice:
- * "Es gilt als bewährtes Verfahren, das EU-Emblem und den Verweis
- *  auf die Fonds innerhalb der Anzeigefläche digitaler Geräte
- *  anzuzeigen, ohne dass der Nutzer auf der Seite nach unten
- *  scrollen muss."
- *
- * Implementation: Fixed bar at the top (below navbar), not scrolling with content.
- * Logo height set so visible emblems are ≥ 1cm (38px at 96dpi).
+ * EU-Verordnung 2021/1060: Emblem und Fonds-Hinweis sollen ohne Scrollen
+ * sichtbar sein. Laut Anmerkungen (Gerda, Sept. 2026) enthält die Leiste
+ * alle Logos – EU/EFRE-Block, unibz, LocLab und die vier Projektpartner –
+ * und keinen Text mehr. Auf schmalen Screens ist die Leiste horizontal
+ * scrollbar, der EU-Block steht immer vorne.
  */
 export default function EuBadge() {
   const t = useTranslations('EuBadge');
+  const partners = PARTNERS.filter((p) => p.key !== 'unibz');
 
   return (
     <div className={styles.bar}>
@@ -35,11 +35,30 @@ export default function EuBadge() {
             width={1035}
             height={294}
             priority
-            className={styles.logo}
+            className={styles.euLogo}
           />
         </a>
+
         <span className={styles.divider} aria-hidden="true" />
-        <span className={styles.text}>{t('text')}</span>
+
+        <a href="https://www.unibz.it" target="_blank" rel="noopener noreferrer" className={styles.logoLink} aria-label="Freie Universität Bozen">
+          <Image src="/logos/unibz-logo.png" alt="unibz" width={240} height={96} className={styles.partnerLogo} />
+        </a>
+
+        <span className={styles.loclab} aria-label="LocLab">
+          <Logo size={20} />
+          <span className={styles.loclabText}>LOCLAB</span>
+        </span>
+
+        <span className={styles.divider} aria-hidden="true" />
+
+        <div className={styles.partners} aria-label={t('partnersLabel')}>
+          {partners.map((p) => (
+            <a key={p.key} href={p.url} target="_blank" rel="noopener noreferrer" className={styles.logoLink} aria-label={p.name}>
+              <Image src={p.logo} alt={`Logo ${p.name}`} width={240} height={p.logoHeight} className={styles.partnerLogo} />
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );

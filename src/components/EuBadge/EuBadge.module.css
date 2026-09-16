@@ -1,6 +1,6 @@
 /* ===================
-   EU FUNDING BAR — Fixed bottom bar, always visible above the fold
-   EU Reg. 2021/1060 best practice compliance
+   LOGO-LEISTE – fixiert unten, immer sichtbar
+   EU-Block (≥ 1 cm Emblem) + unibz + LocLab + Projektpartner
    =================== */
 
 .bar {
@@ -9,20 +9,27 @@
   left: 0;
   width: 100%;
   z-index: 190;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0.6rem 2rem;
   background: rgba(255, 255, 255, 0.97);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-top: 1px solid rgba(17, 17, 17, 0.08);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.bar::-webkit-scrollbar {
+  display: none;
 }
 
 .inner {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  padding: 0.6rem 2rem 0.6rem 5rem; /* links Platz für den runden Next.js-Dev-Button */
+  min-width: max-content;
+  margin-left: auto;
 }
 
 .logoLink {
@@ -32,12 +39,37 @@
   flex-shrink: 0;
 }
 
-/* Logo: the PNG is 1035×294, we render it so visible emblems are ≥ 1cm.
-   At height 56px the visible logos inside are ~35–40px ≈ 1cm at 96dpi. */
-.logo {
+/* EU-Block: PNG 1035×294 – bei 56px Höhe sind die Embleme ≈ 1 cm */
+.euLogo {
   width: auto;
   height: 56px;
   object-fit: contain;
+}
+
+.partnerLogo {
+  width: auto;
+  height: 30px;
+  object-fit: contain;
+}
+
+.partners {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.loclab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  color: var(--color-text);
+}
+
+.loclabText {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
 }
 
 .divider {
@@ -47,52 +79,22 @@
   flex-shrink: 0;
 }
 
-.text {
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--color-text);
-  line-height: 1.3;
-  white-space: nowrap;
-  opacity: 0.6;
-}
-
 /* ---- Tablet ---- */
 @media (max-width: 1024px) {
-  .logo {
-    height: 48px;
-  }
+  .euLogo { height: 48px; }
+  .partnerLogo { height: 26px; }
+  .inner { gap: 1.2rem; padding-left: 4rem; }
 }
 
-/* ---- Mobile ---- */
+/* ---- Mobile: scrollbar, EU-Block vorne ---- */
 @media (max-width: 768px) {
-  .bar {
-    padding: 0.4rem 1rem;
+  .inner {
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.4rem 1rem 0.4rem 3.5rem;
+    margin-left: 0;
   }
-
-  .logo {
-    height: 40px;
-  }
-
-  .text {
-    font-size: 0.55rem;
-    max-width: 14ch;
-    white-space: normal;
-    line-height: 1.2;
-  }
-}
-
-@media (max-width: 480px) {
-  .text {
-    display: none;
-  }
-
-  .divider {
-    display: none;
-  }
-
-  .logo {
-    height: 36px;
-  }
+  .euLogo { height: 40px; }
+  .partnerLogo { height: 22px; }
+  .divider { height: 24px; }
 }

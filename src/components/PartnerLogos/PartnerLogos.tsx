@@ -53,7 +53,7 @@ export default function PartnerLogos() {
                     objectFit: 'contain',
                     width: 'auto',
                     height: `${partner.logoHeight}px`,
-                    maxWidth: '200px',
+                    maxWidth: 'min(200px, 100%)',
                   }}
                 />
               </motion.a>
@@ -67,7 +67,7 @@ export default function PartnerLogos() {
             viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 0.6 }}
           >
-            <Link href="/konsortium" className={styles.ctaLink}>
+            <Link href="/partner" className={styles.ctaLink}>
               {t('cta')}
             </Link>
           </motion.div>

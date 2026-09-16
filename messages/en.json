@@ -1,33 +1,32 @@
 {
   "Metadata": {
     "homeTitle": "LocLab — Local. Circular. Low-tech.",
-    "homeDescription": "An EU-funded real-world laboratory for innovative and sustainable building in South Tyrol.",
+    "homeDescription": "An EU-funded real-world laboratory for innovative, sustainable building in South Tyrol.",
     "projektTitle": "LocLab — The Project",
-    "projektDescription": "An EU-funded real-world laboratory for innovative building in South Tyrol.",
+    "projektDescription": "A real-world lab for innovative building in South Tyrol – local, circular and low-tech. Background, approach, goals and milestones.",
+    "partnerTitle": "LocLab — Project Partners",
+    "partnerDescription": "Free University of Bozen-Bolzano, LokHaus+, Elektro A. Haller, Pfeifer Partners and Energytech: the LocLab project team.",
     "materialienTitle": "LocLab — Materials",
-    "materialienDescription": "Mapping local, circular building materials in South Tyrol.",
+    "materialienDescription": "Material passport and tested materials: regional, renewable and circular building materials in South Tyrol.",
     "karteTitle": "LocLab — Material Map",
-    "karteDescription": "Interactive map of local building materials in South Tyrol — wood, clay, straw, hempcrete, natural stone, and recycled materials.",
-    "workshopsTitle": "LocLab — Workshops & Residency",
-    "workshopsDescription": "Participatory workshops, real-world labs and Designer in Residence programmes.",
-    "timelineTitle": "LocLab — Timeline",
-    "timelineDescription": "Project phases and milestones over 36 months.",
-    "konsortiumTitle": "LocLab — Consortium",
-    "konsortiumDescription": "Project partners: unibz, Pfeifer & Partners, LokHaus+, Energytech, Elektro A. Haller.",
-    "dokumentationTitle": "LocLab — Documentation",
-    "dokumentationDescription": "Project phases, milestones and scientific publications."
+    "karteDescription": "Interactive map of local building materials in South Tyrol — wood, clay, straw, hemp-lime, natural stone and recycling.",
+    "modularHousesTitle": "LocLab — Modular Houses",
+    "modularHousesDescription": "Planning, construction and operation of the two Modular Houses in Schlanders and Bolzano.",
+    "forschungTitle": "LocLab — Research & Testing",
+    "forschungDescription": "Energy efficiency, indoor quality, well-being and life cycle assessment – research under real conditions.",
+    "workshopsTitle": "LocLab — Events & Workshops",
+    "workshopsDescription": "Events, workshops and participatory formats on sustainable building in South Tyrol."
   },
   "Nav": {
     "projekt": "Project",
+    "partner": "Project Partners",
     "materialien": "Materials",
-    "materialkarte": "Material Map",
-    "workshops": "Workshops",
-    "timeline": "Timeline",
-    "konsortium": "Consortium",
-    "dokumentation": "Documentation",
+    "modularHouses": "Modular Houses",
+    "forschung": "Research & Testing",
+    "workshops": "Events & Workshops",
     "menuOpen": "Open menu",
-    "email": "hello@loclab.eu",
-    "location": "NOI Techpark, Bolzano"
+    "email": "info@loc-lab.it",
+    "location": "Free University of Bozen-Bolzano"
   },
   "Hero": {
     "sectionLabel": "Real-world Lab South Tyrol",
@@ -38,60 +37,420 @@
     "taglineLine2": "innovative and sustainable building.",
     "scroll": "Scroll"
   },
-  "HomeTeaser": {
-    "projektLabel": "The Project",
-    "projektTitle": "A real-world lab for the architecture of tomorrow.",
-    "projektDescription": "LOCLAB researches sustainable building with local materials in the Alps. As a Living Lab, we connect science, architecture and craftsmanship — in a real construction project that sets new standards.",
-    "materialienLabel": "Materials",
-    "materialienTitle": "Local materials, global impact.",
-    "materialienDescription": "Wood, clay, straw, hempcrete and natural stone — all from the region. We analyse and test traditional building materials with modern methods to unlock their future potential.",
-    "workshopsLabel": "Workshops & Residency",
-    "workshopsTitle": "Sharing knowledge, building together.",
-    "workshopsDescription": "In interdisciplinary workshops and residencies, we bring together researchers, architects and craftspeople. Hands-on, directly on the building site — for a genuine knowledge transfer.",
+  "Home": {
+    "introLabel": "The Project",
+    "introHeading": "A real-world lab for innovative building.",
+    "introLead": "At the heart of the project are two modular houses that serve as physical prototypes and digital test beds for developing and trialling innovative housing and building concepts.",
+    "introBody": "By closely linking research, practice and public participation, the project takes a holistic look at material life cycles, participatory design processes and well-being at home. A transdisciplinary research approach yields new insights and solutions for the sustainable transformation of the construction sector. The aim is to show innovative paths towards resource-efficient, circular and people-centred building – and to actively shape the future of living.",
+    "heroAlt": "Modular timber house in South Tyrol",
+    "gridLabel": "Topics",
     "cta": "Learn more",
-    "timelineLabel": "Timeline",
-    "timelineTitle": "Phases & milestones over 36 months.",
-    "konsortiumLabel": "Consortium",
-    "konsortiumTitle": "Inter- and transdisciplinary collaboration.",
-    "dokumentationLabel": "Documentation",
-    "dokumentationTitle": "Making research transparent."
+    "cards": {
+      "projekt": {
+        "label": "Project",
+        "title": "A real-world lab for innovative building – local, circular and low-tech.",
+        "text": "Background, approach and goals of the EU-funded research project – from the idea to the milestones."
+      },
+      "partner": {
+        "label": "Project Partners",
+        "title": "Science, architecture, engineering and craft.",
+        "text": "The Free University of Bozen-Bolzano and four South Tyrolean companies develop solutions for circular building together."
+      },
+      "materialien": {
+        "label": "Materials",
+        "title": "Regional resources, made visible.",
+        "text": "Material passport, mapping and the materials newly researched in the project – from the glue-free timber wall to clay–wood-shaving insulation."
+      },
+      "modularHouses": {
+        "label": "Modular Houses",
+        "title": "Two buildings, two sites, one experiment.",
+        "text": "Planning, BIM models and realisation of the two Modular Houses in Schlanders and Bolzano."
+      },
+      "forschung": {
+        "label": "Research & Testing",
+        "title": "Measure, compare, understand.",
+        "text": "Energy efficiency, indoor quality, well-being and life cycle assessment under real conditions."
+      },
+      "workshops": {
+        "label": "Events & Workshops",
+        "title": "Sharing knowledge, building together.",
+        "text": "Events, workshops and participatory formats for professionals, the public and schools."
+      }
+    }
   },
   "PartnerLogos": {
     "label": "Project Partners",
-    "cta": "View all partners →"
+    "cta": "See all partners →"
   },
-  "About": {
-    "sectionLabel": "The Project",
+  "Projekt": {
+    "label": "The Project · Local, circular, low-tech",
     "heading": "A real-world lab for innovative building.",
-    "bodyLarge": "LocLab is an EU-funded real-world lab for local, circular and low-tech building in South Tyrol.",
-    "bodySmall": "At the centre are two modular houses serving as physical and digital test fields. Through transdisciplinary research, we focus on material life cycles, community participation and structural sensing — for a new era of sustainable building.",
-    "quote": "Two modular houses as physical and digital real-world laboratories.",
-    "heroAlt": "Modular construction in South Tyrol",
-    "interiorAlt": "Interior of a modular house"
+    "intro": [
+      "The construction sector is at the centre of current sustainability and transformation efforts. As one of the most resource- and emission-intensive sectors of the economy, it contributes significantly to energy consumption, greenhouse gas emissions and global material use. At the same time, there is a growing need for innovative construction methods that combine climate protection, resource efficiency, circularity and high living quality.",
+      "Against this background, the LocLab research project explores new paths towards sustainable, regionally rooted and circular building. Its aim is to develop, test and scientifically evaluate innovative building and material concepts that meet ecological, technical, economic and social requirements alike.",
+      "At the heart of the project are two modular buildings that serve as physical and digital real-world laboratories. These Modular Houses will be set up at two sites – at BASIS Vinschgau in Schlanders and at the NOI Techpark in Bolzano – and allow novel building and material systems to be developed, implemented and studied under real conditions. Different solutions are analysed in terms of their environmental impact, energy efficiency, indoor quality and how users perceive them, and compared with existing construction methods."
+    ],
+    "imageAlt": "Modular timber house against a mountain backdrop",
+    "sections": [
+      {
+        "title": "Circular construction based on regional resources",
+        "paragraphs": [
+          "South Tyrol has extensive natural resources and strong expertise in timber construction and the processing of local raw materials. The project draws on this potential to develop innovative circular building systems that strengthen regional value creation while reducing the ecological footprint of buildings.",
+          "In the first real-world lab, a novel timber frame wall is developed and tested that largely avoids adhesives and synthetic sealing systems. The goal is an airtight, resource-efficient and circular construction whose materials can be reused or recycled more easily at the end of their life cycle. At the same time, potential pollutant emissions are reduced and a healthy indoor climate is promoted.",
+          "The second real-world lab focuses on developing an innovative insulation made of clay and regionally sourced wood shavings. The shavings are a by-product of local wood-processing companies and hold largely untapped potential for sustainable building applications. Combined with clay, they form an insulation material that strengthens regional material cycles, shortens transport distances and can offer positive properties in terms of moisture regulation and indoor climate."
+        ]
+      },
+      {
+        "title": "Research under real conditions",
+        "paragraphs": [
+          "A key feature of LocLab is the real-world lab approach. The two modular buildings serve not only as research infrastructure but also as places of exchange and hands-on testing. Innovative building and interior concepts are tested under real conditions of use and accompanied scientifically.",
+          "The systems developed are examined comprehensively, focusing on energy efficiency, indoor quality, the thermal behaviour of the materials, the circularity of the resources used and how users perceive them. Digital methods such as Building Information Modeling (BIM) and Virtual Reality (VR) are used in addition to depict different scenarios and enable new forms of participation.",
+          "A holistic life cycle assessment (LCA) is used to evaluate environmental impacts. Direct data collection within the project is intended to yield robust insights into the actual ecological effects of the construction methods developed."
+        ]
+      },
+      {
+        "title": "Innovation through collaboration",
+        "paragraphs": [
+          "LocLab sees sustainable building as a shared challenge. The project therefore combines scientific research with the expertise of regional companies and the knowledge and experience of the local population.",
+          "In workshops and participatory formats, regional raw materials and by-products are mapped, potentials identified and innovative products and interior solutions developed together. The resulting prototypes are exhibited, tested and refined in the real-world labs. This creates new impulses for a resource-efficient, future-proof building culture in South Tyrol."
+        ]
+      },
+      {
+        "title": "Project goals",
+        "paragraphs": [
+          "The goal of LocLab is to develop, implement and scientifically evaluate innovative, circular building and material solutions based on regional resources. Within the real-world labs, their ecological, technical and social effects are studied in order to create an evidence base for sustainable construction, strengthen the regional circular economy and support the transformation towards a resource-efficient, climate-friendly building culture in South Tyrol."
+        ]
+      }
+    ]
+  },
+  "Milestones": {
+    "label": "Milestones",
+    "heading": "Project timeline.",
+    "intro": "The project runs for 36 months. The phases overlap – the project does not proceed in a straight line. CUP EFRE: I53C25001610009.",
+    "status": {
+      "done": "completed",
+      "active": "in progress",
+      "planned": "planned"
+    },
+    "phases": [
+      {
+        "phase": "Phase 1",
+        "date": "M1–M6",
+        "title": "Kick-off & work plan",
+        "milestone": "M1 Kick-off · M2 Final schedule",
+        "status": "done"
+      },
+      {
+        "phase": "Phase 2",
+        "date": "M7–M14",
+        "title": "Realisation & construction of the Modular Houses",
+        "milestone": "M3 Modular Houses completed · M4 Real-world lab sites operational",
+        "status": "active"
+      },
+      {
+        "phase": "Phase 3",
+        "date": "M15–M24",
+        "title": "Measurements, LCA & workshops",
+        "milestone": "M5 Measurements completed · M6 Real-world labs Schlanders & Bolzano completed",
+        "status": "planned"
+      },
+      {
+        "phase": "Phase 4",
+        "date": "M25–M36",
+        "title": "Evaluation, synthesis & publication",
+        "milestone": "M7 Final report · M8 Public closing event",
+        "status": "planned"
+      }
+    ]
   },
   "Partners": {
-    "sectionLabel": "Consortium",
+    "label": "Project Partners",
     "heading": "Inter- and transdisciplinary collaboration.",
+    "intro": "LocLab is a transdisciplinary research project that brings together expertise from science, architecture, engineering, craft and business. Through close collaboration between the Free University of Bozen-Bolzano and the project partners, innovative solutions for circular and sustainable building emerge – scientifically grounded, tested in practice and developed further together.",
     "leadPartner": "Lead Partner",
-    "projektpartner": "Project Partner"
+    "projektpartner": "Project Partner",
+    "website": "Visit website",
+    "video": "Video interview",
+    "descriptions": {
+      "unibz": "The Free University of Bozen-Bolzano leads the project as Lead Partner. The Faculty of Design and Art and the Faculty of Engineering are involved, bringing together materials research, design, building physics and user studies in a joint research approach.",
+      "lokhaus": "LokHaus+ is a South Tyrolean timber construction company based in Tisens that specialises in sustainable timber building, ecological renovation and circular building concepts. Focusing on regional materials, short transport distances and innovative, almost glue-free timber systems, the company develops forward-looking solutions for healthy, resource-efficient building.",
+      "haller": "Elektro A. Haller is a long-established electrical engineering company from Eppan with over 50 years of experience in planning, installing and maintaining electrical systems. Its services range from building and lighting technology and smart-home solutions to photovoltaics, e-mobility and intelligent building control. With an interdisciplinary team, the company develops tailored, energy-efficient solutions for private and public building projects.",
+      "pfeifer": "Pfeifer Partners is an innovative engineering and architecture firm from South Tyrol that develops sustainable solutions in building construction, civil engineering, mobility and digital planning. Its interdisciplinary team of engineers, architects and surveyors uses modern methods such as Building Information Modeling (BIM) to deliver forward-looking, resource-efficient projects for public and private clients.",
+      "energytech": "Energytech Ingenieure is a South Tyrolean engineering office for building services and energy systems based in Bolzano. The company accompanies projects from consulting and planning to the implementation of thermal, electrical and energy systems. Its focus is on sustainable, low-carbon solutions that combine ecological responsibility with economic efficiency and make an important contribution to the energy transition."
+    }
+  },
+  "Materials": {
+    "label": "Materials",
+    "heading": "Regional resources, made visible.",
+    "intro": [
+      "A central focus of LocLab is researching and making visible regionally available, renewable and circular materials. South Tyrol has great potential in natural raw materials as well as craft expertise that can be used for sustainable, resource-efficient building. At the same time, regional production processes generate valuable by-products and residues whose potential often remains untapped.",
+      "Within the project, innovative material solutions are developed and tested. These materials are scientifically examined with regard to their technical performance, their environmental impact and their contribution to the circular economy.",
+      "In addition, the project maps and documents regional circular resources. Renewable and circular materials, their availability, locations, processing expertise and relevant actors are recorded systematically. The aim is to make existing material cycles visible, strengthen local value chains and promote knowledge transfer between research, business and society.",
+      "The results are prepared as material maps, material passports and a growing material collection. This creates a valuable knowledge base for future research, building and design projects and contributes to the sustainable use of regional resources in South Tyrol."
+    ],
+    "passLabel": "Material passport",
+    "passHeading": "The material collection.",
+    "passIntro": "The material passport documents regional, renewable and circular materials with their building-physics data, their origin and their circularity. The collection will grow to 16 materials over the course of the project – here is a first excerpt.",
+    "statLambda": "λ-value",
+    "statCo2": "CO₂",
+    "statRecycle": "Recyclable",
+    "testedLabel": "Tested materials",
+    "testedHeading": "Newly researched in the real-world lab.",
+    "testedIntro": "Two material systems are newly developed in the project and tested in the Modular Houses under real conditions. Test procedures, results and life cycle assessment (LCA) will be added here as the project progresses.",
+    "tested": [
+      {
+        "label": "Real-world lab 1",
+        "title": "Glue-free timber frame wall",
+        "text": "A novel timber frame wall that largely avoids adhesives and synthetic sealing systems. Goal: airtight, resource-efficient and separable by material type at end of life – with reduced pollutant emissions and a healthy indoor climate.",
+        "status": "Testing to follow"
+      },
+      {
+        "label": "Real-world lab 2",
+        "title": "Clay and wood-shaving insulation",
+        "text": "An insulation material made of clay and wood shavings, a by-product of local wood-processing companies. It strengthens regional material cycles, shortens transport distances and can regulate moisture and improve the indoor climate.",
+        "status": "Testing to follow"
+      }
+    ],
+    "mapLabel": "Material map",
+    "mapTitle": "Material sources in South Tyrol.",
+    "mapText": "Interactive map of the mapped forests, quarries, farmland and recycling centres.",
+    "mapCta": "Open map",
+    "items": {
+      "holz": {
+        "name": "Wood",
+        "subtitle": "Spruce · Larch · Fir",
+        "role": "Structure & cladding",
+        "co2Label": "CO₂ storage",
+        "recycle": "100%",
+        "description": "South Tyrol is densely forested. Wood from local forestry is the central building material – as solid timber, cross-laminated timber or in the almost glue-free LokHaus+ system. Short transport distances, high CO₂ storage and full reusability make it the backbone of the project."
+      },
+      "lehm": {
+        "name": "Clay",
+        "subtitle": "Rammed earth · Clay plaster",
+        "role": "Interior walls & indoor climate",
+        "co2Label": "Climate-neutral",
+        "recycle": "100%",
+        "description": "Clay naturally regulates indoor humidity, stores heat and has proven itself in the Alpine region for centuries. It needs no energy-intensive firing and can be fully returned to the earth at the end of its life."
+      },
+      "stroh": {
+        "name": "Straw",
+        "subtitle": "Straw-bale insulation",
+        "role": "Insulation",
+        "co2Label": "CO₂ sink",
+        "recycle": "100%",
+        "description": "Straw bales offer very good thermal insulation. As an agricultural by-product, straw is locally available, binds CO₂ while growing and is fully compostable at the end of its life."
+      },
+      "hanf": {
+        "name": "Hemp-lime",
+        "subtitle": "Hempcrete · Hemp shives",
+        "role": "Insulation & infill",
+        "co2Label": "Net sink",
+        "recycle": "100%",
+        "description": "Hemp-lime combines the insulating performance of hemp shives with the thermal mass of natural lime. The material is vapour-open, mould-resistant and acts as a CO₂ sink. At end of life it can be crushed and reused as aggregate or composted."
+      },
+      "stein": {
+        "name": "Natural stone",
+        "subtitle": "Porphyry · Dolomite · Gneiss",
+        "role": "Foundation & plinth",
+        "co2Label": "Local quarrying",
+        "recycle": "∞",
+        "description": "Natural stone from South Tyrolean quarries offers high thermal mass and a virtually unlimited lifespan. Porphyry, dolomite and gneiss have been part of Alpine architecture for centuries and can be reused without loss of quality."
+      },
+      "recycling": {
+        "name": "Recycled aggregates",
+        "subtitle": "RC concrete · Reclaimed wood · Brick",
+        "role": "Foundation & structure",
+        "co2Label": "Circular",
+        "recycle": "Circular",
+        "description": "Demolition materials from existing buildings are mapped, tested and used as aggregates in new building materials – a contribution to closed material cycles in the region."
+      }
+    }
+  },
+  "ModularHouses": {
+    "label": "Modular Houses",
+    "heading": "Two buildings, two sites, one experiment.",
+    "intro": [
+      "Within LocLab, two Modular Houses are planned, digitally modelled and built. The two buildings are based on different innovative construction concepts. The aim of the project is to study the performance of these approaches under real conditions and compare them with each other.",
+      "Planning is transdisciplinary, carried out jointly by all project partners. BIM and virtual reality models are developed for both buildings, supporting planning and analysis as well as the digital communication of research results.",
+      "The Modular Houses are designed so that the materials, constructions and technical solutions of sustainable building become visible and comprehensible. After fabrication, the modules are erected at two sites in South Tyrol – at BASIS Vinschgau in Schlanders and at the NOI Techpark in Bolzano –, used as real-world labs and then dismantled again. This also allows the project to study how building modules and materials can be reused, recovered or transferred to new contexts of use at the end of their life cycle."
+    ],
+    "imageAlt": "Prefabricated timber modules on the construction site",
+    "factsLabel": "At a glance",
+    "factsHeading": "Two construction concepts compared.",
+    "facts": [
+      {
+        "label": "Site 1",
+        "title": "BASIS Vinschgau, Schlanders",
+        "text": "Real-world lab in the Vinschgau valley – close to craft, the public and schools."
+      },
+      {
+        "label": "Site 2",
+        "title": "NOI Techpark, Bolzano",
+        "text": "Real-world lab in the innovation district – close to research and business."
+      },
+      {
+        "label": "Modular House 1",
+        "title": "Glue-free timber frame wall",
+        "text": "Largely without adhesives and synthetic seals – airtight, circular, separable."
+      },
+      {
+        "label": "Modular House 2",
+        "title": "Clay and wood-shaving insulation",
+        "text": "Regional by-products as insulation – moisture-regulating, short transport distances."
+      },
+      {
+        "label": "Planning",
+        "title": "BIM and VR models",
+        "text": "Digital twins for planning, analysis and communicating the results."
+      },
+      {
+        "label": "Life cycle",
+        "title": "Assembly, operation, dismantling",
+        "text": "The modules are dismantled after use and reused."
+      }
+    ],
+    "stepsLabel": "Realisation",
+    "stepsHeading": "Step by step.",
+    "stepsIntro": "Photos, videos and baseline measurements (indoor climate) will be added here as construction progresses.",
+    "steps": [
+      {
+        "title": "Planning & digital modelling",
+        "text": "Architecture, structure, building services and BIM model – together with all project partners."
+      },
+      {
+        "title": "Prefabrication of the modules",
+        "text": "Production of the timber frame walls and the clay–wood-shaving insulation in South Tyrol."
+      },
+      {
+        "title": "Assembly on site",
+        "text": "Erection at BASIS Vinschgau in Schlanders and at the NOI Techpark in Bolzano."
+      },
+      {
+        "title": "Operation as real-world lab",
+        "text": "Measurement campaigns, user studies, workshops and visits."
+      },
+      {
+        "title": "Dismantling & reuse",
+        "text": "Disassembly of the modules and transfer of the materials to new uses."
+      }
+    ]
+  },
+  "Forschung": {
+    "label": "Research & Testing",
+    "heading": "Measure, compare, understand.",
+    "intro": [
+      "At the centre of LocLab are two modular demonstration buildings that serve as real-world labs for developing, testing and scientifically evaluating innovative construction methods. In these Modular Houses, novel circular construction and material systems are tested under real conditions – including a largely glue-free timber frame construction and an insulation made of clay and regional wood shavings.",
+      "Using BIM and virtual reality models, extensive measurement campaigns and life cycle assessments (LCA), the buildings are examined with regard to energy efficiency, indoor quality, airtightness, thermal comfort, acoustics, environmental impact and circularity. The tests take place in different climate zones of South Tyrol in order to analyse the performance of the systems under varying conditions.",
+      "In addition, the real-world labs are used for workshops, participatory formats and user studies. This makes it possible to scientifically examine both the technical performance of the solutions developed and their perception and acceptance among the public. The findings form the basis for practical recommendations and future applications in sustainable building."
+    ],
+    "imageAlt": "Measurement equipment in a timber building",
+    "categoriesLabel": "Test categories",
+    "categoriesHeading": "What is measured.",
+    "categories": [
+      {
+        "title": "Energy efficiency",
+        "text": "Heating and cooling demand, heat losses and behaviour of the building envelope over the year."
+      },
+      {
+        "title": "Indoor quality",
+        "text": "Air quality, humidity and pollutant emissions of the materials used."
+      },
+      {
+        "title": "Airtightness",
+        "text": "Airtightness of the glue-free construction compared with conventional systems."
+      },
+      {
+        "title": "Thermal comfort",
+        "text": "Surface and room temperatures, thermal behaviour of the materials."
+      },
+      {
+        "title": "Acoustics",
+        "text": "Sound insulation and room acoustics of the modular construction."
+      },
+      {
+        "title": "Environmental impact (LCA)",
+        "text": "Holistic life cycle assessment based on directly collected data."
+      },
+      {
+        "title": "Circularity",
+        "text": "Separability, reuse and recycling of the components at end of life."
+      },
+      {
+        "title": "Well-being & perception",
+        "text": "User studies on living quality, perception and acceptance."
+      }
+    ],
+    "strandsLabel": "Research strands",
+    "strandsHeading": "Three perspectives, one real-world lab.",
+    "strandsIntro": "The test procedures of the individual strands will be described here in detail as the project progresses.",
+    "strands": [
+      {
+        "label": "Building physics",
+        "title": "Indoor quality",
+        "text": "Measurement campaigns on energy, humidity, airtightness, acoustics and thermal comfort in both Modular Houses."
+      },
+      {
+        "label": "Design & user research",
+        "title": "Living quality & well-being",
+        "text": "Perception studies with users – including virtual reality and eye tracking."
+      },
+      {
+        "label": "Participation",
+        "title": "Transdisciplinary approach",
+        "text": "Participatory formats in which research, companies and the public develop and evaluate solutions together."
+      }
+    ]
+  },
+  "Workshops": {
+    "label": "Events & Workshops",
+    "heading": "Sharing knowledge, building together.",
+    "intro": "Throughout the project, events, workshops and participatory formats take place regularly to share knowledge about sustainable construction, regional materials and the circular economy. These activities foster dialogue between science, business and the public and support the transfer of project results into practice and society.",
+    "imageAlt": "Building together in a workshop",
+    "formatsLabel": "Formats",
+    "formats": [
+      {
+        "title": "Material workshops",
+        "text": "Hands-on experience with wood, clay and regional by-products. Participants learn traditional and innovative processing techniques guided by local craftspeople."
+      },
+      {
+        "title": "Scenario workshops",
+        "text": "Together with citizens, architects and researchers, we develop future scenarios for sustainable building in South Tyrol."
+      },
+      {
+        "title": "Measurement campaigns & user studies",
+        "text": "Physical measurements and perception studies in the Modular Houses – including virtual reality and eye tracking."
+      },
+      {
+        "title": "Participatory interventions",
+        "text": "Awareness-raising activities in Schlanders and Bolzano – the real-world labs open their doors to the public, schools and local communities."
+      }
+    ],
+    "calendarLabel": "Calendar",
+    "calendarHeading": "16 events in South Tyrol.",
+    "calendarText": "The programme of 16 events and workshops is being developed together with BASIS Vinschgau. The workshops start in June 2027; the programme will be published here on an ongoing basis.",
+    "calendarStatus": "Programme to follow",
+    "calendarCta": "Get an invitation",
+    "calendarMail": "info@loc-lab.it",
+    "formatsHeading": "Four formats, one goal."
   },
   "Footer": {
-    "ctaText": "Let's talk about your project",
-    "contactLabel": "Contact",
+    "ctaText": "Contact",
+    "contactLabel": "E-mail",
+    "contactValue": "info@loc-lab.it",
     "locationLabel": "Location",
-    "locationValue": "NOI Techpark, Bolzano / South Tyrol",
+    "locationValue": "Free University of Bozen-Bolzano",
     "fundingLabel": "Funding",
     "fundingValue": "ERDF 2021–2027 · Project EFRE1088",
-    "consortiumLabel": "Consortium",
+    "consortiumLabel": "Project Partners",
     "leadPartner": "Lead Partner",
     "fundingTextIt": "Realizzato con il cofinanziamento dell'Unione europea nell'ambito del programma EFRE-FESR 2021–2027",
     "fundingTextDe": "Kofinanziert von der Europäischen Union im Rahmen des Programms EFRE-FESR 2021–2027",
     "legalCopyright": "© 2026 — All rights reserved",
     "legalFunding": "Co-funded by the European Union · EFRE1088",
-    "legalPrivacy": "Privacy Policy"
+    "legalPrivacy": "Privacy"
   },
   "EuBadge": {
-    "text": "Co-funded by the EU",
-    "ariaLabel": "EU funding information"
+    "ariaLabel": "Information on EU funding",
+    "partnersLabel": "Project Partners"
   }
 }

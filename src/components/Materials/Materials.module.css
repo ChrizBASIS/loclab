@@ -154,4 +154,9 @@
 
 @media (max-width: 600px) {
   .grid { grid-template-columns: 1fr; }
+  .heading {
+    font-size: clamp(2rem, 10.5vw, var(--text-hero));
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
 }
