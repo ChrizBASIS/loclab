@@ -75,24 +75,24 @@
   --section-gap: 12vw;                          /* Massive breathing room */
 
   /* EU Logo Bar clearance */
-  --eu-bar-clearance: 76px;
+  --eu-bar-clearance: 90px;
 }
 
 @media (max-width: 1024px) {
   :root {
-    --eu-bar-clearance: 68px;
+    --eu-bar-clearance: 88px;
   }
 }
 
 @media (max-width: 768px) {
   :root {
-    --eu-bar-clearance: 54px;
+    --eu-bar-clearance: 72px;
   }
 }
 
 @media (max-width: 480px) {
   :root {
-    --eu-bar-clearance: 50px;
+    --eu-bar-clearance: 70px;
   }
 }
 

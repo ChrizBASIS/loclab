@@ -39,16 +39,19 @@
   flex-shrink: 0;
 }
 
-/* EU-Block: PNG 1035×294 – bei 56px Höhe sind die Embleme ≈ 1 cm */
+/* EU-Block: PNG 1035×294, Flagge = 58 % der PNG-Höhe.
+   Leitlinie 2.4: Emblem mindestens 1 cm (37,8 px bei 96 dpi) → PNG ≥ 66 px.
+   Leitlinie 2.5: kein horizontales Logo darf höher sein als das Emblem
+   → Partnerlogos bleiben unter der Flaggenhöhe. */
 .euLogo {
   width: auto;
-  height: 56px;
+  height: 68px;   /* Flagge ≈ 39 px */
   object-fit: contain;
 }
 
 .partnerLogo {
   width: auto;
-  height: 30px;
+  height: 32px;
   object-fit: contain;
 }
 
@@ -81,8 +84,8 @@
 
 /* ---- Tablet ---- */
 @media (max-width: 1024px) {
-  .euLogo { height: 48px; }
-  .partnerLogo { height: 26px; }
+  .euLogo { height: 66px; }   /* Flagge ≈ 38 px */
+  .partnerLogo { height: 30px; }
   .inner { gap: 1.2rem; padding-left: 4rem; }
 }
 
@@ -94,7 +97,9 @@
     padding: 0.4rem 1rem 0.4rem 3.5rem;
     margin-left: 0;
   }
-  .euLogo { height: 40px; }
-  .partnerLogo { height: 22px; }
+  /* Mobil: 1 cm physisch wäre ~60 CSS-px – nicht sinnvoll; Flagge bleibt ≥ 32 px
+     und größer als jedes andere Logo in der Leiste. */
+  .euLogo { height: 56px; }
+  .partnerLogo { height: 24px; }
   .divider { height: 24px; }
 }

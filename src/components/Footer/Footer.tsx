@@ -67,8 +67,10 @@ export default function Footer() {
       <div className={styles.bottom}>
         <motion.div
           className={styles.wordmark}
+          // Ziel-Deckkraft 0.12 (nicht 1): sonst überschreibt die Animation die dezente
+          // CSS-Deckkraft und der Schriftzug steht als riesiges schwarzes Logo neben dem EU-Block.
           initial={{ opacity: 0, scale: 0.92 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 0.12, scale: 1 }}
           viewport={{ once: true, margin: '-50px' }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         >
@@ -86,26 +88,13 @@ export default function Footer() {
                 className={styles.logoItem}
                 aria-label="EFRE FESR Programm 2021–2027"
               >
+                {/* Logo-Kombination der Verwaltungsbehörde (Coesione Italia · EU-Emblem + Erklärung · Republik · Land).
+                    72px PNG-Höhe = Emblem 42px (≥ 1 cm). Kein anderes Logo darf höher sein als das Emblem (Leitlinie 2.5). */}
                 <Image
                   src="/logos/fesr-eu-logo.png"
                   alt={t('fundingTextDe')}
-                  width={200}
-                  height={150}
-                  style={{ objectFit: 'contain', width: 'auto', height: '72px' }}
-                />
-              </a>
-              <a
-                href="https://www.interreg.net/it/2021-2027/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.logoItem}
-                aria-label="Interreg VI-A Italia – Österreich 2021–2027"
-              >
-                <Image
-                  src="/logos/interreg-logo.png"
-                  alt="Interreg VI-A Italia – Österreich 2021–2027"
-                  width={280}
-                  height={100}
+                  width={1035}
+                  height={294}
                   style={{ objectFit: 'contain', width: 'auto', height: '72px' }}
                 />
               </a>
@@ -130,7 +119,7 @@ export default function Footer() {
                 alt="Freie Universität Bozen – Libera Università di Bolzano"
                 width={240}
                 height={96}
-                style={{ objectFit: 'contain', width: 'auto', height: '56px' }}
+                style={{ objectFit: 'contain', width: 'auto', height: '40px' }}
               />
             </a>
           </div>
